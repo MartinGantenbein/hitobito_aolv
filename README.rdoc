@@ -1,0 +1,20 @@
+=== Hitobito AOLV
+
+This hitobito wagon defines the organization hierarchy with groups and roles
+of AOLV.
+
+
+=== Organization Hierarchy
+   * Regionalverband
+      * Regionalverband
+         * Superadmin: [:admin, :layer_and_below_full]
+   * Verein
+      * Verein
+         * Administrator: [:layer_full]
+         * Mitglied: [:group_read]
+   * Global
+      * Gruppe
+         * Gruppenadministrator: [:group_full]
+         * Mitglied: [:group_read]
+
+(Output of rake app:hitobito:roles)

@@ -1,0 +1,36 @@
+de:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/root:
+        one: Regionalverband
+        other: Regionalverbände
+
+      group/club:
+        one: Verein
+        other: Vereine
+
+      group/team:
+        one: Gruppe
+        other: Gruppen
+
+
+      ### ROLES
+
+      role/administrator:
+        one: Superadmin
+        description: Der Administrator hat vollen Zugriff auf seine Organisation und alle darunter liegenden.
+        
+      role/layer_admin:
+        one: Administrator
+        description: Der Administrator hat vollen Zugriff auf seine Organisation mit allen Gruppen.
+        
+      role/group_admin:
+        one: Gruppenadministrator
+        description: Der Gruppenadministrator hat vollen Zugriff auf seine Gruppe.
+
+      role/member:
+        one: Mitglied
+        description: Mitglieder haben Lesezugriff auf ihre Organisation.
