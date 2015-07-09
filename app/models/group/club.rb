@@ -3,17 +3,20 @@
 class Group::Club < ::Group
 
   self.layer = true
-  
+
   self.event_types = []
 
   children Group::Team
-  
+
   ### ROLES
-  class Administrator < Role::LayerAdmin
+  class Administrator < Role::Administrator
+  end
+
+  class Leader < Role::Leader
   end
 
   class Member < Role::Member
   end
 
-  roles Administrator, Member
+  roles Administrator, Leader, Member
 end

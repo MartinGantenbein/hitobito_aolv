@@ -5,31 +5,27 @@ de:
       ### GROUPS
 
       group/root:
-        one: Regionalverband
-        other: Regionalverbände
+        one: Verband
+        other: Verbände
 
       group/club:
         one: Verein
         other: Vereine
 
       group/team:
-        one: Gruppe
-        other: Gruppen
+        one: Team
+        other: Teams
 
 
       ### ROLES
 
       role/administrator:
-        one: Superadmin
-        description: Der Administrator hat vollen Zugriff auf seine Organisation und alle darunter liegenden.
-        
-      role/layer_admin:
         one: Administrator
-        description: Der Administrator hat vollen Zugriff auf seine Organisation mit allen Gruppen.
-        
-      role/group_admin:
-        one: Gruppenadministrator
-        description: Der Gruppenadministrator hat vollen Zugriff auf seine Gruppe.
+        description: Vollzugriff auf die eigene Organisation und darunter liegende Teams.
+
+      role/leader:
+        one: Postmaster
+        description: Lesezugriff auf die eigene Organisation und alle darunter liegenden Teams und Organisationen
 
       role/member:
         one: Mitglied
