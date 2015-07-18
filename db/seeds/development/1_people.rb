@@ -44,6 +44,9 @@ aolv.children.each do |t|
 end
 
 p = Person.find 1
-p.encrypted_password="$2a$04$y7GEgJPjJThlLNe3K4Wyq.Zd4KLI0OrK9B4RoIDeJrtkRD/7AtVRS"
+p.encrypted_password="$2a$10$FIdd7/4ZHDSN96SXZmjvkeGstLhxXwog13mBsGcvNrbzSkf0GXYN6"
 p.company_name="Aargauer OL Verband"
+p.save
+
+p.email="root@aolv.ch"
 p.save
