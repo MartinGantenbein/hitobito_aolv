@@ -9,4 +9,4 @@
       = link_to(item.to_s, group_path(item.id))
 
     %td.right
-      = Person::ListFilter.new(item, Person.find(1), 'deep', Role.visible_types.collect(&:id)).all_count
+      = Person::ListFilter.new(item, Person.find_by_email(Settings.root_email), 'deep', Role.visible_types.collect(&:id)).all_count
