@@ -5,13 +5,13 @@
 
 .brand {
   height: 50px;
-  background: image-url("logo.png") transparent no-repeat 0px 10px;
+  background: image-url("logo_aolv.png") transparent no-repeat 0px 10px;
 
   // Retina version
   @media
     only screen and (-webkit-min-device-pixel-ratio : 2),
     only screen and (min-device-pixel-ratio : 2) {
-      background: image-url("logo@2x.png") transparent no-repeat 0px 10px;
+      background: image-url("logo_aolv@2x.png") transparent no-repeat 0px 10px;
       background-height: 50px;
   }
 }
