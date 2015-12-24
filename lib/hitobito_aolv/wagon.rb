@@ -16,7 +16,16 @@ module HitobitoAolv
     config.to_prepare do
       # rubocop:disable SingleSpaceBeforeFirstArg
       # extend application classes here
+
+      # models
       Group.send        :include, Aolv::Group
+      Person.send       :include, Aolv::Person
+
+      #domain
+      Export::Csv::People::PeopleAddress.send :include, Aolv::Export::Csv::People::PeopleAddressS
+
+      # controllers
+      PeopleController.send :include, Aolv::PeopleController
       # rubocop:enable SingleSpaceBeforeFirstArg
     end
 
