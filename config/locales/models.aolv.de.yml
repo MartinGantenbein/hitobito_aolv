@@ -34,3 +34,10 @@ de:
       role/external_member:
         one: externes Mitglied
         description: Mitglieder haben Lesezugriff auf ihr Team, sind aber für darüber liegende Organisationen nicht zu sehen.
+
+    attributes:
+
+      ### PERSON
+
+      person:
+        title: Anrede
