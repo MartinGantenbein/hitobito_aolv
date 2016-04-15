@@ -1,20 +1,47 @@
 === Hitobito AOLV
 
-This hitobito wagon defines the organization hierarchy with groups and roles
-of AOLV.
+Dieser Hitobito Wagon definiert die Organisationsstruktur des Aargauer OL
+Verbands mit seinen Mitgliedervereinen
 
+=== Ebenen, Gruppen und Rollen
+==== Ebenen
+Es sind zwei Ebenen definiert: Verband und Vereine. Auf Ebene Verband gibt es
+die Gruppe "AOLV" mit Untergruppen wie "Nachwuchskader" oder "AOLV-Vorstand".
+Auf Ebene Verein besteht eine Gruppe für jeden Mitgliederverein des AOLV.
 
-=== Organization Hierarchy
-* Regionalverband
-  * Regionalverband
-     * Superadmin: [:admin, :layer_and_below_full]
-* Verein
-  * Verein
-     * Administrator: [:layer_full]
-     * Mitglied: [:group_read]
-* Global
-  * Gruppe
-     * Gruppenadministrator: [:group_full]
-     * Mitglied: [:group_read]
+==== Gruppen
+Es sind drei Gruppenarten definiert: Verband, Verein und Team. Die Gruppe
+Verband kann nur auf der Ebene Verband definiert werden, die Gruppe Verein
+nur auf der Ebene Verein. Gruppen der Art Team sind auf beiden Ebenen möglich,
+können aber nicht als eigenständige Gruppe angelegt werden sondern nur als
+Untergruppe eines Verbands, Vereins oder Teams. Die Vereine und der Verband
+sind fix vorgegeben, Teams können durch den jeweiligen Gruppenadministrator
+frei erstellt werden.
 
-(Output of rake app:hitobito:roles)
+==== Rollen
+Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
+aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
+definiert.
+===== Rollen der Gruppenart Verband
+* Administrator: Vollzugriff auf die ganze Datenbank. Wird nur in Ausnahmefällen
+  verwendet
+* Postmaster: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit der
+  Rolle "externes Mitglied" in der Ebene Verein.
+  
+===== Rollen der Gruppenart Verein
+* Administrator: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
+  einem Team des Vereins zugeordnet ist.
+* Postmaster: Lesezugriff auf Personen, denen eine Rolle im Verein oder in einem
+  Team des Vereins zugeordnet ist.
+* Mitglied: Lesezugriff auf Personen, denen eine Rolle Verein zugeordnet ist
+  (aber nicht auf Personen in Teams des Vereins).
+  
+===== Rollen der Gruppenart Team
+* Administrator: Vollzugriff auf Personen, denen eine Rolle im Team oder in 
+  einem Team des Teams zugeordnet ist.
+* Postmaster: Lesezugriff auf Personen, denen eine Rolle im Team oder in einem
+  Team des Teams zugeordnet ist.
+* Mitglied: Lesezugriff auf Personen, denen eine Rolle im Team zugeordnet ist
+  (aber nicht auf Personen in Teams des Teams).
+* externes Mitglied: gleiche Rechte wie Team-Mitglied, aber nicht sichtbar für
+  den Postmaster des Verbands.
