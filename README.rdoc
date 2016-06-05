@@ -25,13 +25,13 @@ definiert.
 ===== Rollen der Gruppenart Verband
 * Administrator: Vollzugriff auf die ganze Datenbank. Wird nur in Ausnahmefällen
   verwendet
-* Postmaster: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit der
+* Leiter: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit der
   Rolle "externes Mitglied" in der Ebene Verein.
   
 ===== Rollen der Gruppenart Verein
 * Administrator: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
   einem Team des Vereins zugeordnet ist.
-* Postmaster: Lesezugriff auf Personen, denen eine Rolle im Verein oder in einem
+* Leiter: Lesezugriff auf Personen, denen eine Rolle im Verein oder in einem
   Team des Vereins zugeordnet ist.
 * Mitglied: Lesezugriff auf Personen, denen eine Rolle Verein zugeordnet ist
   (aber nicht auf Personen in Teams des Vereins).
@@ -39,7 +39,7 @@ definiert.
 ===== Rollen der Gruppenart Team
 * Administrator: Vollzugriff auf Personen, denen eine Rolle im Team oder in 
   einem Team des Teams zugeordnet ist.
-* Postmaster: Lesezugriff auf Personen, denen eine Rolle im Team oder in einem
+* Leiter: Lesezugriff auf Personen, denen eine Rolle im Team oder in einem
   Team des Teams zugeordnet ist.
 * Mitglied: Lesezugriff auf Personen, denen eine Rolle im Team zugeordnet ist
   (aber nicht auf Personen in Teams des Teams).

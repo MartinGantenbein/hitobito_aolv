@@ -24,7 +24,7 @@ de:
         description: Vollzugriff auf die eigene Organisation und darunter liegende Teams.
 
       role/leader:
-        one: Postmaster
+        one: Leiter
         description: Lesezugriff auf die eigene Organisation und alle darunter liegenden Teams und Organisationen.
 
       role/member:
