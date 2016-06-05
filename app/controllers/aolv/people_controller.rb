@@ -4,6 +4,6 @@ module Aolv::PeopleController
   extend ActiveSupport::Concern
 
   included do
-    self.permitted_attrs += [:title]
+    self.permitted_attrs += [:title, :iban]
   end
 end

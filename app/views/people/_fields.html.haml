@@ -10,12 +10,12 @@
 
 -# NOTE:   This partial overrides app/views/people/_fields.html.haml from the base application
 -#         and might need update when the base application is modified
--#         Overriden to add the title field
+-#         Overriden to add the title and iban fields
 
 - without_relations ||= false
 
 = field_set_tag do
-  = f.labeled_input_fields :title, :first_name, :last_name, :nickname, :company_name, :company
+  = f.labeled_input_fields :title, :first_name, :last_name, :nickname, :company_name, :company, :iban
 
   = render_extensions :name_fields, locals: { f: f }
 
