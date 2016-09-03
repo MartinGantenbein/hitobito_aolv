@@ -23,25 +23,139 @@ Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
 definiert.
 ===== Rollen der Gruppenart Verband
-* Administrator: Vollzugriff auf die ganze Datenbank. Wird nur in Ausnahmefällen
-  verwendet
-* Leiter: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit der
-  Rolle "externes Mitglied" in der Ebene Verein.
-  
+====== Administrator
+* Berechtigungen: Vollzugriff auf die ganze Datenbank. Wird nur in
+  Ausnahmefällen verwendet (z.B. wenn ein Verein versehntlich seinen letzten
+  Administrator löscht).
+* Sichtbarkeit: Sichtbar für alle Rollen des Verbands.
+
+====== Leiter
+* Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
+  der Rolle "externes Mitglied" in der Ebene Verein. Vollzugriff auf die eigenen
+  Daten. Wird für das Erstellen der Adressetiketten für den Versand der
+  AOLV-News verwendet.
+* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter des Verbands.
+
 ===== Rollen der Gruppenart Verein
-* Administrator: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
-  einem Team des Vereins zugeordnet ist.
-* Leiter: Lesezugriff auf Personen, denen eine Rolle im Verein oder in einem
-  Team des Vereins zugeordnet ist.
-* Mitglied: Lesezugriff auf Personen, denen eine Rolle Verein zugeordnet ist
-  (aber nicht auf Personen in Teams des Vereins).
-  
+====== Administrator
+* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
+  einem Team des Vereins zugeordnet ist. Wird für die Mitgliederverwaltung
+  verwendet (Eintritte und Austritte, Adressänderungen, ...), kann
+  Mailing-Listen erstellen (Empfängerkreis: Verein mit allen Teams).
+* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+
+====== Leiter
+* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Verein oder in
+  einem Team des Vereins zugeordnet ist. Vollzugriff auf  die eigenen Daten.
+  Wird z.B. für das Erstellen von Adressetiketten verwendet.
+* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+
+====== Mitglied
+* Berechtigungen
+  * Ohne Login: kein Zugriff.
+  * Mit Login: Lesezugriff auf Personen, denen eine Rolle im Verein zugeordnet
+    ist (aber nicht auf Personen in Teams des Vereins ohne Rolle im Verein).
+    Vollzugriff auf die eigenen Daten.
+* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+
 ===== Rollen der Gruppenart Team
-* Administrator: Vollzugriff auf Personen, denen eine Rolle im Team oder in 
-  einem Team des Teams zugeordnet ist.
-* Leiter: Lesezugriff auf Personen, denen eine Rolle im Team oder in einem
-  Team des Teams zugeordnet ist.
-* Mitglied: Lesezugriff auf Personen, denen eine Rolle im Team zugeordnet ist
-  (aber nicht auf Personen in Teams des Teams).
-* externes Mitglied: gleiche Rechte wie Team-Mitglied, aber nicht sichtbar für
-  den Postmaster des Verbands.
+====== Administrator
+* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Team oder in
+  einem Unterteam des Teams zugeordnet ist. Wird für die Mitgliederverwaltung
+  innerhalb des Teams verwendet (Eintritte und Austritte, Adressänderungen,
+  ...), kann Mailing-Listen erstellen (Empfängerkreis: Team und Sub-Teams).
+  Eine Team benötigt nicht zwingend einen Administrator, der
+  Vereinsadministrator ist für alle diese Aufgaben ebenfalls berechtigt.
+* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
+  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
+  
+====== Leiter
+* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Team oder in
+  einem Team des Teams zugeordnet ist. Vollzugriff auf die eigenen Daten.
+  Wird für Teammitglieder verwendet, die Mitgliederdaten benötigen aber keine
+  Daten von Vereinsmitgliedern ausserhalb des Teams sehen sollen.
+* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
+  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
+
+====== Mitglied
+* Berechtigungen
+  * Ohne Login: kein Zugriff.
+  * Mit Login: Lesezugriff auf Personen, denen eine Rolle im Team zugeordnet ist
+    (aber nicht auf Personen in Sub-Teams des Teams). Vollzugriff auf die
+    eigenen Daten.
+* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
+  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
+
+====== externes Mitglied
+* Berechtigungen: gleich wie "Mitglied"
+* Sichtbarkeit: Wie "Mitglied" aber nicht sichtbar für Leiter von Verband.
+  Deshalb wird diese Rolle verwendet für Team-Mitglieder, welche nicht 
+  Vereinsmitglieder sind.
+  
+  Beispiele:
+  * der vereinsexterne J+S Coach, der Mitglied der Nachwuchsgruppe sein sollte,
+    um bei Mailings an diese Gruppe berücksichtigt zu werden.
+  * Inserenten im Vereinsorgan, die ein Belegexemplar erhalten und beim
+    Etikettendruck nicht vergessen werden dürfen und somit dem Team
+    "Heftversand" zugeordnet werden sollten.
+    
+===== Hinweise
+====== Keine Rolle "Mitglied" im Verband
+Es existiert keine Rolle "Mitglied" für die Gruppenart Verband. Es sind nur zwei
+Benutzerkonten für den Verband vorgesehen, eines mit der Rolle "Administrator"
+und eines mit der Rolle "Leiter". Für alle weiteren Rollen innerhalb des
+Verbandes müssen entsprechende Teams innerhalb des Verbands erstellt werden.
+Vorstandsmitglieder sind somit nicht Mitglieder des Verbands sondern Mitglieder
+des Teams "Vorstand". So erhalten diese Personen keinen Zugriff auf die
+Mitgliederdaten des Vereins oder von anderen Teams des Verbands (z.B. des NWK).
+
+====== Mehrere Rollen / Haupt-Rolle
+Jeder Person kann eine beliebige Anzahl von Rollen zugewiesen werden. So kann
+die selbe Person Mitglied von mehreren Vereinen sein und gleichzeitig als
+Administrator in einem Team des Verbands berechtigt sein. Für jede Person
+kann die Haupt-Rolle gesetzt werden, welche bestimmt, auf welcher Startseite
+der Benutzer nach dem Login landet.
+
+====== Empfang AOLV-News
+Alle Personen mit einer Rolle in mindestens einem Verein oder Team gelten 
+als Mitglieder des Verbands und erhalten die AOLV-News, ausgenommen sind nur
+Personen mit der Rolle "externes Mitglied" (falls sie keine andere Rolle
+in einem Verein oder Team haben).
+
+====== Mitgliederzahlen
+Auf der Info-Seite jeder Gruppe (Verband, Verein, Teams) werden die
+Mitgliederzahlen der jeweiligen Untergruppen angezeigt. Hier werden die
+Personen mit einer (oder mehreren) Rollen (ohne Rolle "externes Mitglied") in
+der Untergruppe oder einem Team gezählt.
+
+====== Hierarchie der Mitgliedschaften
+Bei der Zuordnung von Rollen stellt sich die Frage, ob ein Mitglied eines Teams
+auch als Mitglied des Vereins (bzw. der übergeordneten Gruppe) zugeordnet werden
+soll. Aus Sicht des Verbands spielt dies keine Rolle, wie oben erklärt erhält
+die Person in beiden Fällen die AOLV-News und sie wird in beiden Fällen bei den
+Mitgliederzahlen korrekt berücksichtigt.
+
+Bei der Administration im Verein bzw. Team ist zu berücksichtigen:
+
+* Mitglieder mit Login sehen immer nur die Mitglieder ihrer Gruppe. Wenn also
+  ein Mitglied nur einem Team zugeordnet wird, dann kann es nur die
+  Mitgliederliste des Teams sehen aber nicht die Mitgliederliste des Vereins.
+* Für Mitglieder ohne Login spielt es keine Rolle, ob sie nur ihrem Team
+  (z.B. Nachwuchsgruppe) oder dem Team und den Verein als Mitglied zugeordnet
+  sind. Es müssen aber die folgenden Unterschiede berücksichtigt werden:
+  * Vorübergehende Teammitgliedschaften: Wenn ein Mitglied ein Team verlässt
+    (z.B. Austritt aus dem Vorstand), dann bleibt es in der Regel Mitglied des
+    Vereins. Der administative Aufwand (und das Risiko für Fehler) ist kleiner,
+    wenn beide Rollen erfasst werden.
+  * Mailinglisten, Exporte: Wenn Mailinglisten oder Datenexporte über die Rollen
+    definiert werden, dann sollte diese Definition der jeweiligen Art der
+    Datenerfassung angepasst werden. Wenn sichergestellt ist, dass sämtliche
+    Vereinsmitglieder eine Rolle im Verein haben, dann genügt es, hier die
+    Rollen im Verein auszuwählen. Falls aber Vereinsmitglieder nur eine
+    Rolle in einem Team haben, dann müssen bei der Definition auch die
+    entsprechenden Rollen in den Teams berücksichtigt werden, wenn der Export
+    sämtliche Vereinsmitglieder enthalten soll.
+  * Sichere und somit empfohlene Variante: Mitgliedschaften in allen zutreffenden
+    Gruppen definieren (also z.B. im Vorstand und im Verein) und gleichzeitig
+    trotzdem bei der Definition von Exporten oder Mailinglisten sämtliche
+    Untergruppen mitberücksichtigen.
