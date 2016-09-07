@@ -6,7 +6,7 @@ definiert.
 ## Rollen der Gruppenart Verband
 ### Leiter
 * Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
-  der Rolle "externes Mitglied" in der Ebene Verein. Vollzugriff auf die eigenen
+  der Rolle _externes Mitglied_ in der Ebene Verein. Vollzugriff auf die eigenen
   Daten. Wird für das Erstellen der Adressetiketten für den Versand der
   AOLV-News verwendet.
 * Sichtbarkeit: Sichtbar für alle Leiter des Verbands.
@@ -62,8 +62,8 @@ definiert.
   Verein und übergeordneten Teams sowie für alle Rollen des Teams.
 
 ### externes Mitglied
-* Berechtigungen: gleich wie "Mitglied"
-* Sichtbarkeit: Wie "Mitglied" aber nicht sichtbar für Leiter von Verband.
+* Berechtigungen: gleich wie _Mitglied_
+* Sichtbarkeit: Wie _Mitglied_ aber nicht sichtbar für Leiter von Verband.
   Deshalb wird diese Rolle verwendet für Team-Mitglieder, welche nicht 
   Vereinsmitglieder sind.
   
@@ -72,4 +72,4 @@ definiert.
     um bei Mailings an diese Gruppe berücksichtigt zu werden.
   * Inserenten im Vereinsorgan, die ein Belegexemplar erhalten und beim
     Etikettendruck nicht vergessen werden dürfen und somit dem Team
-    "Heftversand" zugeordnet werden sollten.
+    _Heftversand_ zugeordnet werden sollten.
