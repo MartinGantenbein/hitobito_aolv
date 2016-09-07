@@ -1,4 +1,24 @@
 # Hinweise für Administratoren
+Administratoren verwalten Mitglieder und Teams. Dabei ist es wichtig,
+das [Rollenkonzept](roles.md) und die damit verbundenen Belange betreffend
+[Datenzugriff](security.md) zu verstehen und zu berücksichtigen.
+
+## Mitgliederverwaltung
+Die Verwaltung von Mitgliedern umfasst die folgenden Aufgaben:
+* Erfassung und Mutation der Mitgliederdaten
+* Zuordnung von Rollen gemäss [Rollenkonzept](roles.md)
+* Entziehung von Rollen bei Austritten / Änderung der Aufgaben
+* Versand von Logins an Administratoren, Leiter und eventuell Mitglieder
+* Erstellung von Mailing-Listen
+
+## Teamverwaltung
+Die Verwaltung von Teams beinhaltet:
+* Erfassen von Teams
+* Instruktion von Team-Administratoren (es ist auch möglich, dass der
+Administrator des Vereins diese Aufgabe für einzelne Teams übernimmt)
+* Entfernen von Teams wenn angezeigt (bei temporären Teams z.B. für die 
+Organisation von Anlässen)
+
 ## Hierarchie der Mitgliedschaften
 Bei der Zuordnung von Rollen stellt sich die Frage, ob ein Mitglied eines Teams
 auch als Mitglied des Vereins (bzw. der übergeordneten Gruppe) zugeordnet werden
