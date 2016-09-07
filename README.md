@@ -1,15 +1,15 @@
-=== Hitobito AOLV
+# Hitobito AOLV
 
 Dieser Hitobito Wagon definiert die Organisationsstruktur des Aargauer OL
-Verbands mit seinen Mitgliedervereinen
+Verbands mit seinen Mitgliedervereinen.
 
-=== Ebenen, Gruppen und Rollen
-==== Ebenen
+## Ebenen, Gruppen und Rollen
+### Ebenen
 Es sind zwei Ebenen definiert: Verband und Vereine. Auf Ebene Verband gibt es
 die Gruppe "AOLV" mit Untergruppen wie "Nachwuchskader" oder "AOLV-Vorstand".
 Auf Ebene Verein besteht eine Gruppe für jeden Mitgliederverein des AOLV.
 
-==== Gruppen
+### Gruppen
 Es sind drei Gruppenarten definiert: Verband, Verein und Team. Die Gruppe
 Verband kann nur auf der Ebene Verband definiert werden, die Gruppe Verein
 nur auf der Ebene Verein. Gruppen der Art Team sind auf beiden Ebenen möglich,
@@ -18,83 +18,23 @@ Untergruppe eines Verbands, Vereins oder Teams. Die Vereine und der Verband
 sind fix vorgegeben, Teams können durch den jeweiligen Gruppenadministrator
 frei erstellt werden.
 
-==== Rollen
+### Rollen
 Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
 definiert.
-===== Rollen der Gruppenart Verband
-====== Leiter
-* Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
-  der Rolle "externes Mitglied" in der Ebene Verein. Vollzugriff auf die eigenen
-  Daten. Wird für das Erstellen der Adressetiketten für den Versand der
-  AOLV-News verwendet.
-* Sichtbarkeit: Sichtbar für alle Leiter des Verbands.
 
-===== Rollen der Gruppenart Verein
-====== Administrator
-* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
-  einem Team des Vereins zugeordnet ist. Wird für die Mitgliederverwaltung
-  verwendet (Eintritte und Austritte, Adressänderungen, ...), kann
-  Mailing-Listen erstellen (Empfängerkreis: Verein mit allen Teams).
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+Vereinfacht sind die folgenden Rollen definiert:
+* Administrator: Vollzugriff auf die eigene und alle darunter liegenden Gruppen.
+* Leiter: Lesezugriff auf die eigene und alle darunter liegenden Gruppen.
+* Mitglied: Lesezugriff auf die eigene Gruppe.
+* externes Mitglied: Lesezugriff auf die eigene Gruppe, nicht sichtbar von
+  Mitgliedern der darüber liegenden Ebene.
 
-====== Leiter
-* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Verein oder in
-  einem Team des Vereins zugeordnet ist. Vollzugriff auf  die eigenen Daten.
-  Wird z.B. für das Erstellen von Adressetiketten verwendet.
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+Eine genauere Beschreibung der Rollen ist hier[link:roles.rdoc] zu finden.
 
-====== Mitglied
-* Berechtigungen
-  * Ohne Login: kein Zugriff.
-  * Mit Login: Lesezugriff auf Personen, denen eine Rolle im Verein zugeordnet
-    ist (aber nicht auf Personen in Teams des Vereins ohne Rolle im Verein).
-    Vollzugriff auf die eigenen Daten.
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
-
-===== Rollen der Gruppenart Team
-====== Administrator
-* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Team oder in
-  einem Unterteam des Teams zugeordnet ist. Wird für die Mitgliederverwaltung
-  innerhalb des Teams verwendet (Eintritte und Austritte, Adressänderungen,
-  ...), kann Mailing-Listen erstellen (Empfängerkreis: Team und Sub-Teams).
-  Eine Team benötigt nicht zwingend einen Administrator, der
-  Vereinsadministrator ist für alle diese Aufgaben ebenfalls berechtigt.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
-  
-====== Leiter
-* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Team oder in
-  einem Team des Teams zugeordnet ist. Vollzugriff auf die eigenen Daten.
-  Wird für Teammitglieder verwendet, die Mitgliederdaten benötigen aber keine
-  Daten von Vereinsmitgliedern ausserhalb des Teams sehen sollen.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
-
-====== Mitglied
-* Berechtigungen
-  * Ohne Login: kein Zugriff.
-  * Mit Login: Lesezugriff auf Persone, denen eine Rolle im Team zugeordnet ist
-    (aber nicht auf Personen in Sub-Teams des Teams). Vollzugriff auf die
-    eigenen Daten.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
-
-====== externes Mitglied
-* Berechtigungen: gleich wie "Mitglied"
-* Sichtbarkeit: Wie "Mitglied" aber nicht sichtbar für Leiter von Verband.
-  Deshalb wird diese Rolle verwendet für Team-Mitglieder, welche nicht 
-  Vereinsmitglieder sind.
-  
-  Beispiele:
-  * der vereinsexterne J+S Coach, der Mitglied der Nachwuchsgruppe sein sollte,
-    um bei Mailings an diese Gruppe berücksichtigt zu werden.
-  * Inserenten im Vereinsorgan, die ein Belegexemplar erhalten und beim
-    Etikettendruck nicht vergessen werden dürfen und somit dem Team
-    "Heftversand" zugeordnet werden sollten.
     
-===== Hinweise
-====== Keine Rollen "Administrator" und "Mitglied" im Verband
+## Hinweise
+### Keine Rollen "Administrator" und "Mitglied" im Verband
 Für die Gruppenart Verband existiert ausschliesslich die Rolle "Leiter". Es ist
 nur ein Benutzerkonto für den Verband vorgesehen, für alle weiteren Rollen
 innerhalb des Verbandes müssen entsprechende Teams erstellt werden.
@@ -102,26 +42,26 @@ Vorstandsmitglieder sind nicht Mitglieder des Verbands sondern des Teams
 "Vorstand". So erhalten diese Personen keinen Zugriff auf die Mitgliederdaten
 der Vereine oder der anderen Teams des Verbands (z.B. des NWK).
 
-====== Mehrere Rollen / Haupt-Rolle
+### Mehrere Rollen / Haupt-Rolle
 Jeder Person kann eine beliebige Anzahl von Rollen zugewiesen werden. So kann
 die selbe Person Mitglied von mehreren Vereinen sein und gleichzeitig als
 Administrator in einem Team des Verbands berechtigt sein. Für jede Person
 kann die Haupt-Rolle gesetzt werden, welche bestimmt, auf welcher Startseite
 der Benutzer nach dem Login landet.
 
-====== Empfang AOLV-News
+### Empfang AOLV-News
 Alle Personen mit einer Rolle in mindestens einem Verein oder Team gelten 
 als Mitglieder des Verbands und erhalten die AOLV-News, ausgenommen sind nur
 Personen mit der Rolle "externes Mitglied" (falls sie keine andere Rolle
 in einem Verein oder Team haben).
 
-====== Mitgliederzahlen
+### Mitgliederzahlen
 Auf der Info-Seite jeder Gruppe (Verband, Verein, Teams) werden die
 Mitgliederzahlen der jeweiligen Untergruppen angezeigt. Hier werden die
 Personen mit einer (oder mehreren) Rollen (ohne Rolle "externes Mitglied") in
 der Untergruppe oder einem Team gezählt.
 
-====== Hierarchie der Mitgliedschaften
+### Hierarchie der Mitgliedschaften
 Bei der Zuordnung von Rollen stellt sich die Frage, ob ein Mitglied eines Teams
 auch als Mitglied des Vereins (bzw. der übergeordneten Gruppe) zugeordnet werden
 soll. Aus Sicht des Verbands spielt dies keine Rolle, wie oben erklärt erhält
