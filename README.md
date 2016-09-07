@@ -43,7 +43,6 @@ als Mitglied des Verbands. Jedes Verbandsmitglied ist Empfänger der AOLV-News,
 die Zahl der Vereinsmitglieder auf der Info-Seite des Verbands wird gemäss der
 oben genannten Regel bestimmt.
 
-## Hinweise für Benutzer
 ### Startseite
 Nach dem Login wird dem Benutzer eine Startseite angezeigt, die seiner Rolle
 entspricht. Benutzer mit mehreren Rollen können ihre Haupt-Rolle bestimmen, um
