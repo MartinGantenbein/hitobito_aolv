@@ -48,7 +48,7 @@ Verein sondern als _Mitglied_ im Team _Vorstand_ zu erfassen. So kann
 sichergestellt werden, dass kein Vorstandsmitglied ungerechtfertigten Zugang
 zu Adressdaten erhält.
 
-##### Beispiele
+##### Beispiel
 Wenn mehrere Vereine (darunter können auch ausserkantonale OL-Vereine oder
 OL-fremde Vereine sein) gemeinsam einen Anlass organisieren, wird für das OK
 unter dem Verein des Administrators ein Team erstellt. OK-Mitglieder aus
