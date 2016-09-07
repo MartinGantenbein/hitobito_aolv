@@ -23,15 +23,14 @@ Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
 definiert.
 
+[=> Detaillierte Beschreibung](doc/roles.md)
+
 Vereinfacht sind die folgenden Rollen definiert:
 * Administrator: Vollzugriff auf die eigene und alle darunter liegenden Gruppen.
 * Leiter: Lesezugriff auf die eigene und alle darunter liegenden Gruppen.
 * Mitglied: Lesezugriff auf die eigene Gruppe.
 * externes Mitglied: Lesezugriff auf die eigene Gruppe, nicht sichtbar von
   Mitgliedern der darüber liegenden Ebene.
-
-Eine genauere Beschreibung der Rollen ist im [doc Ordner](doc/roles.md) zu finden.
-
     
 ## Hinweise
 ### Keine Rollen "Administrator" und "Mitglied" im Verband
