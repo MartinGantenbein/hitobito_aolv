@@ -7,10 +7,10 @@ Verbands mit seinen Mitgliedervereinen.
 Es sind drei Gruppenarten definiert: Verband, Verein und Team.
 
 #### Beispiele
-*Verband:* AOLV
-*Verein:* OLG Kölliken
-*Team auf Ebene Verband:* Nachwuchskader, Ausbildungsklub, Vorstand
-*Team auf Ebene Verein:* Nachwuchsgruppe, OK Nationaler OL, Vorstand
+* *Verband:* AOLV
+* *Verein:* OLG Kölliken
+* *Team auf Ebene Verband:* Nachwuchskader, Ausbildungsklub, Vorstand
+* *Team auf Ebene Verein:* Nachwuchsgruppe, OK Nationaler OL, Vorstand
 
 ### Rollen
 Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
