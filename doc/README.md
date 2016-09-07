@@ -33,7 +33,7 @@ Kommunikation erreichbar ist (https-Verbindung).
 Das Rollenkonzept stellt darüber hinaus sicher, dass Person mit Login nur Daten
 derjenigen Gruppe(n) sehen bzw. bearbeiten können, welchen sie zugeordnet sind.
 
-[=> Detaillierte Beschreibung](doc/security)
+[=> Detaillierte Beschreibung](doc/security.md)
 
 ## Allgemeine Hinweise
 ### Empfang AOLV-News
