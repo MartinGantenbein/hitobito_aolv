@@ -30,7 +30,7 @@ Vereinfacht sind die folgenden Rollen definiert:
 * externes Mitglied: Lesezugriff auf die eigene Gruppe, nicht sichtbar von
   Mitgliedern der darüber liegenden Ebene.
 
-Eine genauere Beschreibung der Rollen ist hier[link:roles.rdoc] zu finden.
+Eine genauere Beschreibung der Rollen ist im [doc Ordner](doc/roles.md) zu finden.
 
     
 ## Hinweise
