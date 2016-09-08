@@ -5,7 +5,7 @@ Verbands mit seinen Mitgliedervereinen.
 ## Einführung
 Hitobito kennt _Personen_, _Gruppen_ und _Rollen_: Die Zuordnung von _Personen_
 zu _Gruppen_ erfolgt über die _Rolle_. Jeder _Person_ kann eine beliebige Anzahl
-von _Rollen_ zugeteilt werden, somit kann jeder _Person_ Mitglied einer
+von _Rollen_ zugeteilt werden, somit kann jede _Person_ Mitglied einer
 beliebigen Anzahl von _Gruppen_ sein.
 
 ## Personen, Gruppen und Rollen

@@ -3,6 +3,9 @@ Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
 definiert.
 
+Die Grafik illustriert die folgende Beschreibung der Rollen.
+![Gruppen und Rollen](groups_roles.png)
+
 ## Rollen der Gruppenart Verband
 ### Leiter
 * Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
