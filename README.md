@@ -2,15 +2,31 @@
 Dieser Hitobito Wagon definiert die Organisationsstruktur des Aargauer OL
 Verbands mit seinen Mitgliedervereinen.
 
-## Gruppen und Rollen
+## Einführung
+Hitobito kennt _Personen_, _Gruppen_ und _Rollen_: Die Zuordnung von _Personen_
+zu _Gruppen_ erfolgt über die _Rolle_. Jeder _Person_ kann eine beliebige Anzahl
+von _Rollen_ zugeteilt werden, somit kann jeder _Person_ Mitglied einer
+beliebigen Anzahl von _Gruppen_ sein.
+
+## Personen, Gruppen und Rollen
+### Personen
+Zusätzlich zu gewöhnlichen Personen, können auch "Firmenpersonen" erfasst
+werden.
+
 ### Gruppen
-Es sind drei Gruppenarten definiert: Verband, Verein und Team.
+Es sind drei Gruppenarten definiert: Verband, Verein und Team. Die Gruppen
+sind hierarchisch organisiert:
+* Der Verband bildet die Wurzel des Hierarchie-Baums
+* Vereine sind direkt ihrem Verband zugeordnet
+* Teams können unterhalb jeder Gruppenart (Verband, Verein und Team) erstellt
+werden.
 
 #### Beispiele
 * *Verband:* AOLV
 * *Verein:* OLG Kölliken
-* *Team auf Ebene Verband:* Nachwuchskader, Ausbildungsklub, Vorstand
-* *Team auf Ebene Verein:* Nachwuchsgruppe, OK Nationaler OL, Vorstand
+* *Team unter Verband:* Nachwuchskader, Ausbildungsklub, Vorstand
+* *Team unter Verein:* Nachwuchsgruppe, OK Nationaler OL, Vorstand
+* *Team unter Team:* Leiterteam des NWK, Spezialausschuss des Vorstands
 
 ### Rollen
 Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
