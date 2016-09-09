@@ -1,13 +1,23 @@
 # Rollen
-Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
-aus darüber liegenden Ebenen. Für jede Gruppenart sind spezifische Rollen
-definiert.
+Personen werden mittels _Rollen_ einer _Gruppe_ (Verband, Verein oder Team)
+zugeordnet. Die gewählte _Rolle_ definiert die Berechtigungen des entsprechenden
+Users und kann die Sichtbarkeit der Person für User des Verbands einschränken.
+Unten werden sämtliche definierten Rollen im Detail beschrieben.
 
-Die Grafik illustriert die folgende Beschreibung der Rollen.
+## Übersicht
+Für die folgende Beschreibung der Rollen verwenden wir eine vereinfachte
+Struktur mit zwei Vereinen und wenigen Teams. Für jede Gruppe werden sämtliche
+Rollen mit ihren Berechtigungen (Pfeile) dargestellt. Die folgende Abbildung
+stellt unsere Beispielstruktur in der Übersicht dar, weiter unten werden dann 
+die jeweiligen Details hervorgehoben.
+
 ![Gruppen und Rollen](groups_roles.png)
 
 ## Rollen der Gruppenart Verband
 ### Leiter
+
+![Verbandsleiter](federation_leader.png)
+
 * Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
   der Rolle _externes Mitglied_ in der Ebene Verein. Vollzugriff auf die eigenen
   Daten. Wird für das Erstellen der Adressetiketten für den Versand der
