@@ -26,6 +26,9 @@ die jeweiligen Details hervorgehoben.
 
 ## Rollen der Gruppenart Verein
 ### Administrator
+
+![Vereinsadministrator](club_admin.png)
+
 * Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
   einem Team des Vereins zugeordnet ist. Wird für die Mitgliederverwaltung
   verwendet (Eintritte und Austritte, Adressänderungen, ...), kann
