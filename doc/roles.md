@@ -57,6 +57,9 @@ die jeweiligen Details hervorgehoben.
 
 ## Rollen der Gruppenart Team
 ### Administrator
+
+![Teamadministrator](team_admin.png)
+
 * Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Team oder in
   einem Unterteam des Teams zugeordnet ist. Wird für die Mitgliederverwaltung
   innerhalb des Teams verwendet (Eintritte und Austritte, Adressänderungen,
@@ -67,6 +70,9 @@ die jeweiligen Details hervorgehoben.
   Verein und übergeordneten Teams sowie für alle Rollen des Teams.
   
 ### Leiter
+
+![Teamleiter](team_leader.png)
+
 * Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Team oder in
   einem Team des Teams zugeordnet ist. Vollzugriff auf die eigenen Daten.
   Wird für Teammitglieder verwendet, die Mitgliederdaten benötigen aber keine
@@ -75,6 +81,9 @@ die jeweiligen Details hervorgehoben.
   Verein und übergeordneten Teams sowie für alle Rollen des Teams.
 
 ### Mitglied
+
+![Teammitglied](team_member.png)
+
 * Berechtigungen
   * Ohne Login: kein Zugriff.
   * Mit Login: Lesezugriff auf Persone, denen eine Rolle im Team zugeordnet ist
@@ -84,6 +93,9 @@ die jeweiligen Details hervorgehoben.
   Verein und übergeordneten Teams sowie für alle Rollen des Teams.
 
 ### externes Mitglied
+
+![externes Teammitglied](team_extmember.png)
+
 * Berechtigungen: gleich wie _Mitglied_
 * Sichtbarkeit: Wie _Mitglied_ aber nicht sichtbar für Leiter von Verband.
   Deshalb wird diese Rolle verwendet für Team-Mitglieder, welche nicht 
