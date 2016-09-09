@@ -36,6 +36,9 @@ die jeweiligen Details hervorgehoben.
 * Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
 
 ### Leiter
+
+![Vereinsleiter](club_leader.png)
+
 * Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Verein oder in
   einem Team des Vereins zugeordnet ist. Vollzugriff auf  die eigenen Daten.
   Wird z.B. für das Erstellen von Adressetiketten verwendet.
