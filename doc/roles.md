@@ -45,6 +45,9 @@ die jeweiligen Details hervorgehoben.
 * Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
 
 ### Mitglied
+
+![Vereinsmitglied](club_member.png)
+
 * Berechtigungen
   * Ohne Login: kein Zugriff.
   * Mit Login: Lesezugriff auf Personen, denen eine Rolle im Verein zugeordnet
