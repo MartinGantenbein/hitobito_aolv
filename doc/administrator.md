@@ -35,7 +35,7 @@ vereinfacht die Erstellung von korrekten (vollständigen) Datenexporten,
 Mailinglisten oder Adressetiketten.
 
 ## externe Mitglieder
-Unter Umständen haben Vereine Teams mit Mitglieder, die nicht Vereinsmitglieder
+Unter Umständen haben Vereine Teams mit Mitgliedern, die nicht Vereinsmitglieder
 sind. Diese Personen müssen dem Team mit der Rolle _externes Mitglied_
 zugeordnet werden, damit sie bei der Mitgliederzählung und beim News-Versand
 korrekt ausgeschlossen werden.
@@ -46,3 +46,9 @@ korrekt ausgeschlossen werden.
 * Kursteilnehmer, die (noch) nicht Vereinsmitglied sind
 * J+S-Coach, der nicht Vereinsmitglied ist (aber im Team _Nachwuchsgruppe_ sein
 sollte um die entsprechenden Informationen zu erhalten)
+
+## Versand von Logins
+Aktuell besteht ein Problem mit der Funktion "Login schicken" auf der Personen-Seite,
+der versandte Link ist nicht korrekt und Passwort-Setzen funktioniert damit nicht.
+Als Workaround kann der Link "Passwort vergessen" auf der Login-Seite verwendet werden,
+damit wir ein korrekter Link zum Passwort-Setzen versandt.
