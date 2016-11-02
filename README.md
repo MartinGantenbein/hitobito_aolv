@@ -2,6 +2,11 @@
 Dieser Hitobito Wagon definiert die Organisationsstruktur des Aargauer OL
 Verbands mit seinen Mitgliedervereinen.
 
+## Bekannte Probleme
+* *Login-Versand:* Der Link im E-Mail welches beim Login-Versand geschickt wird,
+funktioniert in vielen Fällen nicht. Abhilfe schafft der Link, welchen man
+via "Passwort vergessen" auf der Login-Seite zugeschickt erhält.
+
 ## Einführung
 Hitobito kennt _Personen_, _Gruppen_ und _Rollen_: Die Zuordnung von _Personen_
 zu _Gruppen_ erfolgt über die _Rolle_. Jeder _Person_ kann eine beliebige Anzahl
