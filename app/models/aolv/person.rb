@@ -11,7 +11,7 @@ module Aolv::Person
   
   private
   
-  def full_name_with_title
-    "#{title} #{full_name_without_title}".strip
+  def full_name_with_title(format = :default)
+    "#{title} #{full_name_without_title(format)}".strip
   end
 end
