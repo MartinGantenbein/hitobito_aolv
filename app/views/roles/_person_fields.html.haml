@@ -6,7 +6,7 @@
 -# NOTE:   This partial overrides app/views/roles/_person_fields.html.haml
 -#         from the base application and might need update when the base
 -#         application is modified.
--#         Overridden to add the title and iban fields
+-#         Overridden to add the title, sicard and iban fields
 
 = swappable_role_add_fieldset(:create_new, :search_existing) do
   = f.labeled_person_field(:person)
@@ -17,5 +17,5 @@
 
   = f.fields_for(:new_person, entry.person) do |fields|
     = field_set_tag do
-      = fields.labeled_input_fields :title, :first_name, :last_name, :nickname, :company_name, :company, :iban
+      = fields.labeled_input_fields :title, :first_name, :last_name, :nickname, :company_name, :company, :sicard, :iban
       = fields.labeled_input_field :email, help_inline: t('people.email_field.used_as_login')

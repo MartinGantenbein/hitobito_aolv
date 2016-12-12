@@ -41,4 +41,5 @@ de:
 
       person:
         title: Anrede
+        sicard: SI-Card
         iban: Konto (IBAN)
