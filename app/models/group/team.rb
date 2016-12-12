@@ -2,7 +2,7 @@
 
 class Group::Team < ::Group
 
-  self.layer = false
+  self.layer = true
 
   self.event_types = []
 
