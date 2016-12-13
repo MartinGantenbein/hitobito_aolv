@@ -1,6 +1,6 @@
 class AddSiCardToPeople < ActiveRecord::Migration
   def change
-    add_column(:people, :sicard, :integer, :limit => 12)
+    add_column(:people, :sicard, :bigint)
   end
 
   def down
