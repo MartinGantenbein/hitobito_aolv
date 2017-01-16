@@ -9,4 +9,5 @@ class UpdateTeamToGrouping < ActiveRecord::Migration
   
   def down
     execute "UPDATE groups SET type = 'Group::Team', layer_group_id = id WHERE type = 'Group::Grouping';"
-  endend
+  end
+end
