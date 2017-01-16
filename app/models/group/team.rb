@@ -6,7 +6,7 @@ class Group::Team < ::Group
 
   self.event_types = []
 
-  children Group::Team
+  children Group::Team, Group::Grouping
 
   ### ROLES
   class Administrator < Role::Administrator

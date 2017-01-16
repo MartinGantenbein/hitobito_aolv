@@ -6,7 +6,7 @@ class Group::Root < ::Group
 
   self.event_types = []
 
-  children Group::Club, Group::Team
+  children Group::Club, Group::Team, Group::Grouping
 
   ### ROLES
 

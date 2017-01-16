@@ -15,25 +15,29 @@ de:
       group/team:
         one: Team
         other: Teams
+        
+      group/grouping:
+        one: Gruppierung
+        other: Gruppierungen
 
 
       ### ROLES
 
       role/administrator:
         one: Administrator
-        description: Vollzugriff auf die eigene Organisation und darunter liegende Teams.
+        description: Vollzugriff auf die eigene Organisation und darunter liegende Gruppierungen.
 
       role/leader:
         one: Leiter
-        description: Lesezugriff auf die eigene Organisation und alle darunter liegenden Teams und Organisationen.
+        description: Lesezugriff auf die eigene Organisation und darunter liegende Gruppierungen.
 
       role/member:
         one: Mitglied
-        description: Mitglieder haben Lesezugriff auf ihre Organisation.
+        description: Mitglieder haben Lesezugriff auf ihre Gruppe (Verein / Team / Organisation).
 
       role/external_member:
         one: externes Mitglied
-        description: Mitglieder haben Lesezugriff auf ihr Team, sind aber für darüber liegende Organisationen nicht zu sehen.
+        description: Mitglieder haben Lesezugriff auf ihre Gruppe (Team / Organisation), sind aber für darüber liegende Organisationen nicht zu sehen.
 
     attributes:
 
