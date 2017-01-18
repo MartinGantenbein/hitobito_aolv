@@ -19,30 +19,34 @@ Zusätzlich zu gewöhnlichen Personen, können auch "Firmenpersonen" erfasst
 werden.
 
 ### Gruppen
-Es sind drei Gruppenarten definiert: Verband, Verein und Team. Die Gruppen
-sind hierarchisch organisiert:
+Es sind vier Gruppenarten definiert: Verband, Verein, Team und Gruppierung. Verband, Vereine und Teams bilden eine hierarchische Struktur (eine sogenannte Baumstruktur):
 * Der Verband bildet die Wurzel des Hierarchie-Baums
 * Vereine sind direkt ihrem Verband zugeordnet
-* Teams können unterhalb jeder Gruppenart (Verband, Verein und Team) erstellt
-werden.
+* Teams können unterhalb von Verband, Verein oder Team erstellt werden.
+
+Gruppierungen dienen der Einteilung von Personen innerhalb einer Gruppe. Gruppierungen können innerhalb jeder Gruppenart (Verband, Verein, Team, Gruppierung) erstellt werden.
 
 #### Beispiele
 * *Verband:* AOLV
-* *Verein:* OLG Kölliken
-* *Team unter Verband:* Nachwuchskader, Ausbildungsklub, Vorstand
-* *Team unter Verein:* Nachwuchsgruppe, OK Nationaler OL, Vorstand
-* *Team unter Team:* Leiterteam des NWK, Spezialausschuss des Vorstands
+* *Verein unter Verband:* OLG Kölliken
+* *Team unter Verband:* Nachwuchskader, Stützpunkt
+* *Gruppierung im Verband:* Vorstand
+* *Team unter Verein:* Nachwuchsgruppe, OK Nationaler OL
+* *Gruppierung im Verein:* Heftempfänger, Ehrenmitglieder
+* *Team unter Team:* Trainingslager im Nachwuchskader
+* *Gruppierung im Team:* Trainer im Nachwuchskader, Ressort im OK Nationaler OL
+* *Gruppierung in Gruppierung:* Schulen oder Sponsoren in "Heftempfänger"
 
 ### Rollen
 Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen.
 
 Es sind die folgenden Rollen definiert:
-* *Administrator:* Vollzugriff auf die eigene und alle darunter liegenden Gruppen.
-* *Leiter:* Lesezugriff auf die eigene und alle darunter liegenden Gruppen.
+* *Administrator:* Vollzugriff auf die eigene Gruppe inklusive Gruppierungen.
+* *Leiter:* Lesezugriff auf die eigene Gruppe inklusive Gruppierungen.
 * *Mitglied:* Lesezugriff auf die eigene Gruppe.
-* *externes Mitglied:* Lesezugriff auf die eigene Gruppe, nicht sichtbar von
-  Mitgliedern der darüber liegenden Ebene.
+* *externes Mitglied:* Lesezugriff auf die eigene Gruppe, nicht sichtbar für
+  Mitglieder, Leiter und Administratoren der darüber liegenden Ebenen.
 
 [=> Detaillierte Beschreibung](doc/roles.md)
     
@@ -59,7 +63,7 @@ derjenigen Gruppe(n) sehen bzw. bearbeiten können, welchen sie zugeordnet sind.
 ## Allgemeine Hinweise
 ### Verbandsmitgliedschaft
 Jede Person mit einer Rolle (ausgenommen _externes Mitglied_) im Verein oder in
-einem Team des Vereins gilt als Mitglied des Vereins und somit automatisch auch
+einem Team (oder Gruppierung) des Vereins gilt als Mitglied des Vereins und somit automatisch auch
 als Mitglied des Verbands. Jedes Verbandsmitglied ist Empfänger der AOLV-News,
 die Zahl der Vereinsmitglieder auf der Info-Seite des Verbands wird gemäss der
 oben genannten Regel bestimmt.
