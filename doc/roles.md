@@ -1,10 +1,16 @@
 # Rollen
-Personen werden mittels _Rollen_ einer _Gruppe_ (Verband, Verein oder Team)
+Personen werden mittels _Rollen_ einer _Gruppe_ (Verband, Verein, Team und Gruppierung)
 zugeordnet. Die gewählte _Rolle_ definiert die Berechtigungen des entsprechenden
-Users und kann die Sichtbarkeit der Person für User des Verbands einschränken.
+Users und kann die Sichtbarkeit der Person für User des Verbands, Vereins oder von darüber liegenden Teams einschränken.
 Unten werden sämtliche definierten Rollen im Detail beschrieben.
 
 ## Übersicht
+_Achtung: Die folgenden Beispiele und Grafiken müssen überarbeitet werden,
+sie zeigen nicht den aktuellen Stand. Es fehlt die neue Gruppenart "Gruppierung"
+und neu sind die Berechtigungen von Administratoren und Leitern stärker
+eingeschränkt: sie können nur noch Gruppierungen in ihrem Verein bzw. Team
+sehen bzw. bearbeiten, nicht aber Teams unterhalb ihres Vereins bzw. Team_
+
 Für die folgende Beschreibung der Rollen verwenden wir eine vereinfachte
 Struktur mit zwei Vereinen und wenigen Teams. Für jede Gruppe werden sämtliche
 Rollen mit ihren Berechtigungen (Pfeile) dargestellt. Die folgende Abbildung
