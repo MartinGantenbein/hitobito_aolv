@@ -11,13 +11,12 @@ und neu sind die Berechtigungen von Administratoren und Leitern stärker
 eingeschränkt: sie können nur noch Gruppierungen in ihrem Verein bzw. Team
 sehen bzw. bearbeiten, nicht aber Teams unterhalb ihres Vereins bzw. Team_
 
-Für die folgende Beschreibung der Rollen verwenden wir eine vereinfachte
-Struktur mit zwei Vereinen und wenigen Teams. Für jede Gruppe werden sämtliche
-Rollen mit ihren Berechtigungen (Pfeile) dargestellt. Die folgende Abbildung
-stellt unsere Beispielstruktur in der Übersicht dar, weiter unten werden dann 
-die jeweiligen Details hervorgehoben.
+Für die folgende Beschreibung der Rollen verwenden wir eine Struktur mit zwei 
+Vereinen, einigen Teams und Gruppierungen. Das Beispiel ist so gewählt, dass
+für jede Rolle nachvollziehbar ist, welche Daten geschrieben und/oder gelesen
+werden können.
 
-`<object type="image/svg+xml" data="groups_roles.svg" width="297mm" height="420mm" border="1"></object>`
+![Gruppen und Rollen](groups_roles.png)
 
 ## Rollen der Gruppenart Verband
 ### Leiter
