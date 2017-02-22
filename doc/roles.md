@@ -17,7 +17,7 @@ Rollen mit ihren Berechtigungen (Pfeile) dargestellt. Die folgende Abbildung
 stellt unsere Beispielstruktur in der Übersicht dar, weiter unten werden dann 
 die jeweiligen Details hervorgehoben.
 
-![Gruppen und Rollen](groups_roles.svg)
+`<object type="image/svg+xml" data="groups_roles.svg" width="297mm" height="420mm" border="1"></object>`
 
 ## Rollen der Gruppenart Verband
 ### Leiter
