@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="420mm"
+   viewBox="0 0 297 420"
+   version="1.1"
+   id="svg4345"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="test.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5"
+     inkscape:cx="463.7426"
+     inkscape:cy="929.28243"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g5118"
+     showgrid="false"
+     inkscape:window-width="3200"
+     inkscape:window-height="1706"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     showborder="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-text-baseline="false" />
+  <script
+     id="script4117"><![CDATA[
+   function setAll(users, fun) {
+      for(i = 0; i < users.length; i++) {
+         users[i].setAttribute("opacity", fun(users[i]));
+      }
+   }
+   
+   function showAll(e) {
+      setAll(document.getElementsByClassName("user"), function(user) {
+         return "1";
+      });
+   }
+   
+   function visibleFrom(id, user) {
+      var group = user.substring(0, user.lastIndexOf("_"));
+      if(id.endsWith("_ext") || id.endsWith("_exts")) {
+         return id.startsWith(group) && id.indexOf("team", group.length) == -1;
+      }
+      return user == "aolv_leader" || id.startsWith(group) && id.indexOf("team", group.length) == -1;
+   }
+   
+   function hideOthers(e) {
+      setAll(document.getElementsByClassName("user"), function(user) {
+         var id = user.id;
+         if(visibleFrom(id, e.target.id)) {
+            if(e.target.id.indexOf("admin") == -1 && e.target.id != id) {
+               return "0.5";
+            }
+            else {
+               return "1";
+            }
+         }
+         else {
+            return "0";
+         }
+      });
+   }
+   ]]></script>
+  <defs
+     id="defs4339">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4779"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4764"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:path-effect
+       end_linecap_type="zerowidth"
+       miter_limit="4"
+       linejoin_type="extrp_arc"
+       start_linecap_type="zerowidth"
+       interpolator_beta="0.2"
+       interpolator_type="CubicBezierJohan"
+       sort_points="true"
+       offset_points="0,0.13229166"
+       is_visible="true"
+       id="path-effect4759"
+       effect="powerstroke" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect280"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect276"
+       is_visible="true"
+       offset_points="3,0.44669039"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect272"
+       is_visible="true"
+       offset_points="5,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4764-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4764-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4764-3-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4764-3-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4764-3-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata4342">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1"
+     transform="translate(0,123)">
+    <g
+       id="g4854"
+       transform="translate(1.3150308)">
+      <path
+         style="fill:#7fba42;stroke:none;stroke-width:0.25378129"
+         d="m 64.105178,-98.859206 c -1.4883,0.0176 -2.66352,-1.177054 -2.91695,-2.456774 -0.37396,-1.45358 0.2718,-3.20435 1.7936,-3.87199 1.12392,-0.50416 2.53869,-0.082 3.24762,0.83594 1.28599,1.52141 1.00799,4.06466 -0.81079,5.129474 -0.39204,0.22537 -0.84893,0.36377 -1.31348,0.36335 z m -6.085421,6.60156 c 0.164785,-1.51263 0.236439,-3.05221 0.703188,-4.51857 0.299683,-0.91039 1.311085,-1.31559 2.130113,-1.75914 0.65994,-0.33092 1.03121,0.47817 1.59795,0.64179 1.33219,0.68435 3.06923,0.36871 4.14654,-0.5859 0.61007,-0.37397 1.22878,0.33254 1.7668,0.54914 0.97514,0.45198 1.22116,1.50912 1.37176,2.41365 0.19561,1.08077 0.31253,2.17165 0.45448,3.25903 -4.05694,0 -8.11389,0 -12.170831,0 z"
+         inkscape:connector-curvature="0"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="aolv_leader">
+        <title
+           id="title4337">AOLV Leiter</title>
+      </path>
+      <path
+         d="m 28.102629,-98.901336 c -1.595438,0 -3.01625,-1.333504 -3.01625,-3.376084 0,-1.58486 1.201208,-3.2094 2.960687,-3.2094 1.717146,0 2.973917,1.57163 2.973917,3.28613 0,1.98173 -1.481667,3.299354 -2.918354,3.299354 z m -6.085417,6.64369 c 0.137583,-1.4605 0.322792,-3.45546 0.672042,-4.46352 0.161395,-0.45773 0.396875,-0.78581 0.775229,-1.06098 0.246062,-0.18256 1.119187,-0.6641 1.280583,-0.74348 0.280458,-0.14552 0.568854,-0.22225 0.817563,0 1.481666,1.30969 3.529541,1.27 5.032375,0.005 0.174625,-0.17992 0.449791,-0.13229 0.632354,-0.0608 0.288396,0.11112 1.209146,0.65352 1.383771,0.76464 0.508,0.33338 0.783166,0.77788 0.986895,1.61396 0.259292,1.12977 0.41275,2.56646 0.590021,3.94494 z"
+         inkscape:connector-curvature="0"
+         style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="aolv_admin">
+        <title
+           id="title4320">AOLV Administrator</title>
+      </path>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.23068038"
+       id="rect3690"
+       pointer-events="none"
+       ry="9.9516582"
+       rx="13.10196"
+       height="74.386139"
+       width="87.346405"
+       y="-120.68392"
+       x="3.7457283" />
+    <text
+       id="text363"
+       y="-112.81554"
+       x="25.960119"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444447px;stroke-width:0.26458332"
+         y="-112.81554"
+         x="25.960119"
+         id="tspan361"
+         sodipodi:role="line">Verband: AOLV</tspan></text>
+    <g
+       id="g4922"
+       transform="translate(0.51113787)">
+      <rect
+         x="6.963068"
+         y="-87.073341"
+         width="43.422028"
+         height="34.461185"
+         rx="2.9197574"
+         ry="5.169179"
+         pointer-events="none"
+         id="rect3974"
+         style="fill:none;stroke:#000000;stroke-width:0.19922762;stroke-dasharray:0.59768284, 0.59768284" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458302px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="28.425692"
+         y="-81.043091"
+         id="text4175"><tspan
+           sodipodi:role="line"
+           x="28.425692"
+           y="-81.043091"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan30">Gruppierung</tspan><tspan
+           sodipodi:role="line"
+           x="28.425692"
+           y="-74.428505"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan34">Projekt O-Finder</tspan></text>
+      <rect
+         x="53.461876"
+         y="-86.899574"
+         width="33.403328"
+         height="34.113655"
+         rx="2.2460861"
+         ry="5.1170497"
+         pointer-events="none"
+         id="rect3974-2"
+         style="fill:none;stroke:#000000;stroke-width:0.17385547;stroke-dasharray:0.52156644, 0.52156644" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="70.247948"
+         y="-81.043091"
+         id="text4175-0"><tspan
+           sodipodi:role="line"
+           x="70.247948"
+           y="-81.043091"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan68">Gruppierung</tspan><tspan
+           id="tspan36"
+           sodipodi:role="line"
+           x="70.247948"
+           y="-74.428505"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Vorstand</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+         d="m 22.800267,-61.755827 c 0.608541,-0.96573 0.648229,-2.33627 -0.0291,-3.39196 0.489479,-0.0688 0.886354,-0.2249 1.262062,-0.6006 0.113771,-0.10319 0.277813,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24341 0.600605,0.36777 0.386291,0.25135 0.550333,0.59266 0.635,0.96837 0.187854,0.84667 0.264583,1.79388 0.343958,2.74108 h -2.973917 c -0.08202,-0.037 -0.161396,-0.0741 -0.277812,-0.0926 z m -8.919104,1.97908 c 0.06614,-0.84137 0.185208,-2.08227 0.338666,-2.73314 0.08467,-0.34925 0.206375,-0.66146 0.550334,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.43127,0 0.796396,0.82021 1.984375,0.87577 2.96598,-0.0291 -0.121709,0.84932 0.08202,1.60073 0.433916,2.15371 -0.227541,0.0185 -0.754062,0.36513 -1.180041,0.69321 -0.378355,0.30692 -0.592667,0.7329 -0.71173,1.28587 z m 8.755062,-6.20183 c -0.978958,0 -1.727729,-0.94192 -1.727729,-2.14842 0,-1.00806 0.650875,-2.10872 1.703917,-2.10872 0.912812,0 1.677458,0.96837 1.677458,2.11401 0,1.25677 -0.846667,2.14313 -1.653646,2.14313 z m -5.233458,1.92352 c -1.299104,0 -1.759479,-1.35731 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851959,2.09286 -1.621896,2.09286 z"
+         inkscape:connector-curvature="0"
+         style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+         onmouseover=""
+         onmouseout=""
+         class="user"
+         id="aolv_grp1_members"
+         inkscape:label="#aolv_grp1_members">
+        <title
+           id="title4324">Projektmitglieder</title>
+      </path>
+      <path
+         d="m 21.123477,-61.379177 c -0.930645,0 -1.759428,-0.88424 -1.759428,-2.23868 0,-1.05092 0.700684,-2.12816 1.727018,-2.12816 1.00164,0 1.734734,1.04215 1.734734,2.17905 0,1.31408 -0.864279,2.18779 -1.702324,2.18779 z m -3.549723,4.40543 c 0.08026,-0.96845 0.18829,-2.29131 0.392012,-2.95976 0.09414,-0.30351 0.231505,-0.52106 0.452205,-0.70354 0.143531,-0.12107 0.652839,-0.44036 0.746985,-0.493 0.163596,-0.0965 0.331821,-0.14735 0.476898,0 0.86428,0.86846 2.058839,0.84214 2.935467,0.004 0.10186,-0.11938 0.262371,-0.0876 0.368863,-0.0404 0.168226,0.0738 0.705314,0.43334 0.807177,0.50704 0.296323,0.22106 0.456833,0.51581 0.575671,1.07021 0.151249,0.74915 0.240764,1.70183 0.344169,2.6159 z"
+         inkscape:connector-curvature="0"
+         style="fill:#2072b8;fill-opacity:1;stroke:none;stroke-width:0.16455244"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="aolv_grp1_member">
+        <title
+           id="title4320-3">Projektmitglied</title>
+      </path>
+      <g
+         transform="translate(0.0201803,0.10902)"
+         id="g6000">
+        <path
+           id="aolv_grp1_ext"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 38.477941,-61.395797 c -0.941917,0 -1.722438,-0.87577 -1.722438,-2.17223 0,-1.16946 0.817563,-2.08227 1.643063,-2.08227 1.090083,0 1.733021,1.10596 1.733021,2.07434 0,1.55045 -1.031875,2.18016 -1.653646,2.18016 z m -3.503083,4.29684 c 0.07408,-0.93398 0.193145,-2.15636 0.34925,-2.78342 0.111125,-0.44979 0.312208,-0.6985 0.545041,-0.86519 l 0.489479,-0.32808 c 0.177271,-0.12171 0.42598,-0.29898 0.632355,-0.12965 0.806979,0.82021 1.939395,0.87313 2.891895,0.0132 0.08467,-0.0688 0.246063,-0.0767 0.33073,-0.0317 0.211666,0.09 0.489479,0.29898 0.735541,0.45773 0.410104,0.29104 0.547688,0.62706 0.653521,1.15358 0.153458,0.68528 0.235479,1.74625 0.293688,2.51355 z"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4326">externes Projektmitglied</title>
+        </path>
+        <path
+           id="aolv_grp1_ext-7"
+           class="user"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 40.195087,-61.848237 c 0.608541,-0.96572 0.648229,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.886355,-0.2249 1.262062,-0.60061 0.113771,-0.10319 0.277813,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24342 0.600605,0.36777 0.386291,0.25136 0.550333,0.59267 0.635,0.96838 0.187854,0.84666 0.264583,1.79387 0.343958,2.74108 h -2.973917 c -0.08202,-0.037 -0.161396,-0.0741 -0.277812,-0.0926 z m -8.919104,1.97909 c 0.06614,-0.84138 0.185208,-2.08227 0.338666,-2.73315 0.08467,-0.34925 0.206375,-0.66146 0.550334,-0.91016 0.24077,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.43127,0 0.796396,0.82021 1.984375,0.87577 2.96598,-0.0291 -0.121709,0.84931 0.08202,1.60073 0.433916,2.15371 -0.227541,0.0185 -0.754062,0.36512 -1.180041,0.69321 -0.378355,0.30691 -0.592667,0.73289 -0.71173,1.28587 z m 8.755062,-6.20184 c -0.978958,0 -1.727729,-0.94191 -1.727729,-2.14841 0,-1.00806 0.650875,-2.10872 1.703917,-2.10872 0.912812,0 1.677458,0.96836 1.677458,2.11401 0,1.25677 -0.846667,2.14312 -1.653646,2.14312 z m -5.233458,1.92353 c -1.299104,0 -1.759479,-1.35732 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851959,2.09286 -1.621896,2.09286 z"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4326-4">externe Projektmitglieder</title>
+        </path>
+      </g>
+      <g
+         transform="translate(-0.22614661,0.181045)"
+         id="g6006">
+        <path
+           id="aolv_grp2_member"
+           class="user"
+           inkscape:label="#aolv_grp2_member"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 71.506224,-61.467807 c -0.941917,0 -1.722438,-0.87578 -1.722438,-2.17223 0,-1.16946 0.817563,-2.08227 1.643063,-2.08227 1.090083,0 1.733021,1.10595 1.733021,2.07433 0,1.55046 -1.031875,2.18017 -1.653646,2.18017 z m -3.503083,4.29683 c 0.07408,-0.93398 0.193145,-2.15636 0.34925,-2.78342 0.111125,-0.44979 0.312208,-0.6985 0.545041,-0.86519 l 0.489479,-0.32808 c 0.177271,-0.12171 0.42598,-0.29898 0.632355,-0.12964 0.806979,0.8202 1.939395,0.87312 2.891895,0.0132 0.08467,-0.0688 0.246064,-0.0767 0.33073,-0.0318 0.211666,0.09 0.489479,0.29897 0.735541,0.45772 0.410104,0.29105 0.547688,0.62707 0.653521,1.15359 0.153458,0.68527 0.235479,1.74625 0.293688,2.51354 z"
+           sodipodi:nodetypes="ssssscccccccccsc">
+          <title
+             id="title4324-9">Vorstandsmitglied</title>
+        </path>
+        <path
+           id="aolv_grp2_members"
+           class="user"
+           inkscape:label="#aolv_grp2_member"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 73.22337,-61.920247 c 0.608541,-0.96573 0.64823,-2.33627 -0.0291,-3.39196 0.489479,-0.0688 0.886354,-0.2249 1.262062,-0.6006 0.113771,-0.10319 0.277813,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24341 0.600605,0.36777 0.386291,0.25135 0.550333,0.59266 0.635,0.96837 0.187852,0.84667 0.264582,1.79388 0.343962,2.74108 h -2.973921 c -0.08202,-0.037 -0.161396,-0.0741 -0.277812,-0.0926 z m -8.919104,1.97908 c 0.06614,-0.84137 0.185208,-2.08227 0.338666,-2.73314 0.08467,-0.34925 0.206375,-0.66146 0.550334,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.43127,0 0.796396,0.82021 1.984375,0.87577 2.96598,-0.0291 -0.121709,0.84932 0.08202,1.60073 0.433916,2.15371 -0.227541,0.0185 -0.754062,0.36513 -1.180041,0.69321 -0.378355,0.30692 -0.592667,0.7329 -0.71173,1.28587 z m 8.755062,-6.20183 c -0.978958,0 -1.727729,-0.94192 -1.727729,-2.14842 0,-1.00805 0.650875,-2.10871 1.703917,-2.10871 0.912812,0 1.677459,0.96837 1.677459,2.114 0,1.25677 -0.846668,2.14313 -1.653647,2.14313 z m -5.233458,1.92352 c -1.299104,0 -1.759479,-1.35731 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851959,2.09286 -1.621896,2.09286 z"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4324-9-75">Vorstandsmitglieder</title>
+        </path>
+      </g>
+    </g>
+    <g
+       id="g4860"
+       transform="translate(0.76295823)">
+      <path
+         style="fill:#7fba42;stroke:none;stroke-width:0.25156525"
+         d="m 172.09188,-98.900424 c -1.4883,0.0173 -2.66352,-1.156596 -2.91695,-2.414066 -0.37395,-1.42831 0.2718,-3.14864 1.7936,-3.80467 1.12393,-0.49539 2.53869,-0.0806 3.24762,0.8214 1.28599,1.49497 1.008,3.99399 -0.81078,5.040296 -0.39205,0.22145 -0.84894,0.35744 -1.31349,0.35704 z m -6.08542,6.48676 c 0.16479,-1.48632 0.23644,-2.99914 0.70319,-4.44 0.29968,-0.89456 1.31109,-1.29271 2.13011,-1.72855 0.65995,-0.32518 1.03121,0.46985 1.59795,0.63063 1.33219,0.67245 3.06923,0.36229 4.14654,-0.57571 0.61007,-0.36748 1.22878,0.32675 1.7668,0.53959 0.97514,0.44411 1.22116,1.48287 1.37176,2.37168 0.19561,1.06197 0.31253,2.13389 0.45449,3.20236 -4.05695,0 -8.11389,0 -12.17084,0 z"
+         inkscape:connector-curvature="0"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="nwk_leader">
+        <title
+           id="title4337-0">NWK Leiter</title>
+      </path>
+      <path
+         d="m 129.49933,-98.901347 c -1.59544,0 -3.01625,-1.333503 -3.01625,-3.376083 0,-1.58487 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.97391,1.57163 2.97391,3.28614 0,1.98173 -1.48166,3.299353 -2.91835,3.299353 z m -6.08542,6.64369 c 0.13759,-1.4605 0.3228,-3.45546 0.67205,-4.46352 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.18256 1.11918,-0.6641 1.28058,-0.74348 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03238,0.005 0.17462,-0.17992 0.44979,-0.13229 0.63235,-0.0608 0.2884,0.11112 1.20915,0.65352 1.38377,0.76464 0.508,0.33338 0.78317,0.77788 0.9869,1.61396 0.25929,1.12977 0.41275,2.56646 0.59002,3.94494 z"
+         inkscape:connector-curvature="0"
+         style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="nwk_admin">
+        <title
+           id="title4320-9">NWK Administrator</title>
+      </path>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.23068038"
+       id="rect3690-2"
+       pointer-events="none"
+       ry="9.9516582"
+       rx="13.10196"
+       height="74.386139"
+       width="87.346405"
+       y="-120.68392"
+       x="107.88536" />
+    <text
+       id="text363-9"
+       y="-112.81554"
+       x="134.89395"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444447px;stroke-width:0.26458332"
+         y="-112.81554"
+         x="134.89395"
+         id="tspan361-7"
+         sodipodi:role="line">Team: NWK</tspan></text>
+    <g
+       id="g4954"
+       transform="translate(0.50834247)">
+      <rect
+         x="111.09483"
+         y="-87.081215"
+         width="36.809002"
+         height="34.47694"
+         rx="2.4750884"
+         ry="5.1715422"
+         pointer-events="none"
+         id="rect3974-6"
+         style="fill:none;stroke:#000000;stroke-width:0.18347241;stroke-dasharray:0.55041722, 0.55041722" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="129.58374"
+         y="-81.043106"
+         id="text4175-8"><tspan
+           sodipodi:role="line"
+           x="129.58374"
+           y="-81.043106"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan30-6">Gruppierung</tspan><tspan
+           sodipodi:role="line"
+           x="129.58374"
+           y="-74.42852"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan34-2">Trainer</tspan></text>
+      <g
+         transform="translate(0.05463934)"
+         id="g4884">
+        <g
+           transform="translate(0,1e-5)"
+           id="g5926">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 122.04285,-61.286767 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29105 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             inkscape:label="#nwk_grp1_member"
+             class="user"
+             id="nwk_grp1_member">
+            <title
+               id="title4324-7">NWK Trainer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 123.76,-61.739207 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.84667 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84933 0.082,1.60074 0.43392,2.15372 -0.22754,0.0185 -0.75406,0.36513 -1.18004,0.6932 -0.37836,0.30693 -0.59267,0.73291 -0.71173,1.28588 z m 8.75506,-6.20183 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             inkscape:label="#nwk_grp1_member"
+             class="user"
+             id="nwk_grp1_member-0">
+            <title
+               id="title4324-7-4">NWK Trainer</title>
+          </path>
+        </g>
+        <g
+           transform="translate(0,-0.1229)"
+           id="g5932">
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#nwk_grp1_exts"
+             d="m 140.79676,-61.616317 c 0.60854,-0.96572 0.64823,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96838 0.18785,0.84666 0.26458,1.79387 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79639,0.82021 1.98437,0.87577 2.96597,-0.0291 -0.1217,0.84931 0.082,1.60073 0.43392,2.15371 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69321 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28587 z m 8.75507,-6.20184 c -0.97896,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84667,2.14312 -1.65365,2.14312 z m -5.23346,1.92353 c -1.29911,0 -1.75948,-1.35732 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85195,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="nwk_grp1_exts">
+            <title
+               id="title4326-8">externe NWK Trainer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             inkscape:label="#nwk_grp1_ext"
+             d="m 139.07961,-61.163877 c -0.94191,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09008,0 1.73302,1.10596 1.73302,2.07434 0,1.55045 -1.03188,2.18016 -1.65365,2.18016 z m -3.50308,4.29684 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.31221,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12965 0.80698,0.82021 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21167,0.09 0.48948,0.29898 0.73554,0.45773 0.41011,0.29104 0.54769,0.62706 0.65353,1.15358 0.15345,0.68528 0.23547,1.74625 0.29368,2.51355 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="nwk_grp1_ext">
+            <title
+               id="title4326-8-8">externer NWK Trainer</title>
+          </path>
+        </g>
+      </g>
+      <rect
+         x="153.17892"
+         y="-86.899574"
+         width="37.825916"
+         height="34.113655"
+         rx="2.5434673"
+         ry="5.1170497"
+         pointer-events="none"
+         id="rect3974-2-2"
+         style="fill:none;stroke:#000000;stroke-width:0.18500702;stroke-dasharray:0.55502113, 0.55502113" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="172.17628"
+         y="-81.043106"
+         id="text4175-0-6"><tspan
+           sodipodi:role="line"
+           x="172.17628"
+           y="-81.043106"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan68-9">Gruppierung</tspan><tspan
+           id="tspan36-0"
+           sodipodi:role="line"
+           x="172.17628"
+           y="-74.42852"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Athleten</tspan></text>
+      <g
+         transform="translate(1.1619577)"
+         id="g4896">
+        <g
+           transform="translate(0,1e-5)"
+           id="g5938">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 163.07405,-61.286767 c -0.94192,0 -1.72244,-0.87579 -1.72244,-2.17224 0,-1.16945 0.81757,-2.08226 1.64307,-2.08226 1.09008,0 1.73302,1.10595 1.73302,2.07432 0,1.55046 -1.03188,2.18018 -1.65365,2.18018 z m -3.50308,4.29683 c 0.0741,-0.93399 0.19314,-2.15637 0.34925,-2.78343 0.11112,-0.44978 0.31221,-0.6985 0.54504,-0.86519 l 0.48948,-0.32807 c 0.17727,-0.12171 0.42598,-0.29899 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29896 0.73554,0.45771 0.4101,0.29106 0.54769,0.62707 0.65352,1.1536 0.15346,0.68527 0.23548,1.74625 0.29369,2.51353 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             inkscape:label="#nwk_grp2_member"
+             class="user"
+             id="nwk_grp2_member">
+            <title
+               id="title4324-9-7">NWK Athlet</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 164.7912,-61.739207 c 0.60854,-0.96574 0.64823,-2.33628 -0.0291,-3.39197 0.48948,-0.0688 0.88635,-0.22489 1.26206,-0.60059 0.11377,-0.10319 0.27781,-0.0847 0.4392,0.008 0.1958,0.10054 0.39953,0.24341 0.60061,0.36777 0.38629,0.25134 0.55033,0.59266 0.635,0.96837 0.18785,0.84667 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66147 0.55033,-0.91018 0.24077,-0.16139 0.47625,-0.33601 0.6985,-0.46037 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.8202 1.98438,0.87576 2.96598,-0.0291 -0.12171,0.84932 0.082,1.60073 0.43392,2.15371 -0.22754,0.0185 -0.75406,0.36513 -1.18004,0.69321 -0.37836,0.30692 -0.59267,0.7329 -0.71173,1.28587 z m 8.75506,-6.20183 c -0.97895,0 -1.72772,-0.94192 -1.72772,-2.14842 0,-1.00806 0.65087,-2.10872 1.70391,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92351 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16428 1.6801,-2.16428 0.9234,0 1.70127,0.93927 1.70127,2.16428 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             inkscape:label="#nwk_grp2_members"
+             class="user"
+             id="nwk_grp2_members">
+            <title
+               id="title4324-9-7-2">NWK Athleten</title>
+          </path>
+        </g>
+        <g
+           id="g5944">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             inkscape:label="#nwk_grp2_ext"
+             d="m 181.01887,-61.286777 c -0.94191,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09008,0 1.73302,1.10596 1.73302,2.07434 0,1.55045 -1.03188,2.18016 -1.65365,2.18016 z m -3.50308,4.29684 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.31221,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12965 0.80698,0.82021 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21167,0.09 0.48948,0.29898 0.73554,0.45773 0.41011,0.29104 0.54769,0.62706 0.65353,1.15358 0.15345,0.68528 0.23547,1.74625 0.29368,2.51355 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="nwk_grp2_ext">
+            <title
+               id="title4326-8-4">externer NWK Athlet</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#nwk_grp2_exts"
+             d="m 182.73602,-61.739217 c 0.60854,-0.96572 0.64823,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96838 0.18785,0.84666 0.26458,1.79387 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79639,0.82021 1.98437,0.87577 2.96597,-0.0291 -0.1217,0.84931 0.082,1.60073 0.43392,2.15371 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69321 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28587 z m 8.75507,-6.20184 c -0.97896,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84667,2.14312 -1.65365,2.14312 z m -5.23346,1.92353 c -1.29911,0 -1.75948,-1.35732 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85195,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="nwk_grp2_exts">
+            <title
+               id="title4326-8-4-9">externe NWK Athleten</title>
+          </path>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4978"
+       transform="translate(-0.62809209)">
+      <path
+         style="fill:#7fba42;stroke:none;stroke-width:0.25597817"
+         d="m 246.41551,-87.028449 c -1.48831,0.0179 -2.66352,-1.19752 -2.91696,-2.49949 -0.37394,-1.47886 0.27181,-3.260069 1.7936,-3.939309 1.12394,-0.51293 2.53869,-0.0834 3.24762,0.850456 1.286,1.547883 1.00801,4.135353 -0.81077,5.218683 -0.39206,0.22928 -0.84894,0.37009 -1.31349,0.36966 z m -6.08543,6.71634 c 0.16479,-1.53892 0.23644,-3.10528 0.7032,-4.59713 0.29968,-0.92622 1.31109,-1.33846 2.13011,-1.78973 0.65995,-0.33668 1.0312,0.48648 1.59794,0.65295 1.33219,0.69625 3.06923,0.37512 4.14655,-0.59609 0.61006,-0.38048 1.22877,0.33832 1.7668,0.55869 0.97513,0.45983 1.22115,1.53536 1.37175,2.45562 0.19561,1.09956 0.31254,2.20941 0.4545,3.31569 -4.05696,0 -8.11389,0 -12.17085,0 z"
+         inkscape:connector-curvature="0"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="jc_leader">
+        <title
+           id="title4337-0-7">Jugendcup Leiter</title>
+      </path>
+      <path
+         inkscape:label="#jc_admin-6"
+         d="m 227.78493,-87.028365 c -1.59544,0 -3.01625,-1.3335 -3.01625,-3.37608 0,-1.58486 1.20121,-3.209403 2.96069,-3.209403 1.71714,0 2.97392,1.571633 2.97392,3.286133 0,1.98173 -1.48167,3.29935 -2.91836,3.29935 z m -6.08542,6.64369 c 0.13759,-1.4605 0.3228,-3.45546 0.67205,-4.46352 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.18256 1.11918,-0.6641 1.28058,-0.74348 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03238,0.005 0.17462,-0.17991 0.4498,-0.13228 0.63236,-0.0608 0.28839,0.11112 1.20914,0.65352 1.38376,0.76464 0.508,0.33338 0.78318,0.77788 0.9869,1.61396 0.25929,1.12977 0.41275,2.56646 0.59003,3.94495 z"
+         inkscape:connector-curvature="0"
+         style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="jc_admin">
+        <title
+           id="title4320-9-1">Jugendcup Administrator</title>
+      </path>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.14892136"
+       id="rect3690-2-0"
+       pointer-events="none"
+       ry="7.6385074"
+       rx="7.1140337"
+       height="57.095917"
+       width="47.426891"
+       y="-112.03881"
+       x="212.75868" />
+    <text
+       id="text363-9-0"
+       y="-104.81528"
+       x="236.56032"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444447px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="-104.81528"
+         x="236.56032"
+         id="tspan361-7-1"
+         sodipodi:role="line">Team:</tspan><tspan
+         style="font-size:5.64444447px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="-98.200691"
+         x="236.56032"
+         sodipodi:role="line"
+         id="tspan220">Jugendcup</tspan></text>
+    <g
+       id="g4990"
+       transform="translate(-0.62809709)">
+      <g
+         id="g5950"
+         transform="translate(5e-6,7.3145318)">
+        <path
+           id="jc_member"
+           class="user"
+           inkscape:label="#jc_member"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt);"
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 228.90147,-73.630027 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29106 0.54769,0.62707 0.65352,1.15359 0.15346,0.68528 0.23548,1.74625 0.29369,2.51354 z"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4324-7-7">Jugendcup Team-Mitglied</title>
+        </path>
+        <path
+           id="jc_members"
+           class="user"
+           inkscape:label="#jc_members"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 230.61862,-74.082467 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10055 0.39952,0.24342 0.6006,0.36778 0.38629,0.25134 0.55033,0.59266 0.635,0.96837 0.18785,0.84666 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84934 0.082,1.60074 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69319 -0.37836,0.30693 -0.59267,0.73292 -0.71173,1.28588 z m 8.75506,-6.20183 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4324-7-7-2">Jugendcup Team-Mitglieder</title>
+        </path>
+      </g>
+      <g
+         id="g5956"
+         transform="translate(5e-6,7.3145218)">
+        <path
+           id="jc_ext"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 247.53203,-73.630037 c -0.9419,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10596 1.73303,2.07434 0,1.55045 -1.03188,2.18016 -1.65366,2.18016 z m -3.50308,4.29684 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11113,-0.44979 0.31221,-0.6985 0.54505,-0.86519 l 0.48947,-0.32808 c 0.17728,-0.12171 0.42598,-0.29898 0.63236,-0.12965 0.80698,0.82021 1.93939,0.87313 2.89189,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21168,0.09 0.48949,0.29898 0.73555,0.45773 0.4101,0.29104 0.54769,0.62706 0.65352,1.15358 0.15345,0.68528 0.23548,1.74625 0.29368,2.51355 z"
+           inkscape:label="#jc_ext"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4326-8-1">externes Jugendcup-Teammitglied</title>
+        </path>
+        <path
+           id="jc_exts"
+           class="user"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 249.24919,-74.082477 c 0.60853,-0.96572 0.64822,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96838 0.18785,0.84666 0.26458,1.79387 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.91912,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79639,0.82021 1.98437,0.87577 2.96598,-0.0291 -0.1217,0.84931 0.082,1.60073 0.43392,2.15372 -0.22755,0.0185 -0.75406,0.36511 -1.18005,0.6932 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28588 z m 8.75507,-6.20184 c -0.97895,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84666,2.14312 -1.65365,2.14312 z m -5.23345,1.92353 c -1.29912,0 -1.75949,-1.35732 -1.75949,-2.09286 0,-1.23031 0.75935,-2.16429 1.68011,-2.16429 0.92339,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85195,2.09286 -1.62189,2.09286 z"
+           inkscape:label="#jc_exts"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4326-8-1-9">externe Jugendcup-Teammitglieder</title>
+        </path>
+      </g>
+    </g>
+    <g
+       id="g5913"
+       transform="translate(0,3.175)">
+      <g
+         transform="translate(11.641669,-1.3946877)"
+         id="g5503">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.23108909"
+           id="rect3690-6"
+           pointer-events="none"
+           ry="9.9869995"
+           rx="13.101898"
+           height="74.650314"
+           width="87.345993"
+           y="-40.230362"
+           x="2.8936679" />
+        <text
+           id="text363-8"
+           y="-32.362186"
+           x="33.447739"
+           style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444447px;stroke-width:0.26458332"
+             y="-32.362186"
+             x="33.447739"
+             id="tspan361-9"
+             sodipodi:role="line">Verein: A</tspan></text>
+        <g
+           id="g5028"
+           transform="translate(0.2465519)">
+          <rect
+             x="6.3753881"
+             y="-6.6200085"
+             width="43.422028"
+             height="34.461185"
+             rx="2.9197574"
+             ry="5.169179"
+             pointer-events="none"
+             id="rect3974-7"
+             style="fill:none;stroke:#000000;stroke-width:0.19922762;stroke-dasharray:0.59768285, 0.59768285" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="28.170807"
+             y="-0.58974838"
+             id="text4175-2"><tspan
+               sodipodi:role="line"
+               x="28.170807"
+               y="-0.58974838"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               id="tspan30-1">Gruppierung</tspan><tspan
+               sodipodi:role="line"
+               x="28.170807"
+               y="6.0248351"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               id="tspan34-1">Kartenteam</tspan></text>
+          <rect
+             x="52.874195"
+             y="-6.2506609"
+             width="33.403328"
+             height="34.113655"
+             rx="2.2460861"
+             ry="5.1170497"
+             pointer-events="none"
+             id="rect3974-2-4"
+             style="fill:none;stroke:#000000;stroke-width:0.17385547;stroke-dasharray:0.52156645, 0.52156645" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="69.660263"
+             y="-0.58974838"
+             id="text4175-0-7"><tspan
+               sodipodi:role="line"
+               x="69.660263"
+               y="-0.58974838"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               id="tspan68-5">Gruppierung</tspan><tspan
+               id="tspan36-3"
+               sodipodi:role="line"
+               x="69.660263"
+               y="6.0248351"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Vorstand</tspan></text>
+          <g
+             transform="translate(0.02017994)"
+             id="g5002">
+            <g
+               id="g4779"
+               transform="translate(0,-0.092425)">
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 d="m 22.192407,18.37254 c 0.608541,-0.96573 0.648229,-2.33627 -0.0291,-3.39196 0.489479,-0.0688 0.886354,-0.2249 1.262062,-0.6006 0.113771,-0.10319 0.277813,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24341 0.600605,0.36777 0.386291,0.25135 0.550333,0.59266 0.635,0.96837 0.187854,0.84667 0.264583,1.79388 0.343958,2.74108 h -2.973917 c -0.08202,-0.037 -0.161396,-0.0741 -0.277812,-0.0926 z m -8.919104,1.97908 c 0.06614,-0.84137 0.185208,-2.08227 0.338666,-2.73314 0.08467,-0.34925 0.206375,-0.66146 0.550334,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.43127,0 0.796396,0.82021 1.984375,0.87577 2.96598,-0.0291 -0.121709,0.84932 0.08202,1.60073 0.433916,2.15371 -0.227541,0.0185 -0.754062,0.36513 -1.180041,0.69321 -0.378355,0.30692 -0.592667,0.7329 -0.71173,1.28587 z m 8.755062,-6.20183 c -0.978958,0 -1.727729,-0.94192 -1.727729,-2.14842 0,-1.00806 0.650875,-2.10872 1.703917,-2.10872 0.912812,0 1.677458,0.96837 1.677458,2.11401 0,1.25677 -0.846667,2.14313 -1.653646,2.14313 z m -5.233458,1.92352 c -1.299104,0 -1.759479,-1.35731 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851959,2.09286 -1.621896,2.09286 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 class="user"
+                 id="club1_grp1_members">
+                <title
+                   id="title4324-76">Gruppenmitglieder</title>
+              </path>
+              <path
+                 d="m 20.515617,18.74919 c -0.930645,0 -1.759428,-0.88424 -1.759428,-2.23868 0,-1.05092 0.700684,-2.12816 1.727018,-2.12816 1.00164,0 1.734734,1.04215 1.734734,2.17905 0,1.31408 -0.864279,2.18779 -1.702324,2.18779 z m -3.549723,4.40543 c 0.08026,-0.96845 0.18829,-2.29131 0.392012,-2.95976 0.09414,-0.30351 0.231505,-0.52106 0.452205,-0.70354 0.143531,-0.12107 0.652839,-0.44036 0.746985,-0.493 0.163596,-0.0965 0.331821,-0.14735 0.476898,0 0.86428,0.86846 2.058839,0.84214 2.935467,0.004 0.10186,-0.11938 0.262371,-0.0876 0.368863,-0.0404 0.168226,0.0738 0.705314,0.43334 0.807177,0.50704 0.296323,0.22106 0.456833,0.51581 0.575671,1.07021 0.151249,0.74915 0.240764,1.70183 0.344169,2.6159 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;fill-opacity:1;stroke:none;stroke-width:0.16455244"
+                 onmouseover="hideOthers(evt)"
+                 onmouseout="showAll(evt)"
+                 class="user"
+                 id="club1_grp1_member">
+                <title
+                   id="title4320-3-4">Gruppenmitglied</title>
+              </path>
+            </g>
+            <g
+               id="g4785"
+               transform="translate(0,-0.072025)">
+              <path
+                 sodipodi:nodetypes="sssssccccccccccc"
+                 d="m 37.890262,18.82119 c -0.941917,0 -1.722438,-0.87577 -1.722438,-2.17223 0,-1.16946 0.817563,-2.08227 1.643063,-2.08227 1.090083,0 1.733021,1.10596 1.733021,2.07434 0,1.55045 -1.031875,2.18016 -1.653646,2.18016 z m -3.503084,4.29684 c 0.07408,-0.93398 0.193146,-2.15636 0.34925,-2.78342 0.111125,-0.44979 0.312209,-0.6985 0.545042,-0.86519 l 0.489479,-0.32808 c 0.177271,-0.12171 0.425979,-0.29898 0.632354,-0.12965 0.80698,0.82021 1.939396,0.87313 2.891896,0.0132 0.08467,-0.0688 0.246063,-0.0767 0.330729,-0.0317 0.211667,0.09 0.48948,0.29898 0.735542,0.45773 0.410104,0.29104 0.547688,0.62706 0.653521,1.15358 0.153458,0.68528 0.235479,1.74625 0.293687,2.51355 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover="hideOthers(evt)"
+                 onmouseout="showAll(evt)"
+                 class="user"
+                 id="club1_grp1_ext">
+                <title
+                   id="title4326-3">externes Gruppenmitglied</title>
+              </path>
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 d="m 39.607408,18.36875 c 0.608541,-0.96572 0.648229,-2.33627 -0.0291,-3.39195 0.489482,-0.0688 0.886357,-0.2249 1.262063,-0.60061 0.11377,-0.10319 0.277812,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24342 0.600604,0.36777 0.386292,0.25136 0.550333,0.59267 0.635,0.96838 0.187854,0.84666 0.264583,1.79387 0.343958,2.74108 h -2.973916 c -0.08202,-0.037 -0.161396,-0.0741 -0.277813,-0.0926 z m -8.919105,1.97909 c 0.06614,-0.84138 0.185209,-2.08227 0.338667,-2.73315 0.08467,-0.34925 0.206375,-0.66146 0.550333,-0.91016 0.240771,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.314855,-0.10583 0.431271,0 0.796396,0.82021 1.984375,0.87577 2.965979,-0.0291 -0.121708,0.84931 0.08202,1.60073 0.433917,2.15371 -0.227542,0.0185 -0.754062,0.36512 -1.180042,0.69321 -0.378354,0.30691 -0.592666,0.73289 -0.711729,1.28587 z M 39.443366,14.146 c -0.978958,0 -1.727729,-0.94191 -1.727729,-2.14841 0,-1.00806 0.650875,-2.10872 1.703916,-2.10872 0.912813,0 1.677459,0.96836 1.677459,2.11401 0,1.25677 -0.846667,2.14312 -1.653646,2.14312 z m -5.233458,1.92353 c -1.299105,0 -1.75948,-1.35732 -1.75948,-2.09286 0,-1.23031 0.759355,-2.16429 1.680105,-2.16429 0.923395,0 1.70127,0.93927 1.70127,2.16429 0.01323,1.17211 -0.851958,2.09286 -1.621895,2.09286 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 class="user"
+                 id="club1_grp1_exts">
+                <title
+                   id="title4326-4-4">externe Gruppenmitglieder</title>
+              </path>
+            </g>
+          </g>
+          <g
+             transform="translate(-0.22615043)"
+             id="g4791">
+            <path
+               id="club1_grp2_member"
+               class="user"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt)"
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 70.918546,18.74918 c -0.941919,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.817565,-2.08227 1.643065,-2.08227 1.090081,0 1.73302,1.10595 1.73302,2.07433 0,1.55046 -1.031874,2.18017 -1.653645,2.18017 z m -3.503083,4.29683 c 0.07408,-0.93398 0.193143,-2.15636 0.34925,-2.78342 0.111125,-0.44979 0.312208,-0.6985 0.545039,-0.86519 l 0.489479,-0.32808 c 0.177271,-0.12171 0.425982,-0.29898 0.632357,-0.12964 0.806979,0.8202 1.939393,0.87312 2.891893,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0318 0.21167,0.09 0.48948,0.29897 0.73554,0.45772 0.41011,0.29105 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+               sodipodi:nodetypes="ssssscccccccccsc">
+              <title
+                 id="title4324-9-2">Vorstandsmitglied</title>
+            </path>
+            <path
+               id="club1_grp2_members"
+               class="user"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 72.635691,18.29674 c 0.60854,-0.96573 0.64823,-2.33627 -0.0291,-3.39196 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.6006 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.60061,0.36777 0.38629,0.25135 0.55033,0.59266 0.635,0.96837 0.18785,0.84667 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.919103,1.97908 c 0.06614,-0.84137 0.185205,-2.08227 0.338664,-2.73314 0.08467,-0.34925 0.206375,-0.66146 0.550336,-0.91017 0.240768,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.431268,0 0.796396,0.82021 1.984375,0.87577 2.965982,-0.0291 -0.121711,0.84932 0.08202,1.60073 0.433914,2.15371 -0.227539,0.0185 -0.75406,0.36513 -1.180039,0.69321 -0.378357,0.30692 -0.592667,0.7329 -0.711732,1.28587 z m 8.755063,-6.20183 c -0.978959,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00805 0.650875,-2.10871 1.70392,-2.10871 0.91281,0 1.67746,0.96837 1.67746,2.114 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.233459,1.92352 c -1.299104,0 -1.759479,-1.35731 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851961,2.09286 -1.621896,2.09286 z"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4324-9-75-7">Vorstandsmitglieder</title>
+            </path>
+          </g>
+        </g>
+        <g
+           id="g4848"
+           transform="translate(-0.16784154)">
+          <path
+             style="fill:#7fba42;stroke:none;stroke-width:0.25378129"
+             d="m 46.734507,-17.786502 c -1.4883,0.0176 -2.663521,-1.17705 -2.916952,-2.45677 -0.373959,-1.45358 0.271801,-3.20435 1.793603,-3.87199 1.123918,-0.50416 2.538687,-0.082 3.247617,0.83594 1.285992,1.52141 1.007991,4.06466 -0.810789,5.12947 -0.392038,0.22537 -0.848929,0.36377 -1.313479,0.36335 z m -6.085422,6.60156 c 0.164785,-1.51263 0.23644,-3.05221 0.703189,-4.51857 0.299683,-0.91039 1.311084,-1.31559 2.130112,-1.75914 0.65994,-0.33092 1.031211,0.47817 1.597951,0.64179 1.332191,0.68435 3.069231,0.36871 4.14654,-0.5859 0.610071,-0.37397 1.22878,0.33254 1.7668,0.54914 0.975141,0.45198 1.221161,1.50912 1.371759,2.41365 0.195612,1.08077 0.312531,2.17165 0.45448,3.25903 -4.056938,0 -8.11389,0 -12.170831,0 z"
+             inkscape:connector-curvature="0"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_leader">
+            <title
+               id="title4337-07">Club Leiter</title>
+          </path>
+          <path
+             d="m 17.272302,-17.786916 c -1.595438,0 -3.01625,-1.3335 -3.01625,-3.37608 0,-1.58486 1.201208,-3.2094 2.960687,-3.2094 1.717146,0 2.973917,1.57163 2.973917,3.28613 0,1.98173 -1.481667,3.29935 -2.918354,3.29935 z m -6.085417,6.64369 c 0.137583,-1.4605 0.322792,-3.45546 0.672042,-4.46352 0.161395,-0.45773 0.396875,-0.78581 0.775229,-1.06098 0.246062,-0.18256 1.119187,-0.6641 1.280583,-0.74348 0.280458,-0.14552 0.568854,-0.22225 0.817563,0 1.481666,1.30969 3.529541,1.27 5.032375,0.005 0.174625,-0.17992 0.449792,-0.13229 0.632354,-0.0608 0.288396,0.11112 1.209146,0.65352 1.383771,0.76464 0.508,0.33338 0.783167,0.77788 0.986896,1.61396 0.259292,1.12977 0.41275,2.56646 0.590021,3.94494 z"
+             inkscape:connector-curvature="0"
+             style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_admin">
+            <title
+               id="title4320-0">Club Administrator</title>
+          </path>
+          <g
+             transform="translate(11.350042,0.62362891)"
+             id="g4773">
+            <path
+               id="club1_members"
+               class="user"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 67.680352,-16.53276 c 0.608541,-0.96573 0.648229,-2.33627 -0.0291,-3.39196 0.489479,-0.0688 0.886354,-0.2249 1.262062,-0.6006 0.113771,-0.10319 0.277813,-0.0847 0.439208,0.008 0.195792,0.10054 0.399521,0.24341 0.600605,0.36777 0.386291,0.25135 0.550333,0.59266 0.635,0.96837 0.187854,0.84667 0.264583,1.79388 0.343958,2.74108 h -2.973917 c -0.08202,-0.037 -0.161396,-0.0741 -0.277812,-0.0926 z m -8.919104,1.97908 c 0.06614,-0.84137 0.185208,-2.08227 0.338666,-2.73314 0.08467,-0.34925 0.206375,-0.66146 0.550334,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.140229,-0.0794 0.314854,-0.10583 0.43127,0 0.796396,0.82021 1.984375,0.87577 2.96598,-0.0291 -0.121709,0.84932 0.08202,1.60073 0.433916,2.15371 -0.227541,0.0185 -0.754062,0.36513 -1.180041,0.69321 -0.378355,0.30692 -0.592667,0.7329 -0.71173,1.28587 z m 8.755062,-6.20183 c -0.978958,0 -1.727729,-0.94192 -1.727729,-2.14842 0,-1.00806 0.650875,-2.10872 1.703917,-2.10872 0.912812,0 1.677458,0.96837 1.677458,2.11401 0,1.25677 -0.846667,2.14313 -1.653646,2.14313 z m -5.233458,1.92352 c -1.299104,0 -1.759479,-1.35731 -1.759479,-2.09286 0,-1.23031 0.759354,-2.16429 1.680104,-2.16429 0.923396,0 1.701271,0.93927 1.701271,2.16429 0.01323,1.17211 -0.851959,2.09286 -1.621896,2.09286 z"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4324-76-2">Clubmitglieder</title>
+            </path>
+            <path
+               id="club1_member"
+               class="user"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt)"
+               style="fill:#2072b8;fill-opacity:1;stroke:none;stroke-width:0.16455244"
+               inkscape:connector-curvature="0"
+               d="m 66.003562,-16.15611 c -0.930645,0 -1.759428,-0.88424 -1.759428,-2.23868 0,-1.05092 0.700684,-2.12816 1.727018,-2.12816 1.00164,0 1.734734,1.04215 1.734734,2.17905 0,1.31408 -0.864279,2.18779 -1.702324,2.18779 z m -3.549723,4.40543 c 0.08026,-0.96845 0.18829,-2.29131 0.392012,-2.95976 0.09414,-0.30351 0.231505,-0.52106 0.452205,-0.70354 0.143531,-0.12107 0.652839,-0.44036 0.746985,-0.493 0.163596,-0.0965 0.331821,-0.14735 0.476898,0 0.86428,0.86846 2.058839,0.84214 2.935467,0.004 0.10186,-0.11938 0.262371,-0.0876 0.368863,-0.0404 0.168226,0.0738 0.705314,0.43334 0.807177,0.50704 0.296323,0.22106 0.456833,0.51581 0.575671,1.07021 0.151249,0.74915 0.240764,1.70183 0.344169,2.6159 z">
+              <title
+                 id="title4320-3-4-3">Clubmitglied</title>
+            </path>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.2705375"
+       id="rect3690-2-6"
+       pointer-events="none"
+       ry="9.9451895"
+       rx="18.032351"
+       height="74.337784"
+       width="120.21567"
+       y="-38.293785"
+       x="112.30368" />
+    <text
+       id="text363-9-1"
+       y="-30.449577"
+       x="146.80894"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444447px;stroke-width:0.26458332"
+         y="-30.449577"
+         x="146.80894"
+         id="tspan361-7-9"
+         sodipodi:role="line">Team: Nachwuchs</tspan></text>
+    <g
+       id="g4837"
+       transform="translate(17.664462,2.1771937)">
+      <path
+         style="fill:#7fba42;stroke:none;stroke-width:0.25156525"
+         d="m 139.75975,-19.366714 c -1.4883,0.0173 -2.66353,-1.1566 -2.91695,-2.41407 -0.37396,-1.42831 0.27179,-3.14864 1.7936,-3.80467 1.12392,-0.49539 2.53869,-0.0806 3.24762,0.8214 1.28599,1.49497 1.008,3.99399 -0.81078,5.0403 -0.39205,0.22145 -0.84894,0.35744 -1.31349,0.35704 z m -6.08542,6.486754 c 0.16479,-1.486318 0.23644,-2.999139 0.70318,-4.439999 0.29968,-0.89456 1.3111,-1.292705 2.13011,-1.728545 0.65996,-0.32518 1.03122,0.46985 1.59796,0.630625 1.33219,0.67245 3.06923,0.36229 4.14654,-0.575705 0.61007,-0.36748 1.22878,0.32675 1.7668,0.53959 0.97514,0.444105 1.22116,1.482865 1.37176,2.371675 0.19561,1.06197 0.31253,2.13389 0.45448,3.202359 -4.05694,0 -8.11388,0 -12.17083,0 z"
+         inkscape:connector-curvature="0"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="club1_team1_leader">
+        <title
+           id="title4337-0-4">Nachwuchs-Leiter</title>
+      </path>
+      <path
+         d="m 109.78518,-19.367636 c -1.59544,0 -3.01625,-1.33351 -3.01625,-3.37609 0,-1.58487 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.9739,1.57163 2.9739,3.28614 0,1.98173 -1.48165,3.29936 -2.91834,3.29936 z m -6.08542,6.643683 c 0.13759,-1.460499 0.3228,-3.455458 0.67205,-4.463518 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.182555 1.11918,-0.664095 1.28058,-0.743475 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.309685 3.52954,1.269995 5.03238,0.005 0.17462,-0.17992 0.44978,-0.13229 0.63234,-0.0608 0.28841,0.11112 1.20916,0.65352 1.38378,0.76464 0.508,0.333376 0.78316,0.777876 0.9869,1.613956 0.25929,1.12977 0.41275,2.566458 0.59001,3.944939 z"
+         inkscape:connector-curvature="0"
+         style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+         onmouseover="hideOthers(evt)"
+         onmouseout="showAll(evt)"
+         class="user"
+         id="club1_team1_admin">
+        <title
+           id="title4320-9-15">Nachwuchs Administrator</title>
+      </path>
+      <g
+         transform="translate(18.841712,-0.46862926)"
+         id="g5914">
+        <path
+           id="club1_team1_member"
+           class="user"
+           inkscape:label="#nclub1_team1_member"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 152.00917,-16.552164 c -0.94192,0 -1.72244,-0.875792 -1.72244,-2.172239 0,-1.169451 0.81756,-2.082261 1.64306,-2.082261 1.09009,0 1.73303,1.105951 1.73303,2.07432 0,1.550459 -1.03188,2.18018 -1.65365,2.18018 z m -3.50308,4.296827 c 0.0741,-0.933989 0.19314,-2.156366 0.34925,-2.783429 0.11112,-0.449778 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.328067 c 0.17727,-0.121711 0.42598,-0.298993 0.63235,-0.129641 0.80698,0.820201 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29896 0.73554,0.45771 0.4101,0.291061 0.54769,0.627068 0.65352,1.1536 0.15346,0.685269 0.23548,1.746249 0.29369,2.513527 z"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4324-9-7-4">Mitglied Nachwuchs</title>
+        </path>
+        <path
+           id="club1_team1_members"
+           class="user"
+           inkscape:label="#club1_team1_members"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 153.72632,-17.004604 c 0.60854,-0.96574 0.64822,-2.336281 -0.0291,-3.391971 0.48947,-0.0688 0.88634,-0.224888 1.26206,-0.600589 0.11376,-0.10319 0.27781,-0.0847 0.4392,0.008 0.1958,0.100541 0.39952,0.243411 0.60061,0.367771 0.38628,0.251341 0.55033,0.592661 0.635,0.968369 0.18784,0.84667 0.26458,1.793881 0.34395,2.741081 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979081 c 0.0661,-0.84138 0.18521,-2.082271 0.33867,-2.733141 0.0847,-0.34925 0.20637,-0.661471 0.55033,-0.91018 0.24077,-0.16139 0.47625,-0.33601 0.6985,-0.460369 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820197 1.98438,0.875757 2.96598,-0.0291 -0.12171,0.849321 0.082,1.600729 0.43392,2.153711 -0.22754,0.01849 -0.75406,0.36513 -1.18004,0.693209 -0.37836,0.306921 -0.59267,0.732901 -0.71173,1.285872 z m 8.75506,-6.201831 c -0.97895,0 -1.72773,-0.941919 -1.72773,-2.148419 0,-1.008063 0.65088,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968369 1.67746,2.11401 0,1.256771 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92351 c -1.29911,0 -1.75948,-1.357309 -1.75948,-2.092862 0,-1.23031 0.75935,-2.164278 1.6801,-2.164278 0.9234,0 1.70127,0.939271 1.70127,2.164278 0.0132,1.172112 -0.85196,2.092862 -1.62189,2.092862 z"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4324-9-7-2-6">Mitglieder Nachwuchs</title>
+        </path>
+      </g>
+      <g
+         transform="translate(31.929801,-0.99780626)"
+         id="g5920">
+        <path
+           id="club1_team1_ext"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 168.89565,-16.023008 c -0.94191,0 -1.72243,-0.875771 -1.72243,-2.172229 0,-1.169461 0.81756,-2.082271 1.64306,-2.082271 1.09007,0 1.73302,1.105961 1.73302,2.074338 0,1.550451 -1.03188,2.180162 -1.65365,2.180162 z m -3.50308,4.296838 c 0.0741,-0.933979 0.19315,-2.156359 0.34925,-2.783419 0.11112,-0.449789 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.328078 c 0.17726,-0.121711 0.42598,-0.298982 0.63235,-0.129651 0.80698,0.820211 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21167,0.09 0.48948,0.298979 0.73553,0.457729 0.41012,0.291042 0.5477,0.62706 0.65354,1.153581 0.15345,0.685278 0.23546,1.74625 0.29368,2.513549 z"
+           inkscape:label="#club1_team1_ext"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4326-8-4-7">extenes Mitglied Nachwuchs</title>
+        </path>
+        <path
+           id="club1_team1_exts"
+           class="user"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 170.6128,-16.475448 c 0.60854,-0.965722 0.64823,-2.336271 -0.0291,-3.391951 0.48947,-0.0688 0.88635,-0.224898 1.26206,-0.600609 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.100539 0.39951,0.243419 0.60061,0.367768 0.38628,0.25136 0.55033,0.592672 0.635,0.968381 0.18784,0.846661 0.26458,1.793869 0.34396,2.74108 h -2.97393 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979091 c 0.0661,-0.84138 0.18521,-2.082271 0.33866,-2.733151 0.0847,-0.34925 0.20639,-0.661461 0.55034,-0.910162 0.24078,-0.161398 0.47625,-0.336028 0.6985,-0.460377 0.14022,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820208 1.98437,0.875768 2.96597,-0.0291 -0.1217,0.84931 0.082,1.600729 0.43391,2.153711 -0.22753,0.01849 -0.75405,0.36512 -1.18003,0.693209 -0.37835,0.306911 -0.59267,0.73289 -0.71173,1.285872 z m 8.75507,-6.201841 c -0.97896,0 -1.72773,-0.941909 -1.72773,-2.148409 0,-1.008063 0.65087,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968359 1.67746,2.11401 0,1.256771 -0.84667,2.14312 -1.65365,2.14312 z m -5.23346,1.923528 c -1.29911,0 -1.75948,-1.357317 -1.75948,-2.092859 0,-1.23031 0.75934,-2.164289 1.6801,-2.164289 0.9234,0 1.70127,0.939271 1.70127,2.164289 0.0132,1.172109 -0.85195,2.092859 -1.62189,2.092859 z"
+           inkscape:label="#club1_team1_exts"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4326-8-4-9-9">externe Mitglieder Nachwuchs</title>
+        </path>
+      </g>
+    </g>
+    <g
+       id="g5105"
+       transform="translate(16.885932,2.1771937)">
+      <rect
+         x="99.500839"
+         y="-6.8924522"
+         width="36.809002"
+         height="34.47694"
+         rx="2.4750884"
+         ry="5.1715422"
+         pointer-events="none"
+         id="rect3974-6-7"
+         style="fill:none;stroke:#000000;stroke-width:0.18347242;stroke-dasharray:0.55041722, 0.55041722" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="117.98975"
+         y="-0.85433662"
+         id="text4175-8-1"><tspan
+           sodipodi:role="line"
+           x="117.98975"
+           y="-0.85433662"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan34-2-3">Gruppierung</tspan><tspan
+           id="tspan333"
+           sodipodi:role="line"
+           x="117.98975"
+           y="5.7602468"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Leiter</tspan></text>
+      <g
+         transform="translate(0.05470019)"
+         id="g5066">
+        <g
+           id="g4797"
+           transform="translate(0,-0.15281615)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 110.4488,18.902002 c -0.94192,0 -1.72244,-0.875781 -1.72244,-2.172231 0,-1.169459 0.81756,-2.082269 1.64306,-2.082269 1.09009,0 1.73303,1.105951 1.73303,2.074328 0,1.550461 -1.03188,2.180172 -1.65365,2.180172 z m -3.50308,4.296828 c 0.0741,-0.933979 0.19314,-2.156359 0.34925,-2.783419 0.11112,-0.449789 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.328078 c 0.17727,-0.121711 0.42598,-0.298982 0.63235,-0.129641 0.80698,0.820201 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.298968 0.73554,0.457718 0.4101,0.291053 0.54769,0.627071 0.65352,1.153592 0.15346,0.68527 0.23548,1.74625 0.29369,2.513539 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             inkscape:label="#club1_team1_grp1_member"
+             class="user"
+             id="club1_team1_grp1_member">
+            <title
+               id="title4324-7-3">Leiter</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 112.16595,18.449562 c 0.60854,-0.965732 0.64822,-2.336271 -0.0291,-3.391961 0.48947,-0.0688 0.88635,-0.224898 1.26206,-0.600599 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.100541 0.39952,0.243411 0.6006,0.367771 0.38629,0.251348 0.55033,0.592669 0.635,0.968369 0.18785,0.84667 0.26458,1.793881 0.34396,2.741081 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979081 c 0.0661,-0.841372 0.18521,-2.082271 0.33867,-2.733141 0.0847,-0.34925 0.20637,-0.661461 0.55033,-0.910172 0.24077,-0.161398 0.47625,-0.336018 0.6985,-0.460377 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820208 1.98438,0.875768 2.96598,-0.0291 -0.12171,0.849331 0.082,1.60074 0.43392,2.153722 -0.22754,0.01849 -0.75406,0.365127 -1.18004,0.693198 -0.37836,0.306929 -0.59267,0.732911 -0.71173,1.28588 z m 8.75506,-6.201831 c -0.97895,0 -1.72773,-0.941919 -1.72773,-2.148419 0,-1.008063 0.65088,-2.1087207 1.70392,-2.1087207 0.91281,0 1.67746,0.9683687 1.67746,2.1140097 0,1.256771 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.923518 c -1.29911,0 -1.75948,-1.357309 -1.75948,-2.092859 0,-1.23031 0.75935,-2.164289 1.6801,-2.164289 0.9234,0 1.70127,0.939271 1.70127,2.164289 0.0132,1.172109 -0.85196,2.092859 -1.62189,2.092859 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             inkscape:label="#club1_team1_grp1_members"
+             class="user"
+             id="club1_team1_grp1_members">
+            <title
+               id="title4324-7-4-6">Leiter</title>
+          </path>
+        </g>
+        <g
+           id="g4803"
+           transform="translate(0,-0.2757255)">
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#club1_team1_grp1_exts"
+             d="m 129.2027,18.572451 c 0.60855,-0.965719 0.64824,-2.336269 -0.0291,-3.391948 0.48948,-0.0688 0.88636,-0.224901 1.26206,-0.600612 0.11378,-0.10319 0.27783,-0.0847 0.43922,0.008 0.19578,0.100539 0.39951,0.243419 0.60061,0.367771 0.38628,0.251359 0.55033,0.592669 0.635,0.96838 0.18784,0.846659 0.26458,1.79387 0.34395,2.741078 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.9191,1.979091 c 0.0661,-0.84138 0.18521,-2.082271 0.33867,-2.733151 0.0847,-0.34925 0.20638,-0.661459 0.55033,-0.910159 0.24078,-0.161401 0.47625,-0.336031 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820211 1.98437,0.875771 2.96597,-0.0291 -0.12171,0.84931 0.082,1.600729 0.43391,2.153708 -0.22753,0.0185 -0.75406,0.36512 -1.18003,0.693211 -0.37835,0.306909 -0.59267,0.732891 -0.71173,1.28587 z m 8.75507,-6.201841 c -0.97897,0 -1.72773,-0.941909 -1.72773,-2.148409 0,-1.00806 0.65087,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968361 1.67746,2.11401 0,1.256771 -0.84668,2.14312 -1.65365,2.14312 z m -5.23347,1.923531 c -1.2991,0 -1.75947,-1.35732 -1.75947,-2.092859 0,-1.23031 0.75934,-2.164292 1.68009,-2.164292 0.92341,0 1.70128,0.939271 1.70128,2.164292 0.0132,1.172109 -0.85196,2.092859 -1.6219,2.092859 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club1_team1_grp1_exts">
+            <title
+               id="title4326-8-13">externe Leiter</title>
+          </path>
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             inkscape:label="#club1_team1_grp1_ext"
+             d="m 127.48556,19.024891 c -0.94192,0 -1.72243,-0.875768 -1.72243,-2.172229 0,-1.169461 0.81756,-2.082271 1.64306,-2.082271 1.09007,0 1.73301,1.105961 1.73301,2.074341 0,1.55045 -1.03188,2.180159 -1.65364,2.180159 z m -3.50308,4.296841 c 0.0741,-0.933979 0.19315,-2.156359 0.34925,-2.783419 0.11112,-0.449792 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.328081 c 0.17726,-0.121711 0.42598,-0.298979 0.63235,-0.129651 0.80697,0.820211 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21166,0.09 0.48947,0.298981 0.73553,0.457731 0.41012,0.29104 0.54769,0.62706 0.65354,1.153579 0.15345,0.685281 0.23546,1.74625 0.29368,2.513549 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_team1_grp1_ext">
+            <title
+               id="title4326-8-8-7">externer Leiter</title>
+          </path>
+        </g>
+      </g>
+      <rect
+         x="141.70288"
+         y="-6.747746"
+         width="69.812965"
+         height="34.40799"
+         rx="4.6943207"
+         ry="5.1611996"
+         pointer-events="none"
+         id="rect3974-6-7-0"
+         style="fill:none;stroke:#000000;stroke-width:0.25242195;stroke-dasharray:0.7572658, 0.7572658" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="176.5732"
+         y="-0.74411213"
+         id="text4175-8-1-2"><tspan
+           id="tspan333-3"
+           sodipodi:role="line"
+           x="176.5732"
+           y="-0.74411213"
+           style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Gruppierung: Ferienkurs</tspan></text>
+      <g
+         transform="translate(0.36048836)"
+         id="g5054">
+        <g
+           id="g4809"
+           transform="translate(0,-0.26304)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 152.61637,19.012227 c -0.94192,0 -1.72244,-0.875781 -1.72244,-2.172231 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.074329 0,1.550461 -1.03188,2.180172 -1.65365,2.180172 z m -3.50308,4.296827 c 0.0741,-0.933979 0.19314,-2.156356 0.34925,-2.783419 0.11112,-0.449786 0.3122,-0.6985 0.54504,-0.865187 l 0.48948,-0.328079 c 0.17727,-0.121711 0.42598,-0.298983 0.63235,-0.129642 0.80698,0.820202 1.9394,0.873122 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.298967 0.73554,0.457717 0.4101,0.291055 0.54769,0.62707 0.65352,1.153594 0.15346,0.685268 0.23548,1.74625 0.29369,2.513539 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             inkscape:label="#club1_team1_grp2_member"
+             class="user"
+             id="club1_team1_grp2_member">
+            <title
+               id="title4324-7-3-3">Kursteilnehmer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 154.33352,18.559787 c 0.60854,-0.965732 0.64822,-2.336271 -0.0291,-3.391961 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.846673 0.26458,1.793884 0.34396,2.741083 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979083 c 0.0661,-0.841373 0.18521,-2.082273 0.33867,-2.733143 0.0847,-0.34925 0.20637,-0.661461 0.55033,-0.910172 0.24077,-0.161398 0.47625,-0.336018 0.6985,-0.460377 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820208 1.98438,0.875768 2.96598,-0.0291 -0.12171,0.849331 0.082,1.60074 0.43392,2.153723 -0.22754,0.01849 -0.75406,0.365126 -1.18004,0.693197 -0.37836,0.306929 -0.59267,0.732911 -0.71173,1.28588 z m 8.75506,-6.201834 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.923519 c -1.29911,0 -1.75948,-1.357309 -1.75948,-2.092859 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.092859 -1.62189,2.092859 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             inkscape:label="#club1_team1_grp2_members"
+             class="user"
+             id="club1_team1_grp2_members">
+            <title
+               id="title4324-7-4-6-3">Kursteilnehmer</title>
+          </path>
+        </g>
+        <g
+           id="g4815"
+           transform="translate(0,-0.3859505)">
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#club1_team1_grp2_exts"
+             d="m 171.37028,18.682676 c 0.60855,-0.965719 0.64824,-2.336269 -0.0291,-3.39195 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27783,-0.0847 0.43922,0.008 0.19578,0.10054 0.3995,0.24342 0.60061,0.36777 0.38627,0.25136 0.55032,0.59267 0.635,0.96838 0.18783,0.846661 0.26457,1.793872 0.34395,2.741081 h -2.97393 c -0.082,-0.037 -0.16138,-0.0741 -0.27781,-0.0926 z m -8.9191,1.979093 c 0.0661,-0.841381 0.18521,-2.082273 0.33867,-2.733153 0.0847,-0.34925 0.20638,-0.661459 0.55033,-0.910159 0.24078,-0.1614 0.47625,-0.336031 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820211 1.98437,0.875771 2.96597,-0.0291 -0.12171,0.849311 0.082,1.600729 0.43391,2.153708 -0.22753,0.0185 -0.75406,0.36512 -1.18003,0.693211 -0.37835,0.306909 -0.59267,0.732891 -0.71173,1.28587 z m 8.75507,-6.201843 c -0.97897,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84668,2.14312 -1.65365,2.14312 z m -5.23347,1.923531 c -1.2991,0 -1.75947,-1.357321 -1.75947,-2.092861 0,-1.23031 0.75934,-2.16429 1.68009,-2.16429 0.92341,0 1.70128,0.93927 1.70128,2.16429 0.0132,1.17211 -0.85196,2.092861 -1.6219,2.092861 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club1_team1_grp2_exts">
+            <title
+               id="title4326-8-13-2">externe Kursteilnehmer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             inkscape:label="#club1_team1_grp2_ext"
+             d="m 169.65314,19.135116 c -0.94192,0 -1.72243,-0.875768 -1.72243,-2.172229 0,-1.169461 0.81756,-2.082271 1.64306,-2.082271 1.09007,0 1.73301,1.10596 1.73301,2.074341 0,1.55045 -1.03188,2.180159 -1.65364,2.180159 z m -3.50308,4.296843 c 0.0741,-0.933979 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.449791 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.328082 c 0.17726,-0.12171 0.42598,-0.298979 0.63235,-0.129651 0.80697,0.820212 1.9394,0.873132 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21166,0.09 0.48947,0.298981 0.73553,0.457731 0.41012,0.291042 0.54769,0.62706 0.65354,1.153581 0.15345,0.685278 0.23546,1.74625 0.29368,2.513547 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_team1_grp2_ext">
+            <title
+               id="title4326-8-8-7-2">externer Kursteilnehmer</title>
+          </path>
+        </g>
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.13083027;stroke-dasharray:0.39249081, 0.39249081"
+           id="rect3974-6-7-0-2"
+           pointer-events="none"
+           ry="3.6050117"
+           rx="1.8054235"
+           height="24.033403"
+           width="26.84988"
+           y="1.4367542"
+           x="180.16805" />
+        <text
+           id="text4175-8-1-2-3"
+           y="7.352047"
+           x="193.34459"
+           style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="7.352047"
+             x="193.34459"
+             sodipodi:role="line"
+             id="tspan333-3-5">Leiter</tspan></text>
+        <g
+           id="g4821"
+           transform="translate(0.97632515,1.7418517)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 193.7332,17.007333 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29105 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_team1_grp2_grp1_member">
+            <title
+               id="title4324-7-3-3-3">Kursteilnehmer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 195.45035,16.554893 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.84667 0.26458,1.79389 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84933 0.082,1.60074 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69319 -0.37836,0.30693 -0.59267,0.73291 -0.71173,1.28588 z m 8.75506,-6.20183 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.0080597 0.65088,-2.1087194 1.70392,-2.1087194 0.91281,0 1.67746,0.9683697 1.67746,2.1140094 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.1642897 1.6801,-2.1642897 0.9234,0 1.70127,0.9392697 1.70127,2.1642897 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club1_team1_grp2_grp1_members">
+            <title
+               id="title4324-7-4-6-3-5">Kursteilnehmer</title>
+          </path>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5118">
+      <path
+         d="m 241.49368,54.274952 c -1.59544,0 -3.01625,-1.33351 -3.01625,-3.37609 0,-1.58487 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.9739,1.57163 2.9739,3.28614 0,1.98173 -1.48165,3.29936 -2.91834,3.29936 z m -6.08542,6.64369 c 0.13759,-1.4605 0.3228,-3.45546 0.67205,-4.46352 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.18256 1.11918,-0.6641 1.28058,-0.74348 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03238,0.005 0.17462,-0.17992 0.44978,-0.13229 0.63234,-0.0608 0.28841,0.11112 1.20916,0.65352 1.38378,0.76464 0.508,0.33338 0.78316,0.77788 0.9869,1.61396 0.2593,1.12977 0.41276,2.56646 0.59001,3.94494 z"
+         inkscape:connector-curvature="0"
+         style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+         id="admin">
+        <title
+           id="title4320-9-15-5">Administrator</title>
+      </path>
+      <text
+         id="text4915"
+         y="56.405556"
+         x="254.92603"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:6.61458254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="56.405556"
+           x="254.92603"
+           id="tspan4913"
+           sodipodi:role="line">Administrator</tspan></text>
+    </g>
+    <g
+       id="g5112"
+       transform="translate(0,-0.49885521)">
+      <path
+         style="fill:#7fba42;stroke:none;stroke-width:0.25156525"
+         d="m 241.49368,75.866986 c -1.4883,0.0173 -2.66353,-1.1566 -2.91694,-2.41407 -0.37396,-1.42831 0.27179,-3.14864 1.79359,-3.80467 1.12392,-0.49539 2.5387,-0.0806 3.24763,0.8214 1.28598,1.49497 1.008,3.99399 -0.81079,5.0403 -0.39204,0.22145 -0.84893,0.35744 -1.31349,0.35704 z m -6.08542,6.48675 c 0.16479,-1.48632 0.23644,-2.99914 0.70318,-4.44 0.29968,-0.89456 1.3111,-1.2927 2.13011,-1.72854 0.65996,-0.32518 1.03122,0.46985 1.59796,0.63062 1.3322,0.67245 3.06923,0.36229 4.14654,-0.5757 0.61007,-0.36748 1.22878,0.32675 1.7668,0.53959 0.97514,0.4441 1.22116,1.48286 1.37176,2.37167 0.19561,1.06197 0.31253,2.13389 0.45448,3.20236 -4.05694,0 -8.11388,0 -12.17083,0 z"
+         inkscape:connector-curvature="0"
+         id="leader">
+        <title
+           id="title4337-0-4-7">Leiter</title>
+      </path>
+      <text
+         id="text4919"
+         y="77.925003"
+         x="254.44647"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:6.61458254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="77.925003"
+           x="254.44647"
+           id="tspan4917"
+           sodipodi:role="line">Leiter</tspan></text>
+    </g>
+    <g
+       id="g5106"
+       transform="translate(0,-3.5112036)">
+      <g
+         transform="translate(90.60105,118.86969)"
+         id="g5914-4">
+        <path
+           id="member"
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 152.00917,-16.552164 c -0.94192,0 -1.72244,-0.875792 -1.72244,-2.172239 0,-1.169451 0.81756,-2.082261 1.64306,-2.082261 1.09009,0 1.73303,1.105951 1.73303,2.07432 0,1.550459 -1.03188,2.18018 -1.65365,2.18018 z m -3.50308,4.296827 c 0.0741,-0.933989 0.19314,-2.156366 0.34925,-2.783429 0.11112,-0.449778 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.328067 c 0.17727,-0.121711 0.42598,-0.298993 0.63235,-0.129641 0.80698,0.820201 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29896 0.73554,0.45771 0.4101,0.291061 0.54769,0.627068 0.65352,1.1536 0.15346,0.685269 0.23548,1.746249 0.29369,2.513527 z"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4324-9-7-4-8">Mitglied</title>
+        </path>
+        <path
+           id="members"
+           inkscape:label="#members"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 153.72632,-17.004604 c 0.60854,-0.96574 0.64822,-2.336281 -0.0291,-3.391971 0.48947,-0.0688 0.88634,-0.224888 1.26206,-0.600589 0.11376,-0.10319 0.27781,-0.0847 0.4392,0.008 0.1958,0.100541 0.39952,0.243411 0.60061,0.367771 0.38628,0.251341 0.55033,0.592661 0.635,0.968369 0.18784,0.84667 0.26458,1.793881 0.34395,2.741081 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979081 c 0.0661,-0.84138 0.18521,-2.082271 0.33867,-2.733141 0.0847,-0.34925 0.20637,-0.661471 0.55033,-0.91018 0.24077,-0.16139 0.47625,-0.33601 0.6985,-0.460369 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820197 1.98438,0.875757 2.96598,-0.0291 -0.12171,0.849321 0.082,1.600729 0.43392,2.153711 -0.22754,0.01849 -0.75406,0.36513 -1.18004,0.693209 -0.37836,0.306921 -0.59267,0.732901 -0.71173,1.285872 z m 8.75506,-6.201831 c -0.97895,0 -1.72773,-0.941919 -1.72773,-2.148419 0,-1.008063 0.65088,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968369 1.67746,2.11401 0,1.256771 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92351 c -1.29911,0 -1.75948,-1.357309 -1.75948,-2.092862 0,-1.23031 0.75935,-2.164278 1.6801,-2.164278 0.9234,0 1.70127,0.939271 1.70127,2.164278 0.0132,1.172112 -0.85196,2.092862 -1.62189,2.092862 z"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4324-9-7-2-6-9">Mitglieder</title>
+        </path>
+      </g>
+      <text
+         id="text4923"
+         y="101.5611"
+         x="254.44647"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:6.61458254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="101.5611"
+           x="254.44647"
+           id="tspan4921"
+           sodipodi:role="line">Mitglieder</tspan></text>
+    </g>
+    <g
+       id="g5096"
+       transform="translate(1e-5,-8.1138889)">
+      <g
+         transform="translate(73.71456,144.03544)"
+         id="g5920-0">
+        <path
+           id="ext"
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 168.89565,-16.023008 c -0.94191,0 -1.72243,-0.875771 -1.72243,-2.172229 0,-1.169461 0.81756,-2.082271 1.64306,-2.082271 1.09007,0 1.73302,1.105961 1.73302,2.074338 0,1.550451 -1.03188,2.180162 -1.65365,2.180162 z m -3.50308,4.296838 c 0.0741,-0.933979 0.19315,-2.156359 0.34925,-2.783419 0.11112,-0.449789 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.328078 c 0.17726,-0.121711 0.42598,-0.298982 0.63235,-0.129651 0.80698,0.820211 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21167,0.09 0.48948,0.298979 0.73553,0.457729 0.41012,0.291042 0.5477,0.62706 0.65354,1.153581 0.15345,0.685278 0.23546,1.74625 0.29368,2.513549 z"
+           inkscape:label="#ext"
+           sodipodi:nodetypes="sssssccccccccccc">
+          <title
+             id="title4326-8-4-7-6">extenes Mitglied</title>
+        </path>
+        <path
+           id="exts"
+           onmouseout=""
+           onmouseover=""
+           style="fill:#505050;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 170.6128,-16.475448 c 0.60854,-0.965722 0.64823,-2.336271 -0.0291,-3.391951 0.48947,-0.0688 0.88635,-0.224898 1.26206,-0.600609 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.100539 0.39951,0.243419 0.60061,0.367768 0.38628,0.25136 0.55033,0.592672 0.635,0.968381 0.18784,0.846661 0.26458,1.793869 0.34396,2.74108 h -2.97393 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979091 c 0.0661,-0.84138 0.18521,-2.082271 0.33866,-2.733151 0.0847,-0.34925 0.20639,-0.661461 0.55034,-0.910162 0.24078,-0.161398 0.47625,-0.336028 0.6985,-0.460377 0.14022,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820208 1.98437,0.875768 2.96597,-0.0291 -0.1217,0.84931 0.082,1.600729 0.43391,2.153711 -0.22753,0.01849 -0.75405,0.36512 -1.18003,0.693209 -0.37835,0.306911 -0.59267,0.73289 -0.71173,1.285872 z m 8.75507,-6.201841 c -0.97896,0 -1.72773,-0.941909 -1.72773,-2.148409 0,-1.008063 0.65087,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968359 1.67746,2.11401 0,1.256771 -0.84667,2.14312 -1.65365,2.14312 z m -5.23346,1.923528 c -1.29911,0 -1.75948,-1.357317 -1.75948,-2.092859 0,-1.23031 0.75934,-2.164289 1.6801,-2.164289 0.9234,0 1.70127,0.939271 1.70127,2.164289 0.0132,1.172109 -0.85195,2.092859 -1.62189,2.092859 z"
+           inkscape:label="#exts"
+           sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+          <title
+             id="title4326-8-4-9-9-0">externe Mitglieder</title>
+        </path>
+      </g>
+      <text
+         id="text4927"
+         y="123.78612"
+         x="254.70554"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:6.61458254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="123.78612"
+           x="254.70554"
+           id="tspan4925"
+           sodipodi:role="line">externe</tspan><tspan
+           id="tspan5086"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="130.4007"
+           x="254.70554"
+           sodipodi:role="line">Mitglieder</tspan></text>
+    </g>
+    <g
+       id="g5405"
+       transform="translate(-2.6458333,2.8235214)">
+      <rect
+         x="244.81123"
+         y="-40.241272"
+         width="53.747066"
+         height="72.585716"
+         rx="8.0620584"
+         ry="9.7107906"
+         pointer-events="none"
+         id="rect3690-2-0-5"
+         style="fill:none;stroke:#000000;stroke-width:0.17874959" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="271.40121"
+         y="-33.032661"
+         id="text363-9-0-4"><tspan
+           sodipodi:role="line"
+           id="tspan361-7-1-8"
+           x="271.40121"
+           y="-33.032661"
+           style="font-size:5.64444447px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Team:</tspan><tspan
+           id="tspan220-0"
+           sodipodi:role="line"
+           x="271.40121"
+           y="-26.418077"
+           style="font-size:5.64444447px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Herbstlager</tspan></text>
+      <g
+         transform="translate(24.068673,-1.2512792)"
+         id="g5155">
+        <path
+           id="club1_team2_admin"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 230.23117,-13.873578 c -1.59544,0 -3.01625,-1.3335 -3.01625,-3.37608 0,-1.58486 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.97392,1.57164 2.97392,3.28614 0,1.98173 -1.48167,3.29935 -2.91836,3.29935 z m -6.08542,6.6436903 c 0.13759,-1.4605 0.3228,-3.4554603 0.67205,-4.4635203 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.18256 1.11918,-0.6641 1.28058,-0.74348 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03238,0.005 0.17462,-0.17991 0.4498,-0.13228 0.63236,-0.0608 0.28839,0.11112 1.20914,0.65352 1.38376,0.76464 0.508,0.33338 0.78318,0.77788 0.9869,1.61396 0.25929,1.12977 0.41275,2.5664603 0.59003,3.9449503 z"
+           inkscape:label="#club1_team2_admin">
+          <title
+             id="title4320-9-1-9">Herbstlager-Administrator</title>
+        </path>
+        <g
+           id="g5123"
+           transform="translate(0,9e-6)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 249.60396,-11.526736 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.2968284 c 0.0741,-0.933979 0.19314,-2.156359 0.34925,-2.7834184 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29106 0.54769,0.62707 0.65352,1.1535897 0.15346,0.6852797 0.23548,1.7462497 0.29369,2.5135387 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_team2_member">
+            <title
+               id="title4324-7-7-9">Herbstlager-Teilnehmer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 251.32111,-11.979176 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10055 0.39952,0.24342 0.6006,0.36778 0.38629,0.25134 0.55033,0.59266 0.635,0.96837 0.18785,0.84666 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84934 0.082,1.60074 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69319 -0.37836,0.30693 -0.59267,0.73292 -0.71173,1.28588 z m 8.75506,-6.20183 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club1_team2_members">
+            <title
+               id="title4324-7-7-2-1">Herbstlager-Teilnehmer</title>
+          </path>
+        </g>
+        <g
+           id="g5129">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 266.11784,-11.526746 c -0.9419,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10596 1.73303,2.07434 0,1.55045 -1.03188,2.18016 -1.65366,2.18016 z m -3.50308,4.2968384 c 0.0741,-0.933979 0.19315,-2.156359 0.34925,-2.7834184 0.11113,-0.44979 0.31221,-0.6985 0.54505,-0.86519 l 0.48947,-0.32808 c 0.17728,-0.12171 0.42598,-0.29898 0.63236,-0.12965 0.80698,0.82021 1.93939,0.87313 2.89189,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21168,0.09 0.48949,0.29898 0.73555,0.45773 0.4101,0.29104 0.54769,0.62706 0.65352,1.1535797 0.15345,0.6852797 0.23548,1.7462497 0.29368,2.5135467 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club1_team2_ext">
+            <title
+               id="title4326-8-1-8">externer Herbstlager-Teilnehmer</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#club1_team2_exts"
+             d="m 267.835,-11.979186 c 0.60853,-0.96572 0.64822,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96838 0.18785,0.84666 0.26458,1.79387 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.91912,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79639,0.82021 1.98437,0.87577 2.96598,-0.0291 -0.1217,0.84931 0.082,1.60073 0.43392,2.15372 -0.22755,0.0185 -0.75406,0.36511 -1.18005,0.6932 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28588 z m 8.75507,-6.20184 c -0.97895,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84666,2.14312 -1.65365,2.14312 z m -5.23345,1.92353 c -1.29912,0 -1.75949,-1.35732 -1.75949,-2.09286 0,-1.23031 0.75935,-2.16429 1.68011,-2.16429 0.92339,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85195,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club1_team2_exts">
+            <title
+               id="title4326-8-1-9-6">externe Herbstlager-Teilnehmer</title>
+          </path>
+        </g>
+      </g>
+      <g
+         transform="translate(24.034919,-0.99780626)"
+         id="g5172">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.18347242;stroke-dasharray:0.55041722, 0.55041722"
+           id="rect3974-6-7-6"
+           pointer-events="none"
+           ry="5.1715422"
+           rx="2.4750884"
+           height="34.47694"
+           width="36.809002"
+           y="-5.1947198"
+           x="229.2455" />
+        <text
+           id="text4175-8-1-9"
+           y="0.84338886"
+           x="247.73441"
+           style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan34-2-3-9"
+             style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="0.84338886"
+             x="247.73441"
+             sodipodi:role="line">Gruppierung</tspan><tspan
+             style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="7.4579725"
+             x="247.73441"
+             sodipodi:role="line"
+             id="tspan333-5">Leiter</tspan></text>
+        <g
+           id="g5141"
+           transform="translate(0.05469962)">
+          <g
+             transform="translate(0,0.1229105)"
+             id="g5111">
+            <path
+               id="club1_team2_grp1_member"
+               class="user"
+               inkscape:label="#club1_team2_grp1_member"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt);"
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 240.19346,20.599726 c -0.94192,0 -1.72244,-0.875781 -1.72244,-2.172231 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.074329 0,1.550461 -1.03188,2.180172 -1.65365,2.180172 z m -3.50308,4.296827 c 0.0741,-0.933979 0.19314,-2.156359 0.34925,-2.783419 0.11112,-0.449789 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.328077 c 0.17727,-0.121711 0.42598,-0.298982 0.63235,-0.129641 0.80698,0.8202 1.9394,0.873119 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.298968 0.73554,0.457718 0.4101,0.291052 0.54769,0.62707 0.65352,1.153591 0.15346,0.685271 0.23548,1.74625 0.29369,2.513539 z"
+               sodipodi:nodetypes="sssssccccccccccc">
+              <title
+                 id="title4324-7-3-1">Lagerleiter</title>
+            </path>
+            <path
+               id="club1_team2_grp1_members"
+               class="user"
+               inkscape:label="#club1_team2_grp1_members"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 241.91061,20.147286 c 0.60854,-0.965732 0.64822,-2.336271 -0.0291,-3.391961 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.846672 0.26458,1.793883 0.34396,2.741083 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.841372 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.661461 0.55033,-0.910172 0.24077,-0.161398 0.47625,-0.336018 0.6985,-0.460377 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820208 1.98438,0.875768 2.96598,-0.0291 -0.12171,0.849331 0.082,1.60074 0.43392,2.153722 -0.22754,0.01849 -0.75406,0.365127 -1.18004,0.693198 -0.37836,0.306929 -0.59267,0.732911 -0.71173,1.28588 z m 8.75506,-6.201831 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.923519 c -1.29911,0 -1.75948,-1.357309 -1.75948,-2.092859 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.092859 -1.62189,2.092859 z"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4324-7-4-6-1">Lagerleiter</title>
+            </path>
+          </g>
+          <g
+             id="g5117">
+            <path
+               id="club1_team2_grp1_exts"
+               class="user"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#505050;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 258.94736,20.270175 c 0.60855,-0.965719 0.64824,-2.336269 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27783,-0.0847 0.43922,0.008 0.19578,0.10054 0.39951,0.24342 0.60061,0.36777 0.38628,0.25136 0.55033,0.59267 0.635,0.96838 0.18784,0.84666 0.26458,1.793871 0.34395,2.741079 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.9191,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.661459 0.55033,-0.910159 0.24078,-0.161401 0.47625,-0.336031 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820211 1.98437,0.875771 2.96597,-0.0291 -0.12171,0.84931 0.082,1.600729 0.43391,2.153708 -0.22753,0.0185 -0.75406,0.36512 -1.18003,0.693211 -0.37835,0.306909 -0.59267,0.732891 -0.71173,1.28587 z m 8.75507,-6.20184 c -0.97897,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65087,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84668,2.14312 -1.65365,2.14312 z m -5.23347,1.923531 c -1.2991,0 -1.75947,-1.357321 -1.75947,-2.092861 0,-1.23031 0.75934,-2.16429 1.68009,-2.16429 0.92341,0 1.70128,0.93927 1.70128,2.16429 0.0132,1.17211 -0.85196,2.092861 -1.6219,2.092861 z"
+               inkscape:label="#club1_team2_grp1_exts"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4326-8-13-3">externe Lagerleiter</title>
+            </path>
+            <path
+               id="club1_team2_grp1_ext"
+               class="user"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt)"
+               style="fill:#505050;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 257.23022,20.722615 c -0.94192,0 -1.72243,-0.875768 -1.72243,-2.172229 0,-1.169461 0.81756,-2.082271 1.64306,-2.082271 1.09007,0 1.73301,1.10596 1.73301,2.074341 0,1.55045 -1.03188,2.180159 -1.65364,2.180159 z m -3.50308,4.29684 c 0.0741,-0.933979 0.19315,-2.156359 0.34925,-2.783419 0.11112,-0.449792 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.32808 c 0.17726,-0.121711 0.42598,-0.298979 0.63235,-0.129651 0.80697,0.82021 1.9394,0.873129 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21166,0.09 0.48947,0.298981 0.73553,0.457731 0.41012,0.291039 0.54769,0.62706 0.65354,1.153578 0.15345,0.685281 0.23546,1.74625 0.29368,2.51355 z"
+               sodipodi:nodetypes="sssssccccccccccc">
+              <title
+                 id="title4326-8-8-7-3">externer Lagereiter</title>
+            </path>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5872"
+       transform="translate(10.769475,3.5491774)">
+      <rect
+         x="3.7784462"
+         y="40.47802"
+         width="87.320824"
+         height="91.823059"
+         rx="13.098123"
+         ry="12.284434"
+         pointer-events="none"
+         id="rect3690-6-6"
+         style="fill:none;stroke:#000000;stroke-width:0.25625771" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="34.390213"
+         y="48.333599"
+         id="text363-8-1"><tspan
+           sodipodi:role="line"
+           id="tspan361-9-3"
+           x="34.390213"
+           y="48.333599"
+           style="font-size:5.64444447px;stroke-width:0.26458332">Verein: B</tspan></text>
+      <g
+         transform="translate(0.51814503)"
+         id="g5741">
+        <path
+           id="club2_leader"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           inkscape:connector-curvature="0"
+           d="m 47.456363,62.285658 c -1.4883,0.0176 -2.66352,-1.17705 -2.91695,-2.45677 -0.37396,-1.45358 0.2718,-3.20435 1.7936,-3.87199 1.12392,-0.50416 2.53869,-0.082 3.24762,0.83594 1.28599,1.52141 1.00799,4.06466 -0.81079,5.12947 -0.39204,0.22537 -0.84893,0.36377 -1.31348,0.36335 z m -6.08542,6.601559 c 0.16478,-1.512628 0.23644,-3.052209 0.70319,-4.518569 0.29968,-0.91039 1.31108,-1.31559 2.13011,-1.75914 0.65994,-0.33092 1.03121,0.47817 1.59795,0.64179 1.33219,0.68435 3.06923,0.36871 4.14654,-0.5859 0.61007,-0.37397 1.22878,0.33254 1.7668,0.54914 0.97514,0.45198 1.22116,1.50912 1.37176,2.41365 0.19561,1.08077 0.31253,2.17165 0.45448,3.259029 -4.05694,0 -8.11389,0 -12.17083,0 z"
+           style="fill:#7fba42;stroke:none;stroke-width:0.25378129">
+          <title
+             id="title4337-07-4">Club Leiter</title>
+        </path>
+        <path
+           id="club2_admin"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 28.122563,62.285244 c -1.59544,0 -3.01625,-1.3335 -3.01625,-3.37608 0,-1.58486 1.20121,-3.2094 2.96069,-3.2094 1.71714,0 2.97391,1.57163 2.97391,3.28613 0,1.98173 -1.48166,3.29935 -2.91835,3.29935 z m -6.08542,6.643689 c 0.13759,-1.4605 0.32279,-3.455459 0.67204,-4.463519 0.1614,-0.45773 0.39688,-0.78581 0.77523,-1.06098 0.24607,-0.18256 1.11919,-0.6641 1.28059,-0.74348 0.28045,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03237,0.005 0.17463,-0.17992 0.4498,-0.13229 0.63236,-0.0608 0.28839,0.11112 1.20914,0.653521 1.38377,0.764641 0.508,0.33338 0.78317,0.77788 0.98689,1.613959 0.2593,1.129771 0.41275,2.566459 0.59003,3.944941 z"
+           inkscape:label="#club2_admin">
+          <title
+             id="title4320-0-1">Club Administrator</title>
+        </path>
+        <g
+           id="g5553">
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 68.552553,64.163027 c 0.60854,-0.96573 0.64822,-2.336267 -0.0291,-3.391957 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59266 0.635,0.96837 0.18785,0.84667 0.26458,1.793878 0.34396,2.741078 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.349247 0.20637,-0.661457 0.55033,-0.910167 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84932 0.082,1.600727 0.43392,2.153707 -0.22754,0.0185 -0.75406,0.36513 -1.18004,0.69321 -0.37836,0.30692 -0.59267,0.7329 -0.71173,1.28587 z m 8.75506,-6.201827 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club2_members">
+            <title
+               id="title4324-76-2-4">Clubmitglieder</title>
+          </path>
+          <path
+             d="m 66.875763,64.539677 c -0.93065,0 -1.75943,-0.88424 -1.75943,-2.238677 0,-1.05092 0.70068,-2.12816 1.72702,-2.12816 1.00164,0 1.73473,1.04215 1.73473,2.17905 0,1.314077 -0.86428,2.187787 -1.70232,2.187787 z m -3.54973,4.40543 c 0.0803,-0.968449 0.18829,-2.29131 0.39201,-2.95976 0.0941,-0.30351 0.23151,-0.52106 0.45221,-0.70354 0.14353,-0.12107 0.65284,-0.44036 0.74699,-0.493 0.16359,-0.0965 0.33182,-0.14735 0.4769,0 0.86428,0.86846 2.05883,0.84214 2.93546,0.004 0.10186,-0.11938 0.26237,-0.0876 0.36886,-0.0404 0.16823,0.0738 0.70532,0.43334 0.80718,0.50704 0.29632,0.22106 0.45683,0.51581 0.57567,1.07021 0.15125,0.74915 0.24077,1.70183 0.34417,2.6159 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;fill-opacity:1;stroke:none;stroke-width:0.16455244"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club2_member">
+            <title
+               id="title4320-3-4-3-3">Clubmitglied</title>
+          </path>
+        </g>
+      </g>
+      <g
+         transform="translate(0.62088871)"
+         id="g5827">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.26857579;stroke-dasharray:0.80572739, 0.80572739"
+           id="rect3974-7-5"
+           pointer-events="none"
+           ry="5.1587768"
+           rx="5.3168726"
+           height="34.391838"
+           width="79.071426"
+           y="82.047958"
+           x="7.2822561" />
+        <text
+           id="text4175-2-0"
+           y="88.043541"
+           x="46.781796"
+           style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan34-1-3"
+             style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="88.043541"
+             x="46.781796"
+             sodipodi:role="line">Gruppierung: Nachwuchs</tspan></text>
+        <g
+           id="g5796"
+           transform="translate(-2.4107077)">
+          <g
+             transform="translate(0,-0.2106135)"
+             id="g5559">
+            <path
+               id="club2_grp1_members"
+               class="user"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 23.064603,107.00587 c 0.60854,-0.96573 0.64823,-2.33629 -0.0291,-3.39198 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.60061,0.36777 0.38629,0.25135 0.55033,0.59266 0.635,0.96838 0.18785,0.84667 0.26458,1.79388 0.34395,2.74109 h -2.97391 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.9191,1.97909 c 0.0661,-0.84137 0.18521,-2.08228 0.33866,-2.73316 0.0847,-0.34925 0.20638,-0.66146 0.55034,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31485,-0.10583 0.43127,0 0.79639,0.82021 1.98437,0.87577 2.96598,-0.0291 -0.12171,0.84932 0.082,1.60074 0.43391,2.15372 -0.22754,0.0185 -0.75406,0.36513 -1.18004,0.69321 -0.37835,0.30693 -0.59266,0.73291 -0.71173,1.28588 z m 8.75506,-6.20186 c -0.97896,0 -1.72773,-0.94193 -1.72773,-2.14844 0,-1.008057 0.65088,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968374 1.67746,2.114011 0,1.25678 -0.84667,2.14315 -1.65365,2.14315 z m -5.23346,1.92353 c -1.2991,0 -1.75948,-1.35732 -1.75948,-2.09288 0,-1.23031 0.75936,-2.1643 1.68011,-2.1643 0.92339,0 1.70127,0.93928 1.70127,2.1643 0.0132,1.17212 -0.85196,2.09288 -1.6219,2.09288 z"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4324-76-0">Gruppenmitglieder</title>
+            </path>
+            <path
+               id="club2_grp1_member"
+               class="user"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt)"
+               style="fill:#2072b8;fill-opacity:1;stroke:none;stroke-width:0.16455244"
+               inkscape:connector-curvature="0"
+               d="m 21.477112,107.5351 c -0.93064,0 -1.75943,-0.88424 -1.75943,-2.23869 0,-1.05093 0.70069,-2.12817 1.72702,-2.12817 1.00164,0 1.73474,1.04215 1.73474,2.17906 0,1.31409 -0.86428,2.1878 -1.70233,2.1878 z m -3.54972,4.40544 c 0.0803,-0.96845 0.18829,-2.29131 0.39201,-2.95976 0.0941,-0.30351 0.23151,-0.52106 0.45221,-0.70354 0.14353,-0.12107 0.65283,-0.44037 0.74698,-0.49301 0.1636,-0.0965 0.33182,-0.14735 0.4769,0 0.86428,0.86847 2.05884,0.84215 2.93547,0.004 0.10186,-0.11938 0.26237,-0.0876 0.36886,-0.0404 0.16822,0.0738 0.70531,0.43335 0.80718,0.50705 0.29632,0.22106 0.45683,0.51581 0.57567,1.07021 0.15125,0.74915 0.24076,1.70183 0.34417,2.6159 z">
+              <title
+                 id="title4320-3-4-4">Gruppenmitglied</title>
+            </path>
+          </g>
+          <g
+             transform="translate(0,-0.1139235)"
+             id="g5565">
+            <path
+               id="club2_grp1_ext"
+               class="user"
+               onmouseout="showAll(evt)"
+               onmouseover="hideOthers(evt)"
+               style="fill:#505050;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 38.762463,107.45452 c -0.94192,0 -1.72244,-0.87577 -1.72244,-2.17224 0,-1.16947 0.81756,-2.08228 1.64306,-2.08228 1.09009,0 1.73302,1.10596 1.73302,2.07435 0,1.55046 -1.03187,2.18017 -1.65364,2.18017 z m -3.50309,4.29685 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11113,-0.44979 0.31221,-0.6985 0.54505,-0.86519 l 0.48947,-0.32809 c 0.17728,-0.12171 0.42598,-0.29898 0.63236,-0.12965 0.80698,0.82022 1.93939,0.87314 2.89189,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21167,0.09 0.48948,0.29898 0.73555,0.45774 0.4101,0.29104 0.54768,0.62706 0.65352,1.15358 0.15345,0.68528 0.23548,1.74625 0.29368,2.51355 z"
+               sodipodi:nodetypes="sssssccccccccccc">
+              <title
+                 id="title4326-3-5">externes Gruppenmitglied</title>
+            </path>
+            <path
+               id="club2_grp1_exts"
+               class="user"
+               onmouseout=""
+               onmouseover=""
+               style="fill:#505050;stroke:none;stroke-width:0.26458332"
+               inkscape:connector-curvature="0"
+               d="m 40.479603,107.00208 c 0.60854,-0.96573 0.64823,-2.33628 -0.0291,-3.39197 0.48949,-0.0688 0.88636,-0.2249 1.26207,-0.60061 0.11377,-0.10319 0.27781,-0.0847 0.4392,0.008 0.1958,0.10054 0.39953,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96839 0.18785,0.84666 0.26458,1.79388 0.34396,2.74109 h -2.97392 c -0.082,-0.037 -0.1614,-0.0741 -0.27781,-0.0926 z m -8.9191,1.9791 c 0.0661,-0.84138 0.18521,-2.08228 0.33867,-2.73316 0.0847,-0.34925 0.20637,-0.66147 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31485,-0.10583 0.43127,0 0.7964,0.82021 1.98437,0.87577 2.96598,-0.0291 -0.12171,0.84931 0.082,1.60074 0.43392,2.15372 -0.22755,0.0185 -0.75407,0.36512 -1.18005,0.69321 -0.37835,0.30692 -0.59266,0.7329 -0.71173,1.28588 z m 8.75506,-6.20187 c -0.97896,0 -1.72773,-0.94192 -1.72773,-2.14843 0,-1.008057 0.65088,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968364 1.67746,2.114021 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23346,1.92354 c -1.2991,0 -1.75948,-1.35733 -1.75948,-2.09288 0,-1.23031 0.75936,-2.1643 1.68011,-2.1643 0.92339,0 1.70127,0.93928 1.70127,2.1643 0.0132,1.17212 -0.85196,2.09288 -1.6219,2.09288 z"
+               sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+              <title
+                 id="title4326-4-4-0">externe Gruppenmitglieder</title>
+            </path>
+          </g>
+          <g
+             id="g5769">
+            <rect
+               style="fill:none;stroke:#000000;stroke-width:0.14967267;stroke-dasharray:0.44901798, 0.44901798"
+               id="rect3974-6-7-4"
+               pointer-events="none"
+               ry="3.4396815"
+               rx="2.4764867"
+               height="22.931204"
+               width="36.829796"
+               y="91.391914"
+               x="47.407219" />
+            <text
+               id="text4175-8-1-4"
+               y="96.457222"
+               x="65.573723"
+               style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+               xml:space="preserve"><tspan
+                 style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+                 y="96.457222"
+                 x="65.573723"
+                 sodipodi:role="line"
+                 id="tspan333-50">Leiter</tspan></text>
+            <g
+               id="g5753"
+               transform="translate(0.05469585)">
+              <g
+                 transform="translate(0,0.12291)"
+                 id="g5571">
+                <path
+                   id="club2_grp1_grp1_member"
+                   class="user"
+                   inkscape:label="#club2_grp1_grp1_member"
+                   onmouseout="showAll(evt)"
+                   onmouseover="hideOthers(evt);"
+                   style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                   inkscape:connector-curvature="0"
+                   d="m 58.365581,107.2177 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29105 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+                   sodipodi:nodetypes="sssssccccccccccc">
+                  <title
+                     id="title4324-7-3-36">Leiter</title>
+                </path>
+                <path
+                   id="club2_grp1_grp1_members"
+                   class="user"
+                   inkscape:label="#club2_grp1_grp1_members"
+                   onmouseout=""
+                   onmouseover=""
+                   style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                   inkscape:connector-curvature="0"
+                   d="m 60.082731,106.76526 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10055 0.39952,0.24342 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.84667 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84933 0.082,1.60074 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69319 -0.37836,0.30693 -0.59267,0.73291 -0.71173,1.28588 z m 8.75506,-6.20184 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14843 0,-1.008064 0.65088,-2.108718 1.70392,-2.108718 0.91281,0 1.67746,0.968364 1.67746,2.114008 0,1.25678 -0.84667,2.14314 -1.65365,2.14314 z m -5.23345,1.92353 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09287 0,-1.23031 0.75935,-2.1643 1.6801,-2.1643 0.9234,0 1.70127,0.93928 1.70127,2.1643 0.0132,1.17212 -0.85196,2.09287 -1.62189,2.09287 z"
+                   sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+                  <title
+                     id="title4324-7-4-6-9">Leiter</title>
+                </path>
+              </g>
+              <g
+                 id="g5577">
+                <path
+                   id="club2_grp1_grp1_exts"
+                   class="user"
+                   onmouseout=""
+                   onmouseover=""
+                   style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                   inkscape:connector-curvature="0"
+                   d="m 77.119481,106.88815 c 0.60855,-0.96572 0.64824,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88636,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27783,-0.0847 0.43922,0.008 0.19578,0.10054 0.39951,0.24342 0.60061,0.36777 0.38628,0.25136 0.55033,0.59267 0.635,0.96838 0.18784,0.84666 0.26458,1.79387 0.34395,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.9191,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79638,0.82021 1.98437,0.87577 2.96597,-0.0291 -0.12171,0.84931 0.082,1.60073 0.43391,2.15371 -0.22753,0.0185 -0.75406,0.36512 -1.18003,0.69321 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28587 z m 8.75507,-6.20184 c -0.97897,0 -1.72773,-0.94192 -1.72773,-2.14843 0,-1.008057 0.65087,-2.108718 1.70392,-2.108718 0.91281,0 1.67746,0.968354 1.67746,2.114008 0,1.25678 -0.84668,2.14314 -1.65365,2.14314 z m -5.23347,1.92353 c -1.2991,0 -1.75947,-1.35732 -1.75947,-2.09287 0,-1.23031 0.75934,-2.1643 1.68009,-2.1643 0.92341,0 1.70128,0.93928 1.70128,2.1643 0.0132,1.17212 -0.85196,2.09287 -1.6219,2.09287 z"
+                   inkscape:label="#club2_grp1_grp1_exts"
+                   sodipodi:nodetypes="ccccccccccccccccccccsssssssscs">
+                  <title
+                     id="title4326-8-13-6">externe Leiter</title>
+                </path>
+                <path
+                   id="club2_grp1_grp1_ext"
+                   class="user"
+                   onmouseout="showAll(evt)"
+                   onmouseover="hideOthers(evt)"
+                   style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                   inkscape:connector-curvature="0"
+                   d="m 75.402341,107.34059 c -0.94192,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09007,0 1.73301,1.10596 1.73301,2.07434 0,1.55045 -1.03188,2.18016 -1.65364,2.18016 z m -3.50308,4.29684 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.32808 c 0.17726,-0.12171 0.42598,-0.29898 0.63235,-0.12965 0.80697,0.82021 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21166,0.09 0.48947,0.29898 0.73553,0.45773 0.41012,0.29104 0.54769,0.62706 0.65354,1.15358 0.15345,0.68528 0.23546,1.74625 0.29368,2.51355 z"
+                   inkscape:label="#club2_grp1_grp1_ext"
+                   sodipodi:nodetypes="sssssccccccccccc">
+                  <title
+                     id="title4326-8-8-7-9">externer Leiter</title>
+                </path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6034"
+       transform="translate(-8.3951477,3.175)">
+      <rect
+         x="120.62897"
+         y="99.216347"
+         width="59.880413"
+         height="34.89056"
+         rx="8.9820614"
+         ry="4.6677914"
+         pointer-events="none"
+         id="rect3690-2-0-5-6"
+         style="fill:none;stroke:#000000;stroke-width:0.13080926" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="150.70697"
+         y="106.4497"
+         id="text363-9-0-4-5"><tspan
+           id="tspan220-0-8"
+           sodipodi:role="line"
+           x="150.70697"
+           y="106.4497"
+           style="font-size:5.64444447px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Team: Vereinsreise</tspan></text>
+      <g
+         transform="translate(24.84738,0.37417735)"
+         id="g5627">
+        <path
+           id="club2_team2_admin"
+           class="user"
+           onmouseout="showAll(evt)"
+           onmouseover="hideOthers(evt)"
+           style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+           inkscape:connector-curvature="0"
+           d="m 108.33672,119.62908 c -1.59544,0 -3.01625,-1.3335 -3.01625,-3.37607 0,-1.58486 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.97392,1.57164 2.97392,3.28613 0,1.98173 -1.48167,3.29935 -2.91836,3.29935 z m -6.08542,6.64369 c 0.13759,-1.4605 0.3228,-3.45546 0.67205,-4.46352 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.18256 1.11918,-0.6641 1.28058,-0.74348 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.30969 3.52954,1.27 5.03238,0.005 0.17462,-0.17991 0.4498,-0.13228 0.63236,-0.0608 0.28839,0.11112 1.20914,0.65352 1.38376,0.76464 0.508,0.33338 0.78318,0.77788 0.9869,1.61396 0.25929,1.12977 0.41275,2.56646 0.59003,3.94496 z"
+           inkscape:label="#club2_team2_admin">
+          <title
+             id="title4320-9-1-9-0">Vereinsreise-Administrator</title>
+        </path>
+        <g
+           id="g5607"
+           transform="translate(-0.8711839,-0.37434)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 127.70951,122.35028 c -0.94192,0 -1.72244,-0.87578 -1.72244,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29682 c 0.0741,-0.93397 0.19314,-2.15635 0.34925,-2.78341 0.11112,-0.44979 0.3122,-0.6985 0.54504,-0.86519 l 0.48948,-0.32808 c 0.17727,-0.12171 0.42598,-0.29898 0.63235,-0.12964 0.80698,0.8202 1.9394,0.87312 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29106 0.54769,0.62707 0.65352,1.15359 0.15346,0.68528 0.23548,1.74625 0.29369,2.51353 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt);"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club2_team2_member">
+            <title
+               id="title4324-7-7-9-6">Teilnehmer Vereinreise</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             d="m 129.42666,121.89784 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10055 0.39952,0.24342 0.6006,0.36778 0.38629,0.25134 0.55033,0.59266 0.635,0.96837 0.18785,0.84666 0.26458,1.79388 0.34396,2.74108 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.97908 c 0.0661,-0.84137 0.18521,-2.08227 0.33867,-2.73314 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84934 0.082,1.60074 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.36512 -1.18004,0.69319 -0.37836,0.30693 -0.59267,0.73292 -0.71173,1.28588 z m 8.75506,-6.20183 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club2_team2_members">
+            <title
+               id="title4324-7-7-2-1-7">Teilnehmer Vereinsreise</title>
+          </path>
+        </g>
+        <g
+           id="g5613"
+           transform="translate(0,-0.37435)">
+          <path
+             sodipodi:nodetypes="sssssccccccccccc"
+             d="m 144.22339,122.35027 c -0.9419,0 -1.72243,-0.87577 -1.72243,-2.17223 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10596 1.73303,2.07434 0,1.55045 -1.03188,2.18016 -1.65366,2.18016 z m -3.50308,4.29683 c 0.0741,-0.93397 0.19315,-2.15635 0.34925,-2.78341 0.11113,-0.44979 0.31221,-0.6985 0.54505,-0.86519 l 0.48947,-0.32808 c 0.17728,-0.12171 0.42598,-0.29898 0.63236,-0.12965 0.80698,0.82021 1.93939,0.87313 2.89188,0.0132 0.0847,-0.0688 0.24609,-0.0767 0.33073,-0.0317 0.21169,0.09 0.4895,0.29898 0.73557,0.45773 0.4101,0.29104 0.54768,0.62706 0.65352,1.15358 0.15343,0.68528 0.23548,1.74625 0.29366,2.51354 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club2_team2_ext">
+            <title
+               id="title4326-8-1-8-4">externer Teilnehmer Vereinsreise</title>
+          </path>
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+             inkscape:label="#club2_team2_exts"
+             d="m 145.94055,121.89783 c 0.60852,-0.96572 0.64821,-2.33627 -0.0291,-3.39195 0.48948,-0.0688 0.88635,-0.2249 1.26206,-0.60061 0.11377,-0.10319 0.27782,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24342 0.60061,0.36777 0.38629,0.25136 0.55033,0.59267 0.635,0.96838 0.18785,0.84666 0.26458,1.79387 0.34395,2.74108 h -2.97391 c -0.082,-0.037 -0.1614,-0.0741 -0.27782,-0.0926 z m -8.91912,1.97909 c 0.0661,-0.84138 0.18521,-2.08227 0.33867,-2.73315 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79639,0.82021 1.98437,0.87577 2.96598,-0.0291 -0.1217,0.84931 0.082,1.60073 0.43392,2.15372 -0.22755,0.0185 -0.75406,0.36511 -1.18005,0.6932 -0.37835,0.30691 -0.59267,0.73289 -0.71173,1.28588 z m 8.75506,-6.20184 c -0.97894,0 -1.72772,-0.94191 -1.72772,-2.14841 0,-1.00806 0.65087,-2.10872 1.70393,-2.10872 0.91279,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84667,2.14312 -1.65367,2.14312 z m -5.23344,1.92353 c -1.29912,0 -1.75949,-1.35732 -1.75949,-2.09286 0,-1.23031 0.75935,-2.16429 1.68011,-2.16429 0.92339,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85195,2.09286 -1.62189,2.09286 z"
+             inkscape:connector-curvature="0"
+             style="fill:#505050;stroke:none;stroke-width:0.26458332"
+             onmouseover=""
+             onmouseout=""
+             class="user"
+             id="club2_team2_exts">
+            <title
+               id="title4326-8-1-9-6-7">externe Teilnehmer Vereinsreise</title>
+          </path>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5957"
+       transform="translate(-9.4553553,3.175)">
+      <rect
+         x="121.73177"
+         y="40.57172"
+         width="107.57019"
+         height="52.961063"
+         rx="16.135532"
+         ry="7.085331"
+         pointer-events="none"
+         id="rect3690-2-6-5"
+         style="fill:none;stroke:#000000;stroke-width:0.21600634" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="141.17891"
+         y="48.443195"
+         id="text363-9-1-3"><tspan
+           sodipodi:role="line"
+           id="tspan361-7-9-8"
+           x="141.17891"
+           y="48.443195"
+           style="font-size:5.64444447px;stroke-width:0.26458332">Team: OK Nationaler OL</tspan></text>
+      <g
+         transform="translate(24.49241,0.37417735)"
+         id="g5730">
+        <g
+           id="g5657"
+           transform="translate(0,3.342843)">
+          <path
+             style="fill:#7fba42;stroke:none;stroke-width:0.25156525"
+             d="m 107.76208,76.163069 c -1.4883,0.0173 -2.66353,-1.1566 -2.91695,-2.41407 -0.37396,-1.42831 0.27179,-3.14864 1.7936,-3.80467 1.12392,-0.49539 2.53869,-0.0806 3.24762,0.8214 1.28599,1.49497 1.008,3.99399 -0.81078,5.0403 -0.39205,0.22145 -0.84894,0.35744 -1.31349,0.35704 z m -6.08542,6.486754 c 0.16479,-1.486318 0.23644,-2.999139 0.70318,-4.439999 0.29968,-0.894565 1.3111,-1.292705 2.13011,-1.728545 0.65996,-0.32518 1.03122,0.46985 1.59796,0.63062 1.33219,0.672455 3.06923,0.362295 4.14654,-0.5757 0.61007,-0.36748 1.22878,0.32675 1.7668,0.53959 0.97514,0.444105 1.22116,1.482865 1.37176,2.371675 0.19561,1.06197 0.31253,2.13389 0.45448,3.202359 -4.05694,0 -8.11388,0 -12.17083,0 z"
+             inkscape:connector-curvature="0"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club2_team1_leader">
+            <title
+               id="title4337-0-4-3">OK-Leiter</title>
+          </path>
+          <path
+             d="m 107.76208,59.337378 c -1.59544,0 -3.01625,-1.33351 -3.01625,-3.37609 0,-1.58487 1.20121,-3.20941 2.96069,-3.20941 1.71714,0 2.9739,1.57163 2.9739,3.28614 0,1.98173 -1.48165,3.29936 -2.91834,3.29936 z m -6.08542,6.643682 c 0.13759,-1.460498 0.3228,-3.455457 0.67205,-4.463517 0.16139,-0.45773 0.39687,-0.78581 0.77523,-1.06098 0.24606,-0.182555 1.11918,-0.664095 1.28058,-0.743475 0.28046,-0.14552 0.56885,-0.22225 0.81756,0 1.48167,1.309685 3.52954,1.269995 5.03238,0.005 0.17462,-0.17992 0.44978,-0.13229 0.63234,-0.0608 0.28841,0.11112 1.20916,0.65352 1.38378,0.76464 0.508,0.333376 0.78316,0.777876 0.9869,1.613956 0.25929,1.12977 0.41275,2.566458 0.59001,3.944938 z"
+             inkscape:connector-curvature="0"
+             style="fill:#da4026;stroke:none;stroke-width:0.26458332"
+             onmouseover="hideOthers(evt)"
+             onmouseout="showAll(evt)"
+             class="user"
+             id="club2_team1_admin">
+            <title
+               id="title4320-9-15-7">OK Administrator</title>
+          </path>
+        </g>
+        <g
+           id="g5674">
+          <rect
+             x="120.84651"
+             y="53.80685"
+             width="38.128662"
+             height="34.473686"
+             rx="2.5638244"
+             ry="5.1710548"
+             pointer-events="none"
+             id="rect3974-6-7-0-0"
+             style="fill:none;stroke:#000000;stroke-width:0.18672355;stroke-dasharray:0.56017062, 0.56017062" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="139.99525"
+             y="59.843342"
+             id="text4175-8-1-2-5"><tspan
+               sodipodi:role="line"
+               x="139.99525"
+               y="59.843342"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               id="tspan34-2-3-1-5">Gruppierung</tspan><tspan
+               id="tspan333-3-6"
+               sodipodi:role="line"
+               x="139.99525"
+               y="66.457924"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Kern-OK</tspan></text>
+          <g
+             transform="translate(0.7163479)"
+             id="g5651">
+            <g
+               id="g5583">
+              <path
+                 sodipodi:nodetypes="sssssccccccccccc"
+                 d="m 131.79265,79.59968 c -0.94192,0 -1.72244,-0.875779 -1.72244,-2.17223 0,-1.169461 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.550461 -1.03188,2.18017 -1.65365,2.18017 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15635 0.34925,-2.78342 0.11112,-0.44978 0.3122,-0.6985 0.54504,-0.86518 l 0.48948,-0.32808 c 0.17727,-0.12172 0.42598,-0.29899 0.63235,-0.12965 0.80698,0.82021 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29106 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                 onmouseover="hideOthers(evt);"
+                 onmouseout="showAll(evt)"
+                 inkscape:label="#club2_team1_grp1_member"
+                 class="user"
+                 id="club2_team1_grp1_member">
+                <title
+                   id="title4324-7-3-3-39">Mitglied Kern-OK</title>
+              </path>
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 d="m 133.5098,79.147242 c 0.60854,-0.965732 0.64822,-2.336271 -0.0291,-3.391961 0.48947,-0.0688 0.88635,-0.224901 1.26206,-0.600601 0.11377,-0.103191 0.27781,-0.0847 0.43921,0.008 0.19579,0.100539 0.39952,0.243409 0.6006,0.367771 0.38629,0.251349 0.55033,0.592669 0.635,0.96837 0.18785,0.846671 0.26458,1.793882 0.34396,2.741083 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979088 c 0.0661,-0.84138 0.18521,-2.082278 0.33867,-2.733148 0.0847,-0.34925 0.20637,-0.661461 0.55033,-0.910172 0.24077,-0.161398 0.47625,-0.336018 0.6985,-0.460377 0.14023,-0.0794 0.31486,-0.105831 0.43127,0 0.7964,0.820208 1.98438,0.875768 2.96598,-0.0291 -0.12171,0.849331 0.082,1.600742 0.43392,2.153724 -0.22754,0.01849 -0.75406,0.365123 -1.18004,0.693193 -0.37836,0.30694 -0.59267,0.73292 -0.71173,1.28589 z m 8.75506,-6.201841 c -0.97895,0 -1.72773,-0.941919 -1.72773,-2.148419 0,-1.00806 0.65088,-2.108721 1.70392,-2.108721 0.91281,0 1.67746,0.968372 1.67746,2.11401 0,1.256771 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.923521 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.092859 0,-1.23031 0.75935,-2.164292 1.6801,-2.164292 0.9234,0 1.70127,0.939271 1.70127,2.164292 0.0132,1.172109 -0.85196,2.092859 -1.62189,2.092859 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 inkscape:label="#club2_team1_grp1_members"
+                 class="user"
+                 id="club2_team1_grp1_members">
+                <title
+                   id="title4324-7-4-6-3-53">externe OK-Mitglieder</title>
+              </path>
+            </g>
+            <g
+               id="g5589"
+               transform="translate(0,-0.1229105)">
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 inkscape:label="#club2_team1_grp1_exts"
+                 d="m 150.54656,79.27013 c 0.60855,-0.965718 0.64824,-2.336268 -0.0291,-3.39195 0.48947,-0.0688 0.88635,-0.224901 1.26206,-0.600609 0.11378,-0.103191 0.27783,-0.0847 0.43922,0.008 0.19578,0.100542 0.3995,0.243422 0.60061,0.367771 0.38627,0.251359 0.55032,0.592669 0.635,0.96838 0.18783,0.846661 0.26457,1.793872 0.34395,2.741078 h -2.97393 c -0.082,-0.037 -0.16138,-0.0741 -0.27781,-0.0926 z m -8.9191,1.9791 c 0.0661,-0.84139 0.18521,-2.082279 0.33867,-2.733159 0.0847,-0.34925 0.20638,-0.661459 0.55033,-0.910159 0.24078,-0.161401 0.47625,-0.336032 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.105831 0.43128,0 0.79638,0.820211 1.98437,0.87577 2.96597,-0.0291 -0.12171,0.849313 0.082,1.600729 0.43391,2.153708 -0.22753,0.0185 -0.75406,0.36512 -1.18003,0.69321 -0.37835,0.30691 -0.59267,0.7329 -0.71173,1.28587 z m 8.75507,-6.20185 c -0.97897,0 -1.72773,-0.941911 -1.72773,-2.148411 0,-1.00806 0.65087,-2.108719 1.70392,-2.108719 0.91281,0 1.67746,0.96836 1.67746,2.114011 0,1.256768 -0.84668,2.143119 -1.65365,2.143119 z m -5.23347,1.923532 c -1.2991,0 -1.75947,-1.357321 -1.75947,-2.092862 0,-1.23031 0.75934,-2.164289 1.68009,-2.164289 0.92341,0 1.70128,0.939268 1.70128,2.164289 0.0132,1.172109 -0.85196,2.092862 -1.6219,2.092862 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 class="user"
+                 id="club2_team1_grp1_exts">
+                <title
+                   id="title4326-8-13-2-5">externe Mitglieder Kern-OK</title>
+              </path>
+              <path
+                 sodipodi:nodetypes="sssssccccccccccc"
+                 inkscape:label="#club2_team1_grp1_ext"
+                 d="m 148.82942,79.72257 c -0.94192,0 -1.72243,-0.875768 -1.72243,-2.172229 0,-1.169461 0.81756,-2.08227 1.64306,-2.08227 1.09007,0 1.73301,1.105958 1.73301,2.074341 0,1.55045 -1.03188,2.180158 -1.65364,2.180158 z m -3.50308,4.29685 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.32808 c 0.17726,-0.12172 0.42598,-0.29899 0.63235,-0.12966 0.80697,0.82022 1.9394,0.87314 2.8919,0.0132 0.0847,-0.0688 0.24607,-0.0767 0.33073,-0.0317 0.21166,0.09 0.48947,0.29898 0.73553,0.45773 0.41012,0.29105 0.54769,0.62706 0.65354,1.15359 0.15345,0.68527 0.23546,1.74625 0.29368,2.51354 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover="hideOthers(evt)"
+                 onmouseout="showAll(evt)"
+                 class="user"
+                 id="club2_team1_grp1_ext">
+                <title
+                   id="title4326-8-8-7-2-3">externes Mitglied Kern-OK</title>
+              </path>
+            </g>
+          </g>
+        </g>
+        <g
+           id="g5691">
+          <rect
+             x="162.15022"
+             y="53.80685"
+             width="38.128666"
+             height="34.473686"
+             rx="2.5638244"
+             ry="5.1710548"
+             pointer-events="none"
+             id="rect3974-6-7-0-0-8"
+             style="fill:none;stroke:#000000;stroke-width:0.18672355;stroke-dasharray:0.56017063, 0.56017063" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:6.61458349px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="181.29897"
+             y="59.843349"
+             id="text4175-8-1-2-5-5"><tspan
+               sodipodi:role="line"
+               x="181.29897"
+               y="59.843349"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               id="tspan34-2-3-1-5-8">Gruppierung</tspan><tspan
+               id="tspan333-3-6-6"
+               sodipodi:role="line"
+               x="181.29897"
+               y="66.457932"
+               style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Ressort A</tspan></text>
+          <g
+             transform="translate(0.71637074)"
+             id="g5639">
+            <g
+               id="g5595"
+               transform="translate(0,1.5000001e-6)">
+              <path
+                 sodipodi:nodetypes="sssssccccccccccc"
+                 d="m 173.09634,79.59968 c -0.94192,0 -1.72244,-0.875784 -1.72244,-2.172234 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09009,0 1.73303,1.10595 1.73303,2.07433 0,1.55046 -1.03188,2.180174 -1.65365,2.180174 z m -3.50308,4.29683 c 0.0741,-0.93398 0.19314,-2.15635 0.34925,-2.78342 0.11112,-0.44978 0.3122,-0.6985 0.54504,-0.86518 l 0.48948,-0.32808 c 0.17727,-0.12172 0.42598,-0.29899 0.63235,-0.12965 0.80698,0.82021 1.9394,0.87313 2.8919,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33073,-0.0318 0.21166,0.09 0.48948,0.29897 0.73554,0.45772 0.4101,0.29106 0.54769,0.62707 0.65352,1.15359 0.15346,0.68527 0.23548,1.74625 0.29369,2.51354 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                 onmouseover="hideOthers(evt);"
+                 onmouseout="showAll(evt)"
+                 inkscape:label="#club2_team1_grp2_member"
+                 class="user"
+                 id="club2_team1_grp2_member">
+                <title
+                   id="title4324-7-3-3-39-4">Helfer Ressort A</title>
+              </path>
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 d="m 174.81349,79.147236 c 0.60854,-0.96573 0.64822,-2.33627 -0.0291,-3.39196 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.6006 0.11377,-0.10319 0.27781,-0.0847 0.43921,0.008 0.19579,0.10054 0.39952,0.24341 0.6006,0.36777 0.38629,0.25135 0.55033,0.59267 0.635,0.96837 0.18785,0.84667 0.26458,1.79388 0.34396,2.74109 h -2.97392 c -0.082,-0.037 -0.16139,-0.0741 -0.27781,-0.0926 z m -8.91911,1.979094 c 0.0661,-0.84138 0.18521,-2.082284 0.33867,-2.733154 0.0847,-0.34925 0.20637,-0.66146 0.55033,-0.91017 0.24077,-0.1614 0.47625,-0.33602 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43127,0 0.7964,0.82021 1.98438,0.87577 2.96598,-0.0291 -0.12171,0.84933 0.082,1.60075 0.43392,2.15373 -0.22754,0.0185 -0.75406,0.365124 -1.18004,0.693204 -0.37836,0.30693 -0.59267,0.73291 -0.71173,1.28588 z m 8.75506,-6.201844 c -0.97895,0 -1.72773,-0.94192 -1.72773,-2.14842 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96837 1.67746,2.11401 0,1.25677 -0.84667,2.14313 -1.65365,2.14313 z m -5.23345,1.92352 c -1.29911,0 -1.75948,-1.35731 -1.75948,-2.09286 0,-1.23031 0.75935,-2.16429 1.6801,-2.16429 0.9234,0 1.70127,0.93927 1.70127,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.62189,2.09286 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#2072b8;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 inkscape:label="#club2_team1_grp2_members"
+                 class="user"
+                 id="club2_team1_grp2_members">
+                <title
+                   id="title4324-7-4-6-3-53-3">Helfer Ressort A</title>
+              </path>
+            </g>
+            <g
+               id="g5601"
+               transform="translate(0,-0.1229085)">
+              <path
+                 sodipodi:nodetypes="ccccccccccccccccccccsssssssscs"
+                 inkscape:label="#club2_team1_grp2_exts"
+                 d="m 191.85025,79.270126 c 0.60856,-0.96572 0.64825,-2.33627 -0.0291,-3.39195 0.48947,-0.0688 0.88635,-0.2249 1.26206,-0.60061 0.11378,-0.10319 0.27783,-0.0847 0.43922,0.008 0.19578,0.10055 0.3995,0.24343 0.60061,0.36777 0.38627,0.25136 0.55032,0.59267 0.635,0.96838 0.18783,0.84666 0.26457,1.79388 0.34395,2.741084 h -2.97393 c -0.082,-0.037 -0.16138,-0.0741 -0.27781,-0.0926 z m -8.9191,1.979104 c 0.0661,-0.84139 0.18521,-2.082284 0.33867,-2.733164 0.0847,-0.34925 0.20638,-0.66146 0.55033,-0.91016 0.24078,-0.1614 0.47625,-0.33603 0.6985,-0.46038 0.14023,-0.0794 0.31486,-0.10583 0.43128,0 0.79638,0.82021 1.98437,0.87577 2.96597,-0.0291 -0.12171,0.84932 0.082,1.60073 0.43391,2.15371 -0.22753,0.0185 -0.75406,0.365124 -1.18003,0.693214 -0.37835,0.30691 -0.59267,0.7329 -0.71173,1.28587 z m 8.75507,-6.201854 c -0.97897,0 -1.72773,-0.94191 -1.72773,-2.14841 0,-1.00806 0.65088,-2.10872 1.70392,-2.10872 0.91281,0 1.67746,0.96836 1.67746,2.11401 0,1.25677 -0.84668,2.14312 -1.65365,2.14312 z m -5.23347,1.92353 c -1.2991,0 -1.75947,-1.35732 -1.75947,-2.09286 0,-1.23031 0.75934,-2.16429 1.68009,-2.16429 0.92341,0 1.70128,0.93927 1.70128,2.16429 0.0132,1.17211 -0.85196,2.09286 -1.6219,2.09286 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover=""
+                 onmouseout=""
+                 class="user"
+                 id="club2_team1_grp2_exts">
+                <title
+                   id="title4326-8-13-2-5-1">externe Helfer Ressort A</title>
+              </path>
+              <path
+                 sodipodi:nodetypes="sssssccccccccccc"
+                 inkscape:label="#club2_team1_grp2_ext"
+                 d="m 190.13312,79.72257 c -0.94193,0 -1.72244,-0.875774 -1.72244,-2.172234 0,-1.16946 0.81756,-2.08227 1.64306,-2.08227 1.09007,0 1.73301,1.10596 1.73301,2.07434 0,1.55045 -1.03187,2.180164 -1.65363,2.180164 z m -3.50309,4.29685 c 0.0741,-0.93398 0.19315,-2.15636 0.34925,-2.78342 0.11112,-0.44979 0.31221,-0.6985 0.54503,-0.86519 l 0.48949,-0.32808 c 0.17726,-0.12172 0.42598,-0.29899 0.63235,-0.12966 0.80698,0.82022 1.93941,0.87314 2.89191,0.0132 0.0847,-0.0688 0.24606,-0.0767 0.33072,-0.0317 0.21166,0.09 0.48947,0.29898 0.73553,0.45773 0.41012,0.29105 0.54769,0.62706 0.65355,1.15359 0.15345,0.68527 0.23545,1.74625 0.29367,2.51354 z"
+                 inkscape:connector-curvature="0"
+                 style="fill:#505050;stroke:none;stroke-width:0.26458332"
+                 onmouseover="hideOthers(evt)"
+                 onmouseout="showAll(evt)"
+                 class="user"
+                 id="club2_team1_grp2_ext">
+                <title
+                   id="title4326-8-8-7-2-3-4">externer Helfer Ressort A</title>
+              </path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 91.016666,-83.490852 H 107.95 v 0"
+       id="path5049"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="m 195.44665,-83.490852 h 16.93333 v 0"
+       id="path5049-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:6.61458254px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="176.86115"
+       y="-4.0880413"
+       id="text5034"><tspan
+         sodipodi:role="line"
+         id="tspan5032"
+         x="176.86115"
+         y="2.2601624"
+         style="stroke-width:0.26458332" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.20204346px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-2)"
+       d="m 102.00559,-1.1248923 h 9.87433 v 0"
+       id="path5049-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.19742452px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-7)"
+       d="m 232.49162,-1.1248923 h 9.42801 v 0"
+       id="path5049-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.20204346px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-8)"
+       d="m 101.75839,70.227253 h 9.87433 v 0"
+       id="path5049-3-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.20204346px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-9)"
+       d="m 102.11116,119.83664 h 9.87433 v 0"
+       id="path5049-3-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
