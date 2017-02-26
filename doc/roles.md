@@ -11,7 +11,7 @@ Vereinen, einigen Teams und Gruppierungen. Das Beispiel ist so gewählt, dass
 für jede Rolle nachvollziehbar ist, welche Daten geschrieben und/oder gelesen
 werden können.
 
-![Gruppen und Rollen](groups_roles.png)
+[![Gruppen und Rollen](groups_roles.png)](https://adressen.aolv.ch/assets/groups_roles.svg)
 
 Klick auf die obige Grafik öffnet die interaktive Variante, hier kannst du mit
 der Maus prüfen, welcher User welche anderen User ändern / sehen kann.
@@ -34,7 +34,7 @@ explizit erwähnt.
 
 ### Leiter
 * Berechtigungen: Lesezugriff auf alle Administratoren, Leiter und Mitglieder
-  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
+  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder dder
   eigenen Gruppe inklusive Gruppierungen.
 * Verfügbarkeit: in allen Gruppenarten ausser "Gruppierung".
 
