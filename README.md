@@ -42,11 +42,12 @@ Rollen definieren die Berechtigungen von Personen sowie deren Sichtbarkeit
 aus darüber liegenden Ebenen.
 
 Es sind die folgenden Rollen definiert:
-* *Administrator:* Vollzugriff auf die eigene Gruppe inklusive Gruppierungen.
-* *Leiter:* Lesezugriff auf die eigene Gruppe inklusive Gruppierungen.
+* *Administrator:* Vollzugriff auf die eigene Gruppe und alle darunter liegenden Gruppen.
+* *Leiter:* Lesezugriff auf die eigene Gruppe und alle darunter liegenden Gruppen.
+* *Lokaler Administrator:* Vollzugriff auf die eigene Gruppe mit ihren Gruppierungen.
 * *Mitglied:* Lesezugriff auf die eigene Gruppe.
-* *externes Mitglied:* Lesezugriff auf die eigene Gruppe, nicht sichtbar für
-  Mitglieder, Leiter und Administratoren der darüber liegenden Ebenen.
+* *externes Mitglied:* Lesezugriff auf die eigene Gruppe, nur sichtbar für Mitglieder
+der eigenen Gruppe und Administratoren und Leiter des direkt darüber liegenden Vereins oder Teams.
 
 [=> Detaillierte Beschreibung](doc/roles.md)
     
