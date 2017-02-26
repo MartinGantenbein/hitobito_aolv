@@ -13,8 +13,11 @@ class Group::Root < ::Group
   # has to be named Leader because there is a
   # hard coded reference to Group::Root::Leader from the core...
   class Leader < Role::Leader
-    self.permissions = [:layer_and_below_read]
+  end
+  
+  class Administrator < Role::Administrator
+    self.permissions = [:layer_full]
   end
 
-  roles Leader
+  roles Leader, Administrator
 end

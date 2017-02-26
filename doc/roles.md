@@ -1,110 +1,54 @@
 # Rollen
-Personen werden mittels _Rollen_ einer _Gruppe_ (Verband, Verein, Team und Gruppierung)
-zugeordnet. Die gewählte _Rolle_ definiert die Berechtigungen des entsprechenden
-Users und kann die Sichtbarkeit der Person für User des Verbands, Vereins oder von darüber liegenden Teams einschränken.
-Unten werden sämtliche definierten Rollen im Detail beschrieben.
+Personen werden mittels _Rollen_ einer _Gruppe_ (**Verband**, **Verein**,
+**Team** oder **Gruppierung**) zugeordnet. Die gewählte _Rolle_ definiert die
+Berechtigungen des entsprechenden Users und kann die Sichtbarkeit der Person für
+User des Verbands, Vereins oder von darüber liegenden Teams einschränken. Unten
+werden sämtliche definierten Rollen im Detail beschrieben.
 
 ## Übersicht
-_Achtung: Die folgenden Beispiele und Grafiken müssen überarbeitet werden,
-sie zeigen nicht den aktuellen Stand. Es fehlt die neue Gruppenart "Gruppierung"
-und neu sind die Berechtigungen von Administratoren und Leitern stärker
-eingeschränkt: sie können nur noch Gruppierungen in ihrem Verein bzw. Team
-sehen bzw. bearbeiten, nicht aber Teams unterhalb ihres Vereins bzw. Team_
-
-Für die folgende Beschreibung der Rollen verwenden wir eine Struktur mit zwei 
+Für die folgende Beschreibung der Rollen verwenden wir eine Struktur mit zwei
 Vereinen, einigen Teams und Gruppierungen. Das Beispiel ist so gewählt, dass
 für jede Rolle nachvollziehbar ist, welche Daten geschrieben und/oder gelesen
 werden können.
 
 ![Gruppen und Rollen](groups_roles.png)
 
-## Rollen der Gruppenart Verband
-### Leiter
+Klick auf die obige Grafik öffnet die interaktive Variante, hier kannst du mit
+der Maus prüfen, welcher User welche anderen User ändern / sehen kann.
 
-![Verbandsleiter](federation_leader.png)
+## verfügbare Rollen
+Jeder User hat Vollzugriff auf seine eigenen Daten, dies wird unten nicht mehr
+explizit erwähnt.
 
-* Berechtigungen: Lesezugriff auf alle Personen, mit Ausnahme von Personen mit
-  der Rolle _externes Mitglied_ in der Ebene Verein. Vollzugriff auf die eigenen
-  Daten. Wird für das Erstellen der Adressetiketten für den Versand der
-  AOLV-News verwendet.
-* Sichtbarkeit: Sichtbar für alle Leiter des Verbands.
-
-## Rollen der Gruppenart Verein
 ### Administrator
+* Berechtigungen: Vollzugriff auf alle Administratoren, Leiter und Mitglieder
+  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
+  eigenen Gruppe inklusive Gruppierungen. Kann Teams und Gruppierungen sowie
+  Mailing-Listen (Abos) erstellen.
+* Verfügbarkeit: in den Gruppenarten "Verein" und "Team".
 
-![Vereinsadministrator](club_admin.png)
-
-* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Verein oder in
-  einem Team des Vereins zugeordnet ist. Wird für die Mitgliederverwaltung
-  verwendet (Eintritte und Austritte, Adressänderungen, ...), kann
-  Mailing-Listen erstellen (Empfängerkreis: Verein mit allen Teams).
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+### Lokaler Administrator
+* Berechtigungen: Vollzugriff auf Personen der eigenen Gruppe inklusive 
+  Gruppierungen. Kann Gruppierungen sowie Mailing-Listen (Abos) erstellen.
+* Verfügbarkeit: nur in der Gruppe "Verband".
 
 ### Leiter
-
-![Vereinsleiter](club_leader.png)
-
-* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Verein oder in
-  einem Team des Vereins zugeordnet ist. Vollzugriff auf  die eigenen Daten.
-  Wird z.B. für das Erstellen von Adressetiketten verwendet.
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
+* Berechtigungen: Lesezugriff auf alle Administratoren, Leiter und Mitglieder
+  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
+  eigenen Gruppe inklusive Gruppierungen.
+* Verfügbarkeit: in allen Gruppenarten ausser "Gruppierung".
 
 ### Mitglied
-
-![Vereinsmitglied](club_member.png)
-
 * Berechtigungen
   * Ohne Login: kein Zugriff.
-  * Mit Login: Lesezugriff auf Personen, denen eine Rolle im Verein zugeordnet
-    ist (aber nicht auf Personen in Teams des Vereins ohne Rolle im Verein).
-    Vollzugriff auf die eigenen Daten.
-* Sichtbarkeit: Sichtbar für alle Rollen von Verein und Verband.
-
-## Rollen der Gruppenart Team
-### Administrator
-
-![Teamadministrator](team_admin.png)
-
-* Berechtigungen: Vollzugriff auf Personen, denen eine Rolle im Team oder in
-  einem Unterteam des Teams zugeordnet ist. Wird für die Mitgliederverwaltung
-  innerhalb des Teams verwendet (Eintritte und Austritte, Adressänderungen,
-  ...), kann Mailing-Listen erstellen (Empfängerkreis: Team und Sub-Teams).
-  Eine Team benötigt nicht zwingend einen Administrator, der
-  Vereinsadministrator ist für alle diese Aufgaben ebenfalls berechtigt.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
-  
-### Leiter
-
-![Teamleiter](team_leader.png)
-
-* Berechtigungen: Lesezugriff auf Personen, denen eine Rolle im Team oder in
-  einem Team des Teams zugeordnet ist. Vollzugriff auf die eigenen Daten.
-  Wird für Teammitglieder verwendet, die Mitgliederdaten benötigen aber keine
-  Daten von Vereinsmitgliedern ausserhalb des Teams sehen sollen.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
-
-### Mitglied
-
-![Teammitglied](team_member.png)
-
-* Berechtigungen
-  * Ohne Login: kein Zugriff.
-  * Mit Login: Lesezugriff auf Persone, denen eine Rolle im Team zugeordnet ist
-    (aber nicht auf Personen in Sub-Teams des Teams). Vollzugriff auf die
-    eigenen Daten.
-* Sichtbarkeit: Sichtbar für alle Administratoren und Leiter von Verband,
-  Verein und übergeordneten Teams sowie für alle Rollen des Teams.
+  * Mit Login: Lesezugriff auf Personen der eigenen Gruppe.
+* Verfügbarkeit: in allen Gruppenarten.
 
 ### externes Mitglied
-
-![externes Teammitglied](team_extmember.png)
-
 * Berechtigungen: gleich wie _Mitglied_
-* Sichtbarkeit: Wie _Mitglied_ aber nicht sichtbar für Leiter von Verband.
-  Deshalb wird diese Rolle verwendet für Team-Mitglieder, welche nicht 
-  Vereinsmitglieder sind.
+* Verfügbarkeit: in den Gruppenarten "Team" und "Gruppierung"
+* Sichtbarkeit: Nur sichtbar für Mitglieder derselben Gruppe und für Leiter und
+  Administratoren des direkt darüber liegenden Vereins oder Teams.
   
   Beispiele:
   * der vereinsexterne J+S Coach, der Mitglied der Nachwuchsgruppe sein sollte,
