@@ -11,6 +11,12 @@ Die Verwaltung von Mitgliedern umfasst die folgenden Aufgaben:
 * Versand von Logins an Administratoren, Leiter und eventuell Mitglieder
 * Erstellung von Mailing-Listen
 
+### Löschen von Personen
+Bei Austritten aus dem Verein werden der enstsprechenden Person nur die
+Rolle im Verein entzogen, eine Löschung ist nicht vorgesehen. In begründeten
+Fällen (z.B. Duplikat) kann der Verbands-Administrator eine Löschung
+vornehmen.
+
 ## Teamverwaltung
 Die Verwaltung von Teams beinhaltet:
 * Erfassen von Teams
