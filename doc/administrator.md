@@ -17,13 +17,11 @@ Rolle im Verein entzogen, eine Löschung ist nicht vorgesehen. In begründeten
 Fällen (z.B. Duplikat) kann der Verbands-Administrator eine Löschung
 vornehmen.
 
-## Teamverwaltung
-Die Verwaltung von Teams beinhaltet:
-* Erfassen von Teams
-* Instruktion von Team-Administratoren (es ist auch möglich, dass der
-Administrator des Vereins diese Aufgabe für einzelne Teams übernimmt)
-* Entfernen von Teams wenn angezeigt (bei temporären Teams z.B. für die 
-Organisation von Anlässen)
+## Verwaltung von Teams und Gruppierungen
+Dies beinhaltet:
+* Erfassen von Teams und Gruppierungen
+* Instruktion von Team-Administratoren
+* Entfernen von Teams und Gruppierungen, wenn angezeigt
 
 ## Hierarchie der Mitgliedschaften
 Bei der Zuordnung von Rollen stellt sich die Frage, ob ein Mitglied eines Teams
