@@ -17,6 +17,18 @@ Rolle im Verein entzogen, eine Löschung ist nicht vorgesehen. In begründeten
 Fällen (z.B. Duplikat) kann der Verbands-Administrator eine Löschung
 vornehmen.
 
+### Tags
+Personen können mittels _Tags_ gekennzeichnet und gruppiert werden. Tags
+können frei definiert und vergeben werden, der Verband gibt aber die folgenden
+Tags vor und verwendet diese für Mails an die entsprechenden Adressen. Teams
+und Vereine sind gebeten, diese Tags aktuell zu halten:
+* Präsident, Präsidentin, Präsidium
+* Kassier, Kassierin, Kasse
+* Redaktor, Redaktorin, Redaktion
+* Nachwuchsbetreuer, Nachwuchsbetreuerin, Nachwuchsbetreuung, Nachwuchs, Jugendbetreuer, Jugendbetreuerin, Jugendbetreuung, Jugend
+* J+S Coach
+* J+S Leiter
+
 ## Verwaltung von Teams und Gruppierungen
 Dies beinhaltet:
 * Erfassen von Teams und Gruppierungen
