@@ -22,12 +22,13 @@ Personen können mittels _Tags_ gekennzeichnet und gruppiert werden. Tags
 können frei definiert und vergeben werden, der Verband gibt aber die folgenden
 Tags vor und verwendet diese für Mails an die entsprechenden Adressen. Teams
 und Vereine sind gebeten, diese Tags aktuell zu halten:
-* Präsident, Präsidentin, Präsidium
-* Kassier, Kassierin, Kasse
-* Redaktor, Redaktorin, Redaktion
-* Nachwuchsbetreuer, Nachwuchsbetreuerin, Nachwuchsbetreuung, Nachwuchs, Jugendbetreuer, Jugendbetreuerin, Jugendbetreuung, Jugend
+* Präsident/in
+* Kassier/in
+* Redaktor/in
+* Nachwuchsbetreuer/in
+* Kartenchef/in
 * J+S Coach
-* J+S Leiter
+* J+S Leiter/in
 
 ## Verwaltung von Teams und Gruppierungen
 Dies beinhaltet:
