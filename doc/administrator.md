@@ -23,6 +23,7 @@ können frei definiert und vergeben werden, der Verband gibt aber die folgenden
 Tags vor und verwendet diese für Mails an die entsprechenden Adressen. Teams
 und Vereine sind gebeten, diese Tags aktuell zu halten:
 * Präsident/in
+* Vizepräsident/in
 * Kassier/in
 * Redaktor/in
 * Nachwuchsbetreuer/in
