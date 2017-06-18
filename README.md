@@ -68,6 +68,17 @@ einem Team (oder Gruppierung) des Vereins gilt als Mitglied des Vereins und somi
 als Mitglied des Verbands. Jedes Verbandsmitglied ist Empfänger der AOLV-News,
 die Zahl der Vereinsmitglieder auf der Info-Seite des Verbands wird gemäss der
 oben genannten Regel bestimmt.
+#### Anzahl Mitglieder
+Auf der Info-Seite jeder Gruppe wird für jede Untergruppe die Anzahl Mitglieder (ohne Externe)
+angezeigt (das heisst, die Anzahl Mitglieder der Vereine ist auf der Info-Seite des Verbands
+zu finden). Es werden drei Spalten angezeigt:
+* _-20_: Mitglieder (ohne Externe), die im aktuellen Jahr 20jährig werden oder jünger sind
+* _21-_: Mitglieder (ohne Externe), die im aktuellen Jahr 21jährig werden oder älter sind
+* _Total_: Anzahl Mitglieder der Gruppe (ohne Externe)
+##### Hinweis
+Die Summe der Spalten _-20_ und _21-_ kann kleiner sein als _Total_, wenn nicht für alle
+Personen ein Geburtsdatum erfasst ist. In den Spalten _-20_ und _21-_ werden nur Personen
+mit gesetztem Geburtsdatum berücksichtigt, die Spalte _Total_ ist vom Geburtsdatum unabhängig
 
 ### Startseite
 Nach dem Login wird dem Benutzer eine Startseite angezeigt, die seiner Rolle
