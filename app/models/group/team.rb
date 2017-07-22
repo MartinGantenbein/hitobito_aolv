@@ -4,7 +4,7 @@ class Group::Team < ::Group
 
   self.layer = true
 
-  self.event_types = []
+  self.event_types = [::Event]
 
   children Group::Team, Group::Grouping
 
