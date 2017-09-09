@@ -15,7 +15,13 @@
 - without_relations ||= false
 
 = field_set_tag do
-  = f.labeled_input_fields :title, :first_name, :last_name, :nickname, :company_name, :company, :sicard, :iban
+  = f.labeled_input_fields :title, :first_name, :last_name, :nickname
+  = f.labeled_string_field(:company_name,
+                           placeholder: I18n.t('global.search.placeholder_company_name'),
+                           data: { provide: 'entity',
+                                   url: query_company_name_path })
+  = f.labeled_input_fields :company
+  = f.labeled_input_fields :sicard, :iban
 
   = render_extensions :name_fields, locals: { f: f }
 
