@@ -9,10 +9,10 @@
       = link_to(item.to_s, group_path(item.id))
 
     %td.right
--#      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday >= date('now','start of year', '-20 year')").size
-      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday >= makedate(?,1)", Date.today.year - 20).size
+      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday >= date('now','start of year', '-20 year')").size
+-#      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday >= makedate(?,1)", Date.today.year - 20).size
     %td.right
--#      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday <  date('now',start of year', '-20 year')").size
-      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday <  makedate(?,1)", Date.today.year - 20).size
+      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday <  date('now',start of year', '-20 year')").size
+-#      = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filter_entries.all.where("birthday <  makedate(?,1)", Date.today.year - 20).size
     %td.right
       = Person::RoleFilter.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).all_count
