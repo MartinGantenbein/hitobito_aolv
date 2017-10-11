@@ -12,6 +12,9 @@ module Aolv::Person
   private
   
   def full_name_with_title(format = :default)
-    "#{title} #{full_name_without_title(format)}".strip
+    case format
+    when :list, :print_list then "#{full_name_without_title(format)}"
+    else "#{title} #{full_name_without_title(format)}".strip
+    end
   end
 end
