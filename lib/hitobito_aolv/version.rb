@@ -1,3 +1,3 @@
 module HitobitoAolv
-  VERSION = '1.6.0-SNAPSHOT'
+  VERSION = '1.18.1-1'
 end
