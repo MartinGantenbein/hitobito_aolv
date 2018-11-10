@@ -18,5 +18,4 @@ Gem::Specification.new do |s|
   s.test_files = Dir['test/**/*']
   # rubocop:enable SingleSpaceBeforeFirstArg
 
-  s.add_runtime_dependency 'mailgun_rails'
 end
