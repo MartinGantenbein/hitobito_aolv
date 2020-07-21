@@ -9,10 +9,10 @@
       = link_to(item.to_s, group_path(item.id))
 
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday >= makedate(?,1)", Date.today.year - 20).size
-      -#= Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday >= date('now','start of year','-20 years')").size
+      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday >= makedate(?,1)", Date.today.year - 20).distinct.count
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday <  makedate(?,1)", Date.today.year - 20).size
-      -#= Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday <  date('now','start of year','-20 years')").size
+      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday <  makedate(?,1)", Date.today.year - 20).distinct.count
+    %td.right
+      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).filtered_accessibles.all.where("birthday is null").distinct.count
     %td.right
       = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.visible_types.collect(&:id)}).all_count

@@ -1,5 +1,9 @@
 # Hitobito AOLV Changelog
 
+## Version 1.21
+ * AOLV: Mitgliederstatistik mit neuer Spalte für Mitglieder mit unbekanntem Alter
+ * AOLV: Mitgliederstatistik zählt Mitglieder mit mehreren Rollen nicht mehr mehrfach
+
 ## Version 1.17
  * Exportformat vCard
  * AOLV: Titel (z.B. "Frau") wird beim Listenexport nicht mehr dem Namen vorangestellt

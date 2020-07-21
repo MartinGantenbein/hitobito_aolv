@@ -1,3 +1,3 @@
 module HitobitoAolv
-  VERSION = '1.21.0'
+  VERSION = '1.21.12-2'
 end
