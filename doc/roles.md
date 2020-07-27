@@ -34,7 +34,7 @@ explizit erwähnt.
 
 ### Leiter
 * Berechtigungen: Lesezugriff auf alle Administratoren, Leiter und Mitglieder
-  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder dder
+  der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
   eigenen Gruppe inklusive Gruppierungen.
 * Verfügbarkeit: in allen Gruppenarten ausser "Gruppierung".
 
