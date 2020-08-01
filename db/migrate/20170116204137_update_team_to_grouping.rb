@@ -1,4 +1,4 @@
-class UpdateTeamToGrouping < ActiveRecord::Migration
+class UpdateTeamToGrouping < ActiveRecord::Migration[4.2]
   def change
     execute "UPDATE groups g SET g.type = 'Group::Grouping', layer_group_id = g.parent_id WHERE g.type = 'Group::Team' and g.id not in (select group_id from roles where type in ('Group::Team::Leader', 'Group::Team::Administrator'));"
     execute "UPDATE groups g join groups parent on (g.parent_id = parent.id and g.type = parent.type) set g.layer_group_id = parent.layer_group_id where g.type = 'Group::Grouping';"

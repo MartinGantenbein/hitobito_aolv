@@ -1,4 +1,4 @@
-class AddIbanToPeople < ActiveRecord::Migration
+class AddIbanToPeople < ActiveRecord::Migration[4.2]
   def change
     add_column(:people, :iban, :string)
   end

@@ -1,4 +1,4 @@
-class AddSolvDbIdToPerson < ActiveRecord::Migration
+class AddSolvDbIdToPerson < ActiveRecord::Migration[4.2]
   def change
     add_column(:people, :solv_db_id, :string)
   end

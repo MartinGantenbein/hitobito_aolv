@@ -1,4 +1,4 @@
-class UpdateTeamLayerId < ActiveRecord::Migration
+class UpdateTeamLayerId < ActiveRecord::Migration[4.2]
   def change
     execute "UPDATE groups SET layer_group_id = id WHERE type = 'Group::Team';"
   end
