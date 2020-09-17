@@ -9,10 +9,10 @@
       = link_to(item.to_s, group_path(item.id))
 
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.all_types.collect(&:id)}).filtered_accessibles.all.where("birthday >= makedate(?,1)", Date.today.year - 20).distinct.count
+      = Person.in_or_below(item).where("birthday >= makedate(?,1)", Date.today.year - 20).count
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.all_types.collect(&:id)}).filtered_accessibles.all.where("birthday <  makedate(?,1)", Date.today.year - 20).distinct.count
+      = Person.in_or_below(item).where("birthday <  makedate(?,1)", Date.today.year - 20).count
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.all_types.collect(&:id)}).filtered_accessibles.all.where("birthday is null").distinct.count
+      = Person.in_or_below(item).where("birthday is null").count
     %td.right
-      = Person::Filter::List.new(item, Person.find_by_email(Settings.root_email), {:kind => 'deep', :role_type_ids => Role.all_types.collect(&:id)}).all_count
+      =Person.in_or_below(item).count

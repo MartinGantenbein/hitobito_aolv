@@ -1,5 +1,8 @@
 # Hitobito AOLV Changelog
 
+## Version 1.22
+ * AOLV: Mitgliederstatistik berücksichtigt wieder alle Ebenen (auch Untergruppen)
+
 ## Version 1.21
  * AOLV: Mitgliederstatistik mit neuer Spalte für Mitglieder mit unbekanntem Alter
  * AOLV: Mitgliederstatistik zählt Mitglieder mit mehreren Rollen nicht mehr mehrfach
@@ -9,10 +12,8 @@
  * AOLV: Titel (z.B. "Frau") wird beim Listenexport nicht mehr dem Namen vorangestellt
 
 ## Version 1.16
-
-*  AOLV: Für Clubs und Teams können neu Anlässe erstellt werden
+ * AOLV: Für Clubs und Teams können neu Anlässe erstellt werden
 
 
 ## Version 1.14
-
-*  AOLV: Mitgliederstatistik mit Spalten für Mitglieder bis 20 bzw. über 20
+ * AOLV: Mitgliederstatistik mit Spalten für Mitglieder bis 20 bzw. über 20
