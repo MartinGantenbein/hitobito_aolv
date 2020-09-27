@@ -59,14 +59,8 @@ zugeordnet werden, damit sie bei der Mitgliederzählung und beim News-Versand
 korrekt ausgeschlossen werden.
 
 ### Beispiele
-* vereinsexterne OK-Mitglieder
+* vereinsexterne OK-Mitglieder (TD, Helfer vom Turnverein, ...)
 * Lagerteilnehmer aus anderen Vereinen
 * Kursteilnehmer, die (noch) nicht Vereinsmitglied sind
 * J+S-Coach, der nicht Vereinsmitglied ist (aber im Team _Nachwuchsgruppe_ sein
 sollte um die entsprechenden Informationen zu erhalten)
-
-## Versand von Logins
-Aktuell besteht ein Problem mit der Funktion "Login schicken" auf der Personen-Seite,
-der versandte Link ist nicht korrekt und Passwort-Setzen funktioniert damit nicht.
-Als Workaround kann der Link "Passwort vergessen" auf der Login-Seite verwendet werden,
-damit wir ein korrekter Link zum Passwort-Setzen versandt.
