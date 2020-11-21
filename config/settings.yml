@@ -2,12 +2,12 @@
 # Settings relevant for the hitobito_aolv wagon
 # Overrides settings from the main application
 application:
-  languages:
-    de: Deutsch
+  logo:
+    image: logo_aolv.png
+    height: 50
+    width: 173
+  footer:
+    links: {https://www.aolv.ch}
 
-# The person with this email has root access to everything
-# This person should only be used by the operators of the application,
-# not the customers.
-# Initially, a password reset token may be mailed from the application
-# to this address to set a password.
-root_email: root@aolv.ch
+mailchimp:
+  enabled: false
