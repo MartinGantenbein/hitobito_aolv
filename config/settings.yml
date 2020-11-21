@@ -6,8 +6,6 @@ application:
     image: logo_aolv.png
     height: 50
     width: 173
-  footer:
-    links: {https://www.aolv.ch}
 
 mailchimp:
   enabled: false
