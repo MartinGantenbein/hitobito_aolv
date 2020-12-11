@@ -7,5 +7,10 @@ application:
     height: 50
     width: 173
 
+  footer:
+    links:
+      "Dokumentation": https://github.com/MartinGantenbein/hitobito_aolv/blob/master/README.md
+      "Kontakt": 'mailto:webmaster@aolv.ch'
+
 mailchimp:
   enabled: false
