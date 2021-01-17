@@ -2,6 +2,7 @@
 
 ## Version 1.22
  * AOLV: Mitgliederstatistik berücksichtigt wieder alle Ebenen (auch Untergruppen)
+ * AOLV: Mitgliederstatistik mit neuer Spalte für externe Mitglieder
 
 ## Version 1.21
  * AOLV: Mitgliederstatistik mit neuer Spalte für Mitglieder mit unbekanntem Alter
