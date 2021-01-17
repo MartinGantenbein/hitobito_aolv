@@ -5,14 +5,21 @@
 
 - @sub_groups.each do |label, groups|
   = section_table(label, groups) do |item|
+    :ruby
+      internal_under_20 = Person.in_or_below(item).where("birthday >= makedate(?,1) AND roles.type not like '%::ExternalMember'", Date.today.year - 20).count
+      internal_over_20  = Person.in_or_below(item).where("birthday <  makedate(?,1) AND roles.type not like '%::ExternalMember'", Date.today.year - 20).count
+      internal_unknown  = Person.in_or_below(item).where("birthday is null AND roles.type not like '%::ExternalMember'").count
+      external_total    = Person.in_or_below(item).where("roles.type like '%::ExternalMember'").count
     %td
       = link_to(item.to_s, group_path(item.id))
 
     %td.right
-      = Person.in_or_below(item).where("birthday >= makedate(?,1)", Date.today.year - 20).count
+      = internal_under_20
     %td.right
-      = Person.in_or_below(item).where("birthday <  makedate(?,1)", Date.today.year - 20).count
+      = internal_over_20
     %td.right
-      = Person.in_or_below(item).where("birthday is null").count
+      = internal_unknown
     %td.right
-      =Person.in_or_below(item).count
+      = internal_under_20 + internal_over_20 + internal_unknown
+    %td.right
+      = external_total
