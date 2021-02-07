@@ -1,21 +1,23 @@
--#  Copyright (c) 2017, Aargauer OL Verband. This file is part of
+-#  Copyright (c) 2021, Aargauer OL Verband. This file is part of
 -#  hitobito_aolv
 
 = section(title) do
   %table.table.table-basic
-    %thead
-      %tr
-      %td
-      %td.right
-        = '-20'
-      %td.right
-        = '21-'
-      %td.right
-        = '?'
-      %td.right
-        = 'Total'
-      %td.right
-        = 'Ext.'
+    - if !collection.empty?
+      - if collection.first.is_a? Group
+        %thead
+          %tr
+          %td
+          %td.right
+            = '-20'
+          %td.right
+            = '21-'
+          %td.right 
+            = '?'
+          %td.right
+            = 'Total'
+          %td.right
+            = 'Ext.'
     %tbody
       - collection.each do |item|
         %tr
