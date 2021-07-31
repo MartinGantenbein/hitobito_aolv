@@ -24,12 +24,16 @@ de:
       ### ROLES
 
       role/administrator:
-        one: Administrator
+        one: Administrator*in
         description: Vollzugriff auf die eigene Organisation und darunter liegende Gruppierungen.
 
       role/leader:
-        one: Leiter
+        one: Leiter*in
         description: Lesezugriff auf die eigene Organisation und darunter liegende Gruppierungen.
+
+      role/treasurer:
+        one: Kassier*in
+        description: Kann Rechnungen erstellen und bearbeiten.
 
       role/member:
         one: Mitglied

@@ -20,19 +20,26 @@ der Maus prüfen, welcher User welche anderen User ändern / sehen kann.
 Jeder User hat Vollzugriff auf seine eigenen Daten, dies wird unten nicht mehr
 explizit erwähnt.
 
-### Administrator
+### Administrator\*in
 * Berechtigungen: Vollzugriff auf alle Administratoren, Leiter und Mitglieder
   der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
   eigenen Gruppe inklusive Gruppierungen. Kann Teams und Gruppierungen sowie
   Mailing-Listen (Abos) erstellen.
 * Verfügbarkeit: in den Gruppenarten "Verein" und "Team".
 
-### Lokaler Administrator
+### Lokale\*r Administrator\*in
 * Berechtigungen: Vollzugriff auf Personen der eigenen Gruppe inklusive 
   Gruppierungen. Kann Gruppierungen sowie Mailing-Listen (Abos) erstellen.
+  Kann in diesen Gruppen Rechnungen erstellen und bearbeiten.
 * Verfügbarkeit: nur in der Gruppe "Verband".
 
-### Leiter
+### Kassier\*in
+* Berechtigungen: Rechnung erstellen und bearbeiten. Mit dieser Rolle sind keine
+  Zugriffsberechtigungen verknüpft, diese müssen gegebenenfalls zusätzlich mit
+  weiteren Rollen erteilt werden.
+* Verfügbarkeit: nur in der Gruppenart "Verein".
+
+### Leiter\*in
 * Berechtigungen: Lesezugriff auf alle Administratoren, Leiter und Mitglieder
   der eigenen und darunter liegenden Gruppen sowie auf externe Mitglieder der
   eigenen Gruppe inklusive Gruppierungen.
