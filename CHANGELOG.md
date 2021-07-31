@@ -1,8 +1,7 @@
 # Hitobito AOLV Changelog
 
 ## Version 1.26
- * AOLV: Neue Rolle "Kassier*in" für Vereine, damit können Rechnungen erstellt und 
-   bearbeitet werden.
+ * AOLV: Neue Rolle "Kassier*in" für Vereine, damit können Rechnungen erstellt und bearbeitet werden.
 
 ## Version 1.22
  * AOLV: Mitgliederstatistik berücksichtigt wieder alle Ebenen (auch Untergruppen)
