@@ -18,8 +18,11 @@ class Group::Team < ::Group
   class Member < Role::Member
   end
 
+  class Treasurer < Role::Treasurer
+  end
+
   class ExternalMember < Role::ExternalMember
   end
 
-  roles Administrator, Leader, Member, ExternalMember
+  roles Administrator, Leader, Member, Treasurer, ExternalMember
 end

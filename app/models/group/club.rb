@@ -18,5 +18,8 @@ class Group::Club < ::Group
   class Member < Role::Member
   end
 
-  roles Administrator, Leader, Member
+  class Treasurer < Role::Treasurer
+  end
+
+  roles Administrator, Leader, Member, Treasurer
 end
