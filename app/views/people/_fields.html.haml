@@ -1,4 +1,4 @@
--#  Copyright (c) 2015, Aargauer OL Verband. This file is part of
+-#  Copyright (c) 2015 - 2023, Aargauer OL Verband. This file is part of
 -#  hitobito and licensed under the Affero General Public License version 3
 -#  or later. See the COPYING file at the top-level directory or at
 -#  https://github.com/hitobito/hitobito.
@@ -12,17 +12,20 @@
 -#         and might need update when the base application is modified
 -#         Overriden to add the title, sicard and iban fields
 
-- without_relations ||= false
+-# TODO:   Try to get rid of this, use render_extensions :name_fields instead
+
+
+- has_relations ||= PeopleRelation.any?
 
 = field_set_tag do
-  = f.labeled_input_fields :title, :first_name, :last_name, :nickname
+  = f.labeled_input_fields :first_name, :last_name
+  = f.labeled_input_field(:nickname) if Person::PUBLIC_ATTRS.include?(:nickname)
   = f.labeled_string_field(:company_name,
                            placeholder: I18n.t('global.search.placeholder_company_name'),
                            data: { provide: 'entity',
                                    url: query_company_name_path })
   = f.labeled_input_fields :company
-  = f.labeled_input_fields :sicard, :iban
-
+  = f.labeled_input_fields :title, :sicard, :iban
   = render_extensions :name_fields, locals: { f: f }
 
 = render 'contactable/fields', f: f
@@ -36,10 +39,18 @@
                            value: f.date_value(:birthday),
                            help_inline: t('.format_birthday'),
                            class: 'span2')
+  - FeatureGate.if(:person_language) do
+    = f.labeled_collection_select(:language,
+                                  Person::LANGUAGES,
+                                  :first,
+                                  :last,
+                                  { prompt: true },
+                                  class: 'span6')
+
 
 = render_extensions :fields, locals: { f: f }
 
-- if !without_relations && PeopleRelation.possible_kinds.present?
+- if has_relations && PeopleRelation.possible_kinds.present?
   = field_set_tag do
     = f.labeled_inline_fields_for :relations_to_tails,
                                   'people_relation_fields',

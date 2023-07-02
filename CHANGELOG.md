@@ -4,6 +4,7 @@
  * AOLV: In der Mitgliedertabelle kann das Datum der letzten Änderung angezeigt werden
  * AOLV: In der Mitglieder- und der Teilnehmertabelle (Anlässe) kann die SI-Card angezeigt werden
  * AOLV: Bei Anmeldungen zu Anlässen kann die SI-Card als obligatorische Angabe verlangt werden
+ * AOLV: Bei Anmeldungen zu Anlässen können Name, Haupt-E-Mail, Geburtsdatum und Geschlecht nicht mehr mutiert werden
 
 ## Version 1.26
  * AOLV: Neue Rolle "Kassier*in" für Vereine, damit können Rechnungen erstellt und verwaltet werden

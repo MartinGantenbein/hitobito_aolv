@@ -1,0 +1,56 @@
+-#  Copyright (c) 2023, Aargauer OL Verband. This file is part of
+-#  hitobito and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/hitobito/hitobito.
+
+-# NOTE:   This partial overrides app/views/event/participation_contact_datas/_form.html.haml 
+-#         from the base application and might need update when the base application is modified
+-#         Overriden to disable name, email, gender and birthday fields (except for external entries).
+-#         This is to prevent the case where parents try to register a child for an event by
+-#         by registering themselves and changing their name to the one of the child...
+
+= field_set_tag do
+  - [:first_name, :last_name, :nickname, :company_name].each do |a|
+    = f.labeled_input_field(a, disabled: !entry.person.new_record?) if entry.show_attr?(a)
+
+= render 'event/participation_contact_datas/address_fields', f: f
+
+- if entry.show_attr?(:email)
+  = f.labeled_input_field :email, help_inline: t('people.email_field.used_as_login'), disabled: !entry.person.new_record?
+
+- Event::ParticipationContactData.contact_associations.each do |a|
+  = field_set_tag do
+    - unless entry.hidden_contact_attrs.include?(a)
+      = f.labeled_inline_fields_for a, "contactable/#{a.to_s.singularize}_fields"
+
+= field_set_tag do
+  - unless entry.hidden_contact_attrs.include?(:phone_numbers)
+    = f.labeled_inline_fields_for :phone_numbers, "contactable/phone_number_fields",
+                                  nil, entry.required_attr?(:phone_numbers)
+
+= field_set_tag do
+  - if entry.show_attr?(:gender)
+    = f.labeled(:gender) do
+      - (Person::GENDERS + ['']).each do |key|
+        = f.inline_radio_button(:gender,
+                                key,
+                                entry.gender_label(key),
+                                true,
+                                disabled: !entry.person.new_record?)
+
+  - if entry.show_attr?(:birthday)
+    = f.labeled_string_field(:birthday,
+                             value: f.date_value(:birthday),
+                             help_inline: t('people.fields.format_birthday'),
+                             class: 'span2',
+                             disabled: !entry.person.new_record?)
+
+  - FeatureGate.if(:person_language) do
+    = f.labeled_collection_select(:language,
+                                  Person::LANGUAGES,
+                                  :first,
+                                  :last,
+                                  { prompt: true },
+                                  class: 'span6')
+
+= render_extensions :fields, locals: { f: f }
