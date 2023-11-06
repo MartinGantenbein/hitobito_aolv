@@ -18,13 +18,15 @@
 - has_relations ||= PeopleRelation.any?
 
 = field_set_tag do
-  = f.labeled_input_fields :first_name, :last_name
-  = f.labeled_input_field(:nickname) if Person::PUBLIC_ATTRS.include?(:nickname)
-  = f.labeled_string_field(:company_name,
-                           placeholder: I18n.t('global.search.placeholder_company_name'),
-                           data: { provide: 'entity',
-                                   url: query_company_name_path })
-  = f.labeled_input_fields :company
+  = f.labeled_input_fields(*entry.decorate.used_attributes(:first_name, :last_name, :nickname))
+  - entry.decorate.used?(:company_name) do
+    = f.labeled_string_field(:company_name,
+                             placeholder: I18n.t('global.search.placeholder_company_name'),
+                             data: { provide: 'entity',
+                                     url: query_company_name_path })
+  - entry.decorate.used?(:company) do
+    = f.labeled_input_fields :company
+
   = f.labeled_input_fields :title, :sicard, :iban
   = render_extensions :name_fields, locals: { f: f }
 

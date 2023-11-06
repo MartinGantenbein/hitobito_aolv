@@ -7,7 +7,7 @@
 -#         from the base application and might need update when the base application is modified
 -#         Overriden to disable name, email, gender and birthday fields (except for external entries).
 -#         This is to prevent the case where parents try to register a child for an event by
--#         by registering themselves and changing their name to the one of the child...
+-#         registering themselves and changing their name to the one of the child...
 
 = field_set_tag do
   - [:first_name, :last_name, :nickname, :company_name].each do |a|
@@ -54,3 +54,5 @@
                                   class: 'span6')
 
 = render_extensions :fields, locals: { f: f }
+
+= render('people/privacy_policy_acceptance_field', policy_finder: @policy_finder, f: f)
