@@ -1,0 +1,9 @@
+/* 
+    Override to remove the default list bullet from the legally-ok subtitles.
+    Adding this CSS to datenschutz.html is not enough, since the contents is
+    replaced via Javascript and downloaded from legally-ok.
+*/
+
+#jmdcontent li {
+    list-style-type: none;
+}

@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   extend LanguageRouteScope
 
   language_scope do
-    # Define wagon routes here
-
+    get 'datenschutz', to: 'pages#datenschutz'
   end
 
 end

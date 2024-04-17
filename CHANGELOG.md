@@ -1,5 +1,8 @@
 # Hitobito AOLV Changelog
 
+## Version 2.1
+ * AOLV: Export nur noch für Benutzer mit Schreib-Berechtigung
+
 ## Version 1.28
  * AOLV: In der Mitgliedertabelle kann das Datum der letzten Änderung angezeigt werden
  * AOLV: In der Mitglieder- und der Teilnehmertabelle (Anlässe) kann die SI-Card angezeigt werden

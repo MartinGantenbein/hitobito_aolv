@@ -1,0 +1,29 @@
+-#  Copyright (c) 2024, Aargauer OL Verband. This file is part of
+-#  hitobito and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/hitobito/hitobito.
+
+-# NOTE:   This partial overrides app/views/people/_actions_show.html.haml 
+-#         from the base application and might need update when the base application is modified
+-#         Overriden to only add the export dropdown for users that can edit.
+
+- if can?(:edit, entry)
+  = button_action_edit
+
+- if can?(:destroy, entry)
+  = button_action_destroy(nil, { class: "btn-danger", data: { confirm: t('person.confirm_delete',
+                                                              person: entry.person) } })
+- if can?(:create_invoice, entry)
+  = invoice_button(people: [entry])
+
+- if can?(:edit, entry)
+  = dropdown_people_export(can?(:show_full, entry), false, true, false)
+
+= dropdown_people_login(entry)
+
+- if may_impersonate?(entry, parent)
+  = action_button(t('.impersonate_user'),
+                  group_person_impersonate_path(parent, entry),
+                  nil,
+                  data: { method: :post },
+                  title: t('.impersonate_user_tooltip'))
