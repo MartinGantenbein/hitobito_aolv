@@ -45,6 +45,15 @@ de:
 
     attributes:
 
+      role:
+        class:
+          permission:
+            description:
+              layer_and_below_full: Alles Lesen, Exportieren und Schreiben auf dieser Ebene und allen darunter liegenden Ebenen. Erstellen von Anlässen und Abos auf dieser Ebene.
+              layer_full: Alles Lesen, Exportieren und Schreiben auf dieser Ebene. Erstellen von Anlässen und Abos auf dieser Ebene.
+              group_and_below_full: Lesen, Exportieren und Schreiben auf der Gruppe und allen darunter liegenden Gruppen (ohne Ebenen). Inkl. Erstellen von Anlässen und Abos.
+              group_full: Lesen, Exportieren und Schreiben auf der Gruppe. Erstellen von Anlässen und Abos auf der Gruppe.
+
       ### PERSON
 
       person:

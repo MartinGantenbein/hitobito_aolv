@@ -10,6 +10,8 @@ application:
   footer:
     links:
       "Dokumentation": https://github.com/MartinGantenbein/hitobito_aolv/blob/master/README.md
+      "Datenschutzrichtlinie AOLV": https://aolv.ch/sites/default/files/Datenschutzrichtlinie.pdf
+      "Datenschutzerklärung (technisch)": /datenschutz
       "Kontakt": 'mailto:webmaster@aolv.ch'
 
 mailchimp:

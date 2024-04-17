@@ -60,12 +60,19 @@ derjenigen Gruppe(n) sehen bzw. bearbeiten können, welchen sie zugeordnet sind.
 
 [=> Detaillierte Beschreibung](doc/security.md)
 
+### Datenschutzrichtlinien
+Es gelten die [Datenschutzrichtlinien des AOLV](https://aolv.ch/sites/default/files/Datenschutzrichtlinie.pdf)
+sowie gegebenenfalls diejenigen des jeweiligen Vereins. Technische Details (Cookies, Tracking,
+IP-Adressen, usw.) sind in der [technischen Datenschutzerklärung](https://adressen.aolv.ch/datenschutz.html)
+zu finden.
+
 ## Allgemeine Hinweise
 ### Verbandsmitgliedschaft
 Jede Person mit einer Rolle (ausgenommen _externes Mitglied_) im Verein oder in einem Team
 (oder Gruppierung) des Vereins gilt als Mitglied des Vereins und somit automatisch auch als
 Mitglied des Verbands. Jedes Verbandsmitglied ist Empfänger der AOLV-News, die Zahl der
 Vereinsmitglieder auf der Info-Seite des Verbands wird gemäss der oben genannten Regel bestimmt.
+
 #### Anzahl Mitglieder
 Auf der Info-Seite jeder Gruppe wird für jede Untergruppe die Anzahl Mitglieder (ohne Externe)
 angezeigt (das heisst, die Anzahl Mitglieder der Vereine ist auf der Info-Seite des Verbands

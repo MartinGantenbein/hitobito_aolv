@@ -1,0 +1,21 @@
+-#  Copyright (c) 2024, Aargauer OL Verband. This file is part of
+-#  hitobito and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/hitobito/hitobito.
+
+-# NOTE:   This partial overrides app/views/event/participations/_actions_index.html.haml 
+-#         from the base application and might need update when the base application is modified
+-#         Overriden to only add the export dropdown for users that can edit.
+
+
+- if can?(:new, @event.new_role)
+  = Dropdown::Event::RoleAdd.new(self, @group, @event)
+
+- if can?(:create_invoices_from_list, @group)
+  = invoice_button(people: entries.collect(&:person))
+
+- if can?(:edit, @group)
+  = dropdown_people_export(can?(:show_details, entries.first))
+
+= action_button(t('global.button.print'), 'javascript:window.print();', :print)
+
