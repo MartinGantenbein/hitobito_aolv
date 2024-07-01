@@ -16,6 +16,8 @@
 - if can?(:create_invoice, entry)
   = invoice_button(people: [entry])
 
+= render_extensions(:actions_show)
+
 - if can?(:edit, entry)
   = dropdown_people_export(can?(:show_full, entry), false, true, false)
 

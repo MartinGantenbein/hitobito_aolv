@@ -3,7 +3,7 @@
 -#  or later. See the COPYING file at the top-level directory or at
 -#  https://github.com/hitobito/hitobito.
 
--# NOTE:   This partial overrides app/views/event/participation_contact_datas/_form.html.haml 
+-# NOTE:   This partial overrides app/views/event/participation_contact_datas/_fields.html.haml 
 -#         from the base application and might need update when the base application is modified
 -#         Overriden to disable name, email, gender and birthday fields (except for external entries).
 -#         This is to prevent the case where parents try to register a child for an event by
@@ -16,7 +16,7 @@
 = render 'event/participation_contact_datas/address_fields', f: f
 
 - if entry.show_attr?(:email)
-  = f.labeled_input_field :email, help_inline: t('people.email_field.used_as_login'), disabled: !entry.person.new_record?
+  = f.labeled_input_field :email, help_inline: t('people.email_field.used_as_login'), class: 'd-inline ', disabled: !entry.person.new_record?
 
 - Event::ParticipationContactData.contact_associations.each do |a|
   = field_set_tag do
@@ -42,7 +42,7 @@
     = f.labeled_string_field(:birthday,
                              value: f.date_value(:birthday),
                              help_inline: t('people.fields.format_birthday'),
-                             class: 'span2',
+                             class: 'col-2 d-inline',
                              disabled: !entry.person.new_record?)
 
   - FeatureGate.if(:person_language) do
@@ -51,7 +51,7 @@
                                   :first,
                                   :last,
                                   { prompt: true },
-                                  class: 'span6')
+                                  class: 'form-select form-select-sm')
 
 = render_extensions :fields, locals: { f: f }
 
