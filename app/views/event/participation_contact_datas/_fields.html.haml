@@ -1,3 +1,4 @@
+
 -#  Copyright (c) 2023, Aargauer OL Verband. This file is part of
 -#  hitobito and licensed under the Affero General Public License version 3
 -#  or later. See the COPYING file at the top-level directory or at
@@ -17,6 +18,9 @@
 
 - if entry.show_attr?(:email)
   = f.labeled_input_field :email, help_inline: t('people.email_field.used_as_login'), class: 'd-inline ', disabled: !entry.person.new_record?
+
+  - [:first_name, :last_name, :email].each do |a|
+    = f.hidden_field(a)
 
 - Event::ParticipationContactData.contact_associations.each do |a|
   = field_set_tag do
